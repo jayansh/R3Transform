@@ -1,3 +1,9 @@
+IMPORTANT: The project is deprecated, its put here only for reference. We don't guarantee, it will work for you, please use it at your own risk. There is no support available for same.
+
+R3Transform is eclipse based desktop application for migrating Oracle forms to Java EE.
+
+This is repository for R3Transform's eclipse plugin.
+
 Release Notes: R3Transform 6.0M3 06 May 2013(for Eclipse Helios)
 1. Premigration process fixed for Oracle Forms 11g.
 
@@ -24,24 +30,38 @@ Release Notes: R3Transform 5.5 M1 27 Aug 2012
 7. LOVHandling WizardPage has been removed.
 
 Release Notes: R3Transform 5.3M1 24 May 2012
-1. Generating CRUD/NON-CRUD and ProgramUnit as text file including Procedure tags generation for NON-CRUD in as text file.2. PLL migration support added(Under premigration tab.)3. Support for Programunit to Java added in Process Form Logic under Migration Tab. (User need to check respective 
-option in Window->Preferences->Tranform Preference)4. Support added for passing value from one item to another in Helper for Canvas switcher.5. Fixed – Under analysis in Premigration tab :warning if windowName==CanvasName==BlockName .6. Fixed - license error not showing message7. Fixed – Under Analysis warning if Formname not equal to module name.8. Create XML Map for all form, block, item, triggers names (before and after)9. Added support for item level trigger  -  whenValidateItem.10. Removed f:validateLength child from h:inputText and added a tag to maxlength to inputText .Release Notes: R3Transform 5.2SR1 30 March 2012
+1. Generating CRUD/NON-CRUD and ProgramUnit as text file including Procedure tags generation for NON-CRUD in as text file.
+2. PLL migration support added(Under premigration tab.)
+3. Support for Programunit to Java added in Process Form Logic under Migration Tab. (User need to check respective 
+option in Window->Preferences->Tranform Preference)
+4. Support added for passing value from one item to another in Helper for Canvas switcher.
+5. Fixed â€“ Under analysis in Premigration tab :warning if windowName==CanvasName==BlockName .
+6. Fixed - license error not showing message
+7. Fixed â€“ Under Analysis warning if Formname not equal to module name.
+8. Create XML Map for all form, block, item, triggers names (before and after)
+9. Added support for item level trigger  -  whenValidateItem.
+10. Removed f:validateLength child from h:inputText and added a tag to maxlength to inputText .Release Notes: R3Transform 5.2SR1 30 March 2012
 1. Added - confirmation box for user  for  writing of package/procedure to database during Process Form Logic
-Under Migration Tab. 2. Search for package/procedure/function in database if not found in program unit3. Initial Value for dbblock items.4. Fixed - heap size error due to size of Migration log.5. Removed - create view option from premigration process.
-Release Notes: R3Transform 5.2M3 27 March 2012
+Under Migration Tab. 
+2. Search for package/procedure/function in database if not found in program unit
+3. Initial Value for dbblock items.
+4. Fixed - heap size error due to size of Migration log.
+5. Removed - create view option from premigration process.
+
+Release Notes: R3Transform 5.2M3 27 March 2012
 1. Added support for migrating Buttons in grid
 
 
 
 Release Notes: R3Transform 5.2M2 20 March 2012
 
-1. Fixed – migrating program unit to java methods in ViewController/src.
+1. Fixed â€“ migrating program unit to java methods in ViewController/src.
 
 
 Release Notes: R3Transform 5.2M1 19 March 2012
 1. Fixed - label not migrated for checkbox
-2. Helper – Passing parameter value option added to customization. (passing only value if block and item is null.)
-3. Fixed - ListBox/Checkbox initial value doesn’t populate in entity
+2. Helper â€“ Passing parameter value option added to customization. (passing only value if block and item is null.)
+3. Fixed - ListBox/Checkbox initial value doesnâ€™t populate in entity
 4. No of Records displayed in grid (generating rows as per form in grid.)
 5. Panel header generating in Window now will be generated in WindowPanel(inside jspx)
 6. Label migration for selectBooleanCheckbox
@@ -52,7 +72,7 @@ Release Notes: R3Transform 5.2M1 19 March 2012
 11. Initialize items on create new object( in create method of control).
 12. Templates fixes for Builtins/NonCrud generation.
 13. Clear/Exit button on premigration.
-14. EJB LOV query – Now supports LOV migration with query without a table or view.
+14. EJB LOV query â€“ Now supports LOV migration with query without a table or view.
 15. Fixed - Cancel button not working- formLogic Dialog
 16. Automatically generate pojo/actionlistener calls for noncrud
 
