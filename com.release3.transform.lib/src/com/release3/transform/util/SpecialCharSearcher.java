@@ -1,3 +1,13 @@
+/*******************************************************************************
+ * Copyright (c) 2009, 2013 ObanSoft Inc. and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Contributors:
+ *     Jayansh Shinde
+ *******************************************************************************/
 package com.release3.transform.util;
 
 public class SpecialCharSearcher {
@@ -25,31 +35,31 @@ public class SpecialCharSearcher {
 				return true;
 			case '\'':
 				return true;
-			case 'á':
+			case 'ï¿½':
 				return true;
-			case 'é':
+			case 'ï¿½':
 				return true;
-			case 'í':
+			case 'ï¿½':
 				return true;
-			case 'ó':
+			case 'ï¿½':
 				return true;
-			case 'ú':
+			case 'ï¿½':
 				return true;
-			case 'Á':
+			case 'ï¿½':
 				return true;
-			case 'É':
+			case 'ï¿½':
 				return true;
-			case 'Í':
+			case 'ï¿½':
 				return true;
-			case 'Ó':
+			case 'ï¿½':
 				return true;
-			case 'Ú':
+			case 'ï¿½':
 				return true;
-			case 'ñ':
+			case 'ï¿½':
 				return true;
-			case 'Ñ':
+			case 'ï¿½':
 				return true;
-			case 'ü':
+			case 'ï¿½':
 				return true;
 
 			}
@@ -92,55 +102,55 @@ public class SpecialCharSearcher {
 				newChar = SpecialCharConstants.BACK_SLASH_REPLACER;
 				aText.replace(i, i+1, newChar);
 				break;
-			case 'á':
+			case 'ï¿½':
 				newChar = SpecialCharConstants.SPANISH_A_REPLACER;
 				aText.replace(i, i+1, newChar);
 				break;
-			case 'é':
+			case 'ï¿½':
 				newChar = SpecialCharConstants.SPANISH_E_REPLACER;
 				aText.replace(i, i+1, newChar);
 				break;
-			case 'í':
+			case 'ï¿½':
 				newChar = SpecialCharConstants.SPANISH_I_REPLACER;
 				aText.replace(i, i+1, newChar);
 				break;
-			case 'ó':
+			case 'ï¿½':
 				newChar = SpecialCharConstants.SPANISH_O_REPLACER;
 				aText.replace(i, i+1, newChar);
 				break;
-			case 'ú':
+			case 'ï¿½':
 				newChar = SpecialCharConstants.SPANISH_U_REPLACER;
 				aText.replace(i, i+1, newChar);
 				break;
-			case 'Á':
+			case 'ï¿½':
 				newChar = SpecialCharConstants.SPANISH_CAP_A_REPLACER;
 				aText.replace(i, i+1, newChar);
 				break;
-			case 'É':
+			case 'ï¿½':
 				newChar = SpecialCharConstants.SPANISH_CAP_E_REPLACER;
 				aText.replace(i, i+1, newChar);
 				break;
-			case 'Í':
+			case 'ï¿½':
 				newChar = SpecialCharConstants.SPANISH_CAP_I_REPLACER;
 				aText.replace(i, i+1, newChar);
 				break;
-			case 'Ó':
+			case 'ï¿½':
 				newChar = SpecialCharConstants.SPANISH_CAP_O_REPLACER;
 				aText.replace(i, i+1, newChar);
 				break;
-			case 'Ú':
+			case 'ï¿½':
 				newChar = SpecialCharConstants.SPANISH_CAP_U_REPLACER;
 				aText.replace(i, i+1, newChar);
 				break;
-			case 'ñ':
+			case 'ï¿½':
 				newChar = SpecialCharConstants.SPANISH_N_REPLACER;
 				aText.replace(i, i+1, newChar);
 				break;
-			case 'Ñ':
+			case 'ï¿½':
 				newChar = SpecialCharConstants.SPANISH_CAP_N_REPLACER;
 				aText.replace(i, i+1, newChar);
 				break;
-			case 'ü':
+			case 'ï¿½':
 				newChar = SpecialCharConstants.SPANISH_U_REPLACER;
 				aText.replace(i, i+1, newChar);
 				break;
@@ -156,7 +166,7 @@ public class SpecialCharSearcher {
 	}
 	
 	public static void main(String args[]){
-		String text = "my string with special chars & spánísh chars";
+		String text = "my string with special chars & spï¿½nï¿½sh chars";
 //		text = "&";
 		System.out.println(text);
 		System.out.println(replaceSpecialChar(text));

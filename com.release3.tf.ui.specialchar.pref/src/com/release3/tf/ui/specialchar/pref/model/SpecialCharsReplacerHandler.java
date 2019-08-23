@@ -1,3 +1,13 @@
+/*******************************************************************************
+ * Copyright (c) 2009, 2013 ObanSoft Inc. and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Contributors:
+ *     Jayansh Shinde
+ *******************************************************************************/
 package com.release3.tf.ui.specialchar.pref.model;
 
 import java.io.FileWriter;
@@ -137,43 +147,43 @@ public class SpecialCharsReplacerHandler {
 			case '\'':
 				newChar = SpecialCharConstants.BACK_SLASH_REPLACER;
 				break;
-			case 'á':
+			case 'ï¿½':
 				newChar = SpecialCharConstants.SPANISH_A_REPLACER;
 				break;
-			case 'é':
+			case 'ï¿½':
 				newChar = SpecialCharConstants.SPANISH_E_REPLACER;
 				break;
-			case 'í':
+			case 'ï¿½':
 				newChar = SpecialCharConstants.SPANISH_I_REPLACER;
 				break;
-			case 'ó':
+			case 'ï¿½':
 				newChar = SpecialCharConstants.SPANISH_O_REPLACER;
 				break;
-			case 'ú':
+			case 'ï¿½':
 				newChar = SpecialCharConstants.SPANISH_U_REPLACER;
 				break;
-			case 'Á':
+			case 'ï¿½':
 				newChar = SpecialCharConstants.SPANISH_CAP_A_REPLACER;
 				break;
-			case 'É':
+			case 'ï¿½':
 				newChar = SpecialCharConstants.SPANISH_CAP_E_REPLACER;
 				break;
-			case 'Í':
+			case 'ï¿½':
 				newChar = SpecialCharConstants.SPANISH_CAP_I_REPLACER;
 				break;
-			case 'Ó':
+			case 'ï¿½':
 				newChar = SpecialCharConstants.SPANISH_CAP_O_REPLACER;
 				break;
-			case 'Ú':
+			case 'ï¿½':
 				newChar = SpecialCharConstants.SPANISH_CAP_U_REPLACER;
 				break;
-			case 'ñ':
+			case 'ï¿½':
 				newChar = SpecialCharConstants.SPANISH_N_REPLACER;
 				break;
-			case 'Ñ':
+			case 'ï¿½':
 				newChar = SpecialCharConstants.SPANISH_CAP_N_REPLACER;
 				break;
-			case 'ü':
+			case 'ï¿½':
 				newChar = SpecialCharConstants.SPANISH_U_REPLACER;
 				break;
 

@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<info primitiveTypes="attribute">
-  <element name="Refresh">
-    <attribute name="Block" property="block"/>
-  </element>
-</info>
-                

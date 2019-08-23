@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<info primitiveTypes='attribute'>
- <element name="R3">
-    <element name="Trigger" property="trigger" updater="addTrigger"/>
-    <element name="RecordGroup" property="recordGroup" updater="addRecordGroup"/>
-    <element name="BlockCust" property="blockCust" updater="addBlockCust"/>
- </element>
-</info>
-                

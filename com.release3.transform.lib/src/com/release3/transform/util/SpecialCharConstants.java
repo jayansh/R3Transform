@@ -1,7 +1,17 @@
+/*******************************************************************************
+ * Copyright (c) 2009, 2013 ObanSoft Inc. and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Contributors:
+ *     Jayansh Shinde
+ *******************************************************************************/
 package com.release3.transform.util;
 
 public class SpecialCharConstants {
-	public static final char[] SPECIAL_CHARS = {'<','>','&','"','\'','á','é','í','ó','ú','Á','É','Í','Ó','Ú','ñ','Ñ','ü'};
+	public static final char[] SPECIAL_CHARS = {'<','>','&','"','\'','ï¿½','ï¿½','ï¿½','ï¿½','ï¿½','ï¿½','ï¿½','ï¿½','ï¿½','ï¿½','ï¿½','ï¿½','ï¿½'};
 	public static final String SPANISH_CAP_N_REPLACER = "N";
 	public static final String SPANISH_N_REPLACER = "n";
 	public static final String SPANISH_CAP_U_REPLACER = "U";

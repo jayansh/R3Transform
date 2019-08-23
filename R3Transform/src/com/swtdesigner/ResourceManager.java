@@ -28,7 +28,7 @@ import org.osgi.framework.Bundle;
  * 
  * This class may be freely distributed as part of any application or plugin.
  * <p>
- * Copyright (c) 2003 - 2007, Instantiations, Inc. <br>
+ * Copyright (c) 2003 - 2013, Instantiations, Inc. <br>
  * All Rights Reserved
  * 
  * @author scheglov_ke

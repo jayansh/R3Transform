@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<info primitiveTypes="attribute">
-  <element name="Sequence">
-    <attribute name="Item" property="item"/>
-    <attribute name="Seq" property="seq"/>
-  </element>
-</info>
-                
