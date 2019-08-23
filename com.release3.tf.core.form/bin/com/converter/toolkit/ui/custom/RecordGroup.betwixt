@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<info primitiveTypes="attribute">
+  <element name="RecordGroup">
+    <attribute name="Table" property="table"/>
+    <attribute name="Name" property="name"/>
+    <attribute name="Schema" property="schema"/>
+    <attribute name="ComponentOrderBy" property="componentOrderBy"/>
+    
+    <element name="Parameter" property="parameter" updater="addParameter"/>
+  </element>
+</info>
+                

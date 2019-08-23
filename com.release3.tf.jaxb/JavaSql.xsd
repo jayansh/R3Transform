@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.release3.com/JavaSql"
+	xmlns:tns="http://www.release3.com/JavaSql" elementFormDefault="qualified"
+	xmlns:Q1="http://www.release3.com/plsqlgen" xmlns:Q2="http://www.release3.com/JavaSql"
+	xmlns:Q3="http://www.release3.com/Customization/Builtin">
+
+
+	<import schemaLocation="customization/BuiltinCustomization.xsd"
+		namespace="http://www.release3.com/Customization/Builtin"></import>
+	<complexType name="JavaPlSqlType">
+		<sequence>
+			<element name="Builtin" maxOccurs="unbounded" minOccurs="0"
+				type="Q3:BuiltinType">
+			</element>
+            <element name="JavaPlSqlText" type="string" maxOccurs="1" minOccurs="1"></element>
+        </sequence>
+		<attribute name="JavaPlSql" type="string"></attribute>
+
+		<attribute name="BlockName" type="string"></attribute>
+		<attribute name="ItemName" type="string"></attribute>
+		<attribute name="toBeMigrate" type="boolean" use="optional" default="false"></attribute>
+		<attribute name="MoveToDB" type="boolean" use="optional" default="false"></attribute>
+		<attribute name="JavaMethod" type="string"></attribute>
+	</complexType>
+
+	<element name="R3JavaSqlGen">
+		<complexType>
+			<sequence>
+				<element name="JavaSql" type="Q2:JavaPlSqlType" maxOccurs="unbounded"
+					minOccurs="0"></element>
+			</sequence>
+			<attribute name="Name" type="string"></attribute>
+		</complexType>
+
+	</element>
+</schema>

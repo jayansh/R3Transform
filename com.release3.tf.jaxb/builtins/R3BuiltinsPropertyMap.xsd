@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.release3.com/Builtins/PropertyMap"
+	xmlns:tns="http://www.release3.com/Builtins/PropertyMap"
+	elementFormDefault="qualified">
+
+	<element name="R3BuiltinsMap">
+		<complexType>
+			<sequence>
+				<element name="PropertyMap" maxOccurs="unbounded" minOccurs="0"
+					type="tns:PropertyMapType">
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+
+
+
+
+
+	<complexType name="PropertyMapType">
+		<sequence>
+			<element name="FormProperty" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="JavaProperty" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="JavaDataType" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="Negation" type="boolean" maxOccurs="1"
+				minOccurs="0">
+			</element>
+		</sequence>
+	</complexType>
+</schema>

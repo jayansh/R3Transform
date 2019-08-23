@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://release3.com/FormsKeywords"
+	xmlns:Q1="http://release3.com/FormsKeywords">
+	<element name="R3Reservedlist">
+		<complexType>
+			<sequence>
+				<element name="Keyword" maxOccurs="unbounded" minOccurs="0"
+					type="Q1:KeywordType">
+				</element>
+			</sequence>
+			<attribute name="Name" type="string"></attribute>
+
+		</complexType>
+	</element>
+
+	<complexType name="KeywordType">
+		<sequence>
+			<element name="Action" type="string" maxOccurs="1" minOccurs="0"></element>
+		</sequence>
+		<attribute name="Name" type="string"></attribute>
+	</complexType>
+
+
+</schema>

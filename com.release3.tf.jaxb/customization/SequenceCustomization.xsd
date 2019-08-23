@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.release3.com/Customization/Sequence"
+	xmlns:tns="http://www.release3.com/Customization/Sequence"
+	elementFormDefault="qualified">
+
+	<element name="Sequence" type="tns:SequenceType"></element>
+
+	<complexType name="SequenceType">
+		<attribute name="Item" type="string"></attribute>
+		<attribute name="Seq" type="string"></attribute>
+	</complexType>
+</schema>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="R3Transform" version="2">
+    <resource path="src/com/release3/transform/ui/ParameterCustomizationGroup.java" type="com.release3.transform.ui.ParameterCustomizationGroup">
+        <filter id="571473929">
+            <message_arguments>
+                <message_argument value="Group"/>
+                <message_argument value="ParameterCustomizationGroup"/>
+            </message_arguments>
+        </filter>
+    </resource>
+    <resource path="src/com/release3/transform/ui/SequenceCustomization.java" type="com.release3.transform.ui.SequenceCustomization">
+        <filter id="571473929">
+            <message_arguments>
+                <message_argument value="Group"/>
+                <message_argument value="SequenceCustomization"/>
+            </message_arguments>
+        </filter>
+    </resource>
+</component>

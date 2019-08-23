@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TriggerList xmlns="http://www.release3.com/TriggerList">
+    <SupportedTrigger Name="KEY-UP" Migrate="true"/>
+    <SupportedTrigger Name="KEY-DOWN" Migrate="true"/>
+    <SupportedTrigger Name="KEY-NEXT" Migrate="true"/>
+    <SupportedTrigger Name="KEY-PRESS" Migrate="true"/>
+    <SupportedTrigger Name="LOCK-XXX" Migrate="true"/>
+    <SupportedTrigger Name="ON-CHECK-DELETE-MASTER" Migrate="true"/>
+    <SupportedTrigger Name="ON-CHECK-UNIQUE " Migrate="true"/>
+    <SupportedTrigger Name="ON-CLEAR-DETAILS" Migrate="true"/>
+    <SupportedTrigger Name="ON-CLOSE " Migrate="true"/>
+    <SupportedTrigger Name="ON-COLUMN-SECURITY" Migrate="true"/>
+    <SupportedTrigger Name="ON-COMMIT " Migrate="true"/>
+    <SupportedTrigger Name="ON-COUNT " Migrate="true"/>
+    <SupportedTrigger Name="ON-DELETE" Migrate="true"/>
+    <SupportedTrigger Name="ON-ERROR" Migrate="true"/>
+    <SupportedTrigger Name="ON-FETCH " Migrate="true"/>
+    <SupportedTrigger Name="ON-INSERT" Migrate="true"/>
+    <SupportedTrigger Name="ON-LOCK " Migrate="true"/>
+    <SupportedTrigger Name="ON-LOGON" Migrate="true"/>
+    <SupportedTrigger Name="ON-LOGOUT" Migrate="true"/>
+    <SupportedTrigger Name="ON-MESSAGE" Migrate="true"/>
+    <SupportedTrigger Name="ON-POPULATE-DETAILS" Migrate="true"/>
+    <SupportedTrigger Name="ON-ROLLBACK " Migrate="true"/>
+    <SupportedTrigger Name="ON-SAVEPOINT " Migrate="true"/>
+    <SupportedTrigger Name="ON-SELECT " Migrate="true"/>
+    <SupportedTrigger Name="ON-SEQUENCE-NUMBER " Migrate="true"/>
+    <SupportedTrigger Name="ON-UPDATE" Migrate="true"/>
+    <SupportedTrigger Name="POST-BLOCK" Migrate="true"/>
+    <SupportedTrigger Name="POST-CHANGE " Migrate="true"/>
+    <SupportedTrigger Name="POST-DATABASE-COMMIT" Migrate="true"/>
+    <SupportedTrigger Name="POST-DELETE" Migrate="false"/>
+    <SupportedTrigger Name="POST-FORM" Migrate="true"/>
+    <SupportedTrigger Name="POST-FORMS-COMMIT" Migrate="true"/>
+    <SupportedTrigger Name="POST-INSERT" Migrate="false"/>
+    <SupportedTrigger Name="POST-LOGON " Migrate="true"/>
+    <SupportedTrigger Name="POST-LOGOUT " Migrate="true"/>
+    <SupportedTrigger Name="POST-QUERY" Migrate="false"/>
+    <SupportedTrigger Name="POST-RECORD" Migrate="true"/>
+    <SupportedTrigger Name="POST-SELECT " Migrate="true"/>
+    <SupportedTrigger Name="POST-TEXT-ITEM" Migrate="true"/>
+    <SupportedTrigger Name="POST-UPDATE" Migrate="false"/>
+    <SupportedTrigger Name="PRE-BLOCK" Migrate="true"/>
+    <SupportedTrigger Name="PRE-COMMIT" Migrate="true"/>
+    <SupportedTrigger Name="PRE-DELETE" Migrate="false"/>
+    <SupportedTrigger Name="PRE-FORM" Migrate="true"/>
+    <SupportedTrigger Name="PRE-INSERT" Migrate="false"/>
+    <SupportedTrigger Name="PRE-LOGON " Migrate="true"/>
+    <SupportedTrigger Name="PRE-LOGOUT " Migrate="true"/>
+    <SupportedTrigger Name="PRE-POPUP-MENU " Migrate="true"/>
+    <SupportedTrigger Name="PRE-QUERY" Migrate="false"/>
+    <SupportedTrigger Name="PRE-RECORD" Migrate="true"/>
+    <SupportedTrigger Name="PRE-SELECT " Migrate="true"/>
+    <SupportedTrigger Name="PRE-TEXT-ITEM" Migrate="true"/>
+    <SupportedTrigger Name="PRE-UPDATE" Migrate="false"/>
+    <SupportedTrigger Name="QUERY-PROCEDURE " Migrate="true"/>
+    <SupportedTrigger Name="UPDATE-PROCEDURE " Migrate="true"/>
+    <SupportedTrigger Name="USER-NAMED " Migrate="true"/>
+    <SupportedTrigger Name="WHEN-BUTTON-PRESSED" Migrate="true"/>
+    <SupportedTrigger Name="WHEN-CHECKBOX-CHANGED" Migrate="true"/>
+    <SupportedTrigger Name="WHEN-CLEAR-BLOCK" Migrate="true"/>
+    <SupportedTrigger Name="WHEN-CREATE-RECORD" Migrate="true"/>
+    <SupportedTrigger Name="WHEN-DATABASE-RECORD" Migrate="true"/>
+    <SupportedTrigger Name="WHEN-FORM-NAVIGATE " Migrate="true"/>
+    <SupportedTrigger Name="WHEN-IMAGE-ACTIVATED" Migrate="true"/>
+    <SupportedTrigger Name="WHEN-IMAGE-PRESSED" Migrate="true"/>
+    <SupportedTrigger Name="WHEN-LIST-ACTIVATED " Migrate="true"/>
+    <SupportedTrigger Name="WHEN-MOUSE-CLICK" Migrate="true"/>
+    <SupportedTrigger Name="WHEN-MOUSE-DOUBLECLICK" Migrate="true"/>
+    <SupportedTrigger Name="WHEN-MOUSE-DOWN" Migrate="true"/>
+    <SupportedTrigger Name="WHEN-MOUSE-ENTER " Migrate="true"/>
+    <SupportedTrigger Name="WHEN-MOUSE-LEAVE " Migrate="true"/>
+    <SupportedTrigger Name="WHEN-MOUSE-MOVE " Migrate="true"/>
+    <SupportedTrigger Name="WHEN-MOUSE-UP" Migrate="true"/>
+    <SupportedTrigger Name="WHEN-NEW-BLOCK-INSTANCE" Migrate="true"/>
+    <SupportedTrigger Name="WHEN-NEW-FORM-INSTANCE" Migrate="false"/>
+    <SupportedTrigger Name="WHEN-NEW-ITEM-INSTANCE" Migrate="true"/>
+    <SupportedTrigger Name="WHEN-NEW-RECORD-INSTANCE" Migrate="true"/>
+    <SupportedTrigger Name="WHEN-RADIO-CHANGED" Migrate="true"/>
+    <SupportedTrigger Name="WHEN-REMOVE-RECORD" Migrate="true"/>
+    <SupportedTrigger Name="WHEN-TAB-PAGE-CHANGED " Migrate="true"/>
+    <SupportedTrigger Name="WHEN-TIMER-EXPIRED" Migrate="true"/>
+    <SupportedTrigger Name="WHEN-VALIDATE-ITEM" Migrate="true"/>
+    <SupportedTrigger Name="WHEN-VALIDATE-RECORD" Migrate="true"/>
+    <SupportedTrigger Name="WHEN-WINDOW-ACTIVATED" Migrate="true"/>
+    <SupportedTrigger Name="WHEN-WINDOW-CLOSED" Migrate="true"/>
+    <SupportedTrigger Name="WHEN-WINDOW-DEACTIVATED" Migrate="true"/>
+    <SupportedTrigger Name="WHEN-WINDOW-RESIZED" Migrate="true"/>
+</TriggerList>

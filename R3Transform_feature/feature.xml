@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="R3Transform_feature"
+      label="R3Transform_feature"
+      version="1.1.0"
+      provider-name="Release3">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.core.runtime" version="3.6.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui" version="3.6.1" match="greaterOrEqual"/>
+      <import plugin="com.release3.cleanup" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="com.release3.migrate" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="com.release3.premigrate" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="com.release3.postmigrate" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.databinding" version="1.3.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.databinding.beans" version="1.2.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jface.databinding" version="1.4.0" match="greaterOrEqual"/>
+      <import plugin="com.ibm.icu" version="4.2.1" match="greaterOrEqual"/>
+      <import plugin="com.release3.transform.ui" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="com.release3.transform.rule" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="com.release3.tf.core" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="com.release3.tf.licensing" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="com.release3.dbconnect" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.forms" version="3.3.103" match="greaterOrEqual"/>
+      <import plugin="com.release3.analysis" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="com.release3.plsql.analysis"/>
+      <import plugin="com.release3.tf.core.form" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.wst.xml.ui" version="1.1.103" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.wst.xml.core" version="1.1.503" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.databinding.property"/>
+      <import plugin="LovXmlReader" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="com.release3.tf.jaxb" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="com.release3.tf.plsql.process" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="com.release3.tf.javasql" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="com.release3.sqlparsing" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jface.text" version="3.6.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.console" version="3.5.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.wb.swt.layout.grouplayout"/>
+      <import plugin="org.eclipse.core.runtime" version="3.4.0" match="greaterOrEqual"/>
+      <import plugin="org.apache.log4j" version="1.2.12" match="greaterOrEqual"/>
+      <import plugin="org.apache.ant" version="1.7.0" match="greaterOrEqual"/>
+      <import plugin="com.release3.transform.lib" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.console" version="3.3.1" match="greaterOrEqual"/>
+      <import plugin="com.release3.plsql.analysis" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jface"/>
+      <import plugin="org.eclipse.ui" version="3.4.2" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="R3Transform"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.release3.cleanup"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.release3.migrate"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.release3.postmigrate"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.release3.premigrate"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.release3.sqlparsing"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.release3.tf.core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.release3.tf.core.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.release3.tf.licensing"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.release3.transform.lib"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.release3.transform.rule"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.release3.transform.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.log4j"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+</feature>

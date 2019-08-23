@@ -1,0 +1,14 @@
+package ${applicationName}.${formName}.model;
+
+public interface ${formName}_${blockName}_UIIntfs{
+	
+    #foreach( $builtin in $builtinList )
+    			
+    			public void set${builtin.getItemName()}${builtin.getPropertyName()}(String
+    			propertyValue);
+    
+    			public
+    			String get${builtin.getItemName()}${builtin.getPropertyName()}();
+    			
+    	#end	
+}

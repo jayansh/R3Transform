@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.release3.com/FormsMap"
+	 elementFormDefault="qualified">
+
+    <element name="R3FormsMap" >
+	<complexType>
+		<sequence>
+			<element name="Rec" maxOccurs="unbounded" minOccurs="0">
+				<complexType>
+					<sequence>
+						<element name="BlockName" type="string" maxOccurs="1" minOccurs="0"></element>
+						<element name="ItemName" type="string" maxOccurs="1" minOccurs="0"></element>
+						<element name="Type" type="string" maxOccurs="1" minOccurs="0"></element>
+						<element name="Source" type="string" maxOccurs="1" minOccurs="0"></element>
+						<element name="Category" type="string" maxOccurs="1" minOccurs="0"></element>
+						<element name="Processing" type="string" maxOccurs="1" minOccurs="0"></element>
+						<element name="AssociatedWith" type="string" maxOccurs="1" minOccurs="0"></element>
+						<element name="Occurances" type="string" maxOccurs="1" minOccurs="0"></element>
+						<element name="Migrate" type="boolean"
+							maxOccurs="1" minOccurs="0">
+						</element>
+						<element name="SqlStatement" type="string" maxOccurs="1" minOccurs="0"></element>
+						<element name="Builtins" type="string" maxOccurs="unbounded" minOccurs="0"></element>
+						<element name="Alternative" type="string" maxOccurs="1" minOccurs="0"></element>
+					</sequence>
+					<attribute name="Name" type="string"></attribute>
+				</complexType>
+			</element>
+		</sequence>
+		<attribute name="Name" type="string"></attribute>
+	</complexType>
+    </element>
+</schema>

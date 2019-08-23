@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.release3.com/Customization/RecordGroup"
+	xmlns:tns="http://www.release3.com/Customization/RecordGroup" elementFormDefault="qualified"
+	xmlns:Q1="http://www.release3.com/Customization/Parameter">
+
+    
+    <import schemaLocation="ParameterCustomization.xsd" namespace="http://www.release3.com/Customization/Parameter"></import>
+    <element name="RecordGroup" type="tns:RecordGroupType"></element>
+
+	<complexType name="RecordGroupType">
+		<sequence>
+
+
+			<element name="Parameter" maxOccurs="unbounded"
+				minOccurs="0" type="Q1:ParameterType">
+			</element>
+		</sequence>
+		<attribute name="Name" type="string"></attribute>
+		<attribute name="Schema" type="string"></attribute>
+		<attribute name="Table" type="string"></attribute>
+		<attribute name="ComponentOrderBy" type="boolean"></attribute>
+	</complexType>
+</schema>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.release3.com/plsqlgen"
+	elementFormDefault="qualified" xmlns:Q1="http://xmlns.oracle.com/Forms"
+	xmlns:Q2="http://www.release3.com/plsqlgen">
+
+	<import schemaLocation="schema1.xsd" namespace="http://xmlns.oracle.com/Forms"></import>
+
+
+
+
+
+
+	<element name="R3PlSql">
+
+		<complexType>
+			<sequence>
+				<element name="R3Trigger" maxOccurs="unbounded" minOccurs="0">
+					<complexType>
+						<sequence>
+							<element name="Trigger" type="Q1:Trigger"
+								maxOccurs="1" minOccurs="1">
+							</element>
+						</sequence>
+						<attribute name="BlockName" type="string"></attribute>
+						<attribute name="ItemName" type="string"></attribute>
+						<attribute name="Name" type="string"></attribute>
+					</complexType>
+				</element>
+				<element name="ProgramUnit" type="Q1:ProgramUnit" maxOccurs="unbounded"
+					minOccurs="0">
+				</element>
+			</sequence>
+			<attribute name="FormName" type="string"></attribute>
+		</complexType>
+	</element>
+</schema>

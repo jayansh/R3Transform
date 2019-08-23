@@ -1,0 +1,16 @@
+<GridBeanPreferences>
+  <columnInfo>
+    <columnType>RefreshBlockDropDown</columnType>
+    <dbColumnName></dbColumnName>
+    <modelAccessName>block</modelAccessName>
+    <sortOrder>1</sortOrder>
+    <sortType>asc</sortType>
+    <sortable>true</sortable>
+    <uiColumnName>Block</uiColumnName>
+    <visible>true</visible>
+  </columnInfo>
+  <pagesize>5</pagesize>
+  
+  <customComponent>/ParamGrid_customcomponents.jspx</customComponent>
+</GridBeanPreferences>
+

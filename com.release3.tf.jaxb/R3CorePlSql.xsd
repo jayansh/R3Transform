@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.release3.com/R3CorePlSqlGen"
+	xmlns:tns="http://www.release3.com/R3CorePlSqlGen" elementFormDefault="qualified"
+	xmlns:Q1="http://www.release3.com/Customization/Builtin">
+
+	<import schemaLocation="customization/BuiltinCustomization.xsd"
+		namespace="http://www.release3.com/Customization/Builtin"></import>
+	<element name="R3CorePlSqlGen">
+
+
+
+		<complexType>
+
+			<sequence>
+				<element name="R3CorePlSql" maxOccurs="unbounded" minOccurs="0"
+					type="tns:R3CorePlSql">
+				</element>
+			</sequence>
+			<attribute name="Name" type="string"></attribute>
+		</complexType>
+	</element>
+	<complexType name="R3CorePlSql">
+		<sequence>
+			<element name="PlSqlText" type="string" maxOccurs="1" minOccurs="0"></element>
+			<element name="Builtin" maxOccurs="unbounded" minOccurs="0"
+				type="Q1:BuiltinType">
+			</element>
+		</sequence>
+		<attribute name="PlSqlName" type="string"></attribute>
+
+		<attribute name="PlSqlDefinition" type="string"></attribute>
+		<attribute name="BlockName" type="string"></attribute>
+		<attribute name="ItemName" type="string"></attribute>
+		<attribute name="toBeMigrate" type="boolean" use="optional" default="false"></attribute>
+		<attribute name="MoveToDB" type="boolean" use="optional" default="true"></attribute>
+	</complexType>
+
+</schema>

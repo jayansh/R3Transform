@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.release3.com/TriggerList"
+	xmlns:tns="http://www.release3.com/TriggerList" elementFormDefault="qualified">
+
+	<element name="TriggerList">
+		<complexType>
+			<sequence>
+				<element name="SupportedTrigger" type="tns:SupportedTriggerType" maxOccurs="unbounded"
+					minOccurs="0">
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+
+
+	<complexType name="SupportedTriggerType">
+
+		<attribute name="Name" type="string"></attribute>
+		<attribute name="Migrate" type="boolean"></attribute>
+	</complexType>
+
+</schema>

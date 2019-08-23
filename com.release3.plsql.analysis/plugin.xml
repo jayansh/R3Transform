@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="com.release3.plsql.analysis.ui.FormPropertiesView"
+            id="com.release3.plsql.analysis.FormPropertiesView"
+            name="FormPropertiesView"
+            restorable="true">
+      </view>
+      <view
+            class="com.release3.plsql.analysis.ui.JavaPropertiesView"
+            id="com.release3.plsql.analysis.JavaPropertiesView"
+            name="JavaPropertiesView"
+            restorable="true">
+      </view>
+   </extension>
+
+</plugin>

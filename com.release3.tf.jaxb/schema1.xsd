@@ -1,0 +1,2012 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema elementFormDefault="qualified" version="1.0"
+	targetNamespace="http://xmlns.oracle.com/Forms" xmlns:tns="http://xmlns.oracle.com/Forms"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:import schemaLocation="formsObject.xsd"/>
+
+  <xs:element name="Alert" type="tns:Alert"/>
+
+  <xs:element name="AttachedLibrary" type="tns:AttachedLibrary"/>
+
+  <xs:element name="Block" type="tns:Block"/>
+
+  <xs:element name="Canvas" type="tns:Canvas"/>
+
+  <xs:element name="CompoundText" type="tns:CompoundText"/>
+
+  <xs:element name="Coordinate" type="tns:Coordinate"/>
+
+  <xs:element name="DataSourceArgument" type="tns:DataSourceArgument"/>
+
+  <xs:element name="DataSourceColumn" type="tns:DataSourceColumn"/>
+
+  <xs:element name="Editor" type="tns:Editor"/>
+
+  <xs:element name="Font" type="tns:Font"/>
+
+  <xs:element name="FormModule" type="tns:FormModule"/>
+
+  <xs:element name="Graphics" type="tns:Graphics"/>
+
+  <xs:element name="Item" type="tns:Item"/>
+
+  <xs:element name="LOV" type="tns:LOV"/>
+
+  <xs:element name="LOVColumnMapping" type="tns:LOVColumnMapping"/>
+
+  <xs:element name="ListItemElement" type="tns:IndexedListWithName"/>
+
+  <xs:element name="Menu" type="tns:Menu"/>
+
+  <xs:element name="MenuItem" type="tns:MenuItem"/>
+
+  <xs:element name="MenuItemRole" type="tns:IndexedListWithoutName"/>
+
+  <xs:element name="MenuModule" type="tns:MenuModule"/>
+
+  <xs:element name="MenuModuleRole" type="tns:IndexedListWithoutName"/>
+
+  <xs:element name="Module" type="tns:Module"/>
+
+  <xs:element name="ModuleParameter" type="tns:ModuleParameter"/>
+
+  <xs:element name="ObjectGroup" type="tns:ObjectGroup"/>
+
+  <xs:element name="ObjectGroupChild" type="tns:ObjectGroupChild"/>
+
+  <xs:element name="ObjectLibrary" type="tns:ObjectLibrary"/>
+
+  <xs:element name="ObjectLibraryTab" type="tns:ObjectLibraryTab"/>
+
+  <xs:element name="Point" type="tns:Point"/>
+
+  <xs:element name="ProgramUnit" type="tns:ProgramUnit"/>
+
+  <xs:element name="PropertyClass" type="tns:PropertyClass"/>
+
+  <xs:element name="RadioButton" type="tns:RadioButton"/>
+
+  <xs:element name="RecordGroup" type="tns:RecordGroup"/>
+
+  <xs:element name="RecordGroupColumn" type="tns:RecordGroupColumn"/>
+
+  <xs:element name="RecordGroupColumnRow" type="tns:IndexedListWithoutName"/>
+
+  <xs:element name="Relation" type="tns:Relation"/>
+
+  <xs:element name="Report" type="tns:Report"/>
+
+  <xs:element name="TabPage" type="tns:TabPage"/>
+
+  <xs:element name="TextSegment" type="tns:TextSegment"/>
+
+  <xs:element name="Trigger" type="tns:Trigger"/>
+
+  <xs:element name="VisualAttribute" type="tns:VisualAttribute"/>
+
+  <xs:element name="VisualState" type="tns:VisualState"/>
+
+  <xs:element name="Window" type="tns:Window"/>
+
+  <xs:complexType name="Alert">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence/>
+        <xs:attribute name="AlertMessage" type="xs:string"/>
+        <xs:attribute name="AlertStyle" type="xs:string"/>
+        <xs:attribute name="BackColor" type="xs:string"/>
+        <xs:attribute name="Button1Label" type="xs:string"/>
+        <xs:attribute name="Button2Label" type="xs:string"/>
+        <xs:attribute name="Button3Label" type="xs:string"/>
+        <xs:attribute name="Comment" type="xs:string"/>
+        <xs:attribute name="DefaultAlertButton" type="xs:string"/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="FillPattern" type="xs:string"/>
+        <xs:attribute name="FontName" type="xs:string"/>
+        <xs:attribute name="FontSize" type="xs:integer"/>
+        <xs:attribute name="FontSpacing" type="xs:string"/>
+        <xs:attribute name="FontStyle" type="xs:string"/>
+        <xs:attribute name="FontWeight" type="xs:string"/>
+        <xs:attribute name="ForegroundColor" type="xs:string"/>
+        <xs:attribute name="LanguageDirection" type="xs:string"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="ParentFilename" type="xs:string"/>
+        <xs:attribute name="ParentFilepath" type="xs:string"/>
+        <xs:attribute name="ParentModule" type="xs:string"/>
+        <xs:attribute name="ParentModuleType" type="xs:integer"/>
+        <xs:attribute name="ParentName" type="xs:string"/>
+        <xs:attribute name="ParentType" type="xs:integer"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="SmartClass" type="xs:boolean"/>
+        <xs:attribute name="SubclassObjectGroup" type="xs:boolean"/>
+        <xs:attribute name="Title" type="xs:string"/>
+        <xs:attribute name="VisualAttributeName" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="AttachedLibrary">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence/>
+        <xs:attribute name="Comment" type="xs:string"/>
+        <xs:attribute name="LibraryLocation" type="xs:string"/>
+        <xs:attribute name="LibrarySource" type="xs:string"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Block">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="DataSourceColumn" type="tns:DataSourceColumn"/>
+            <xs:element name="Trigger" type="tns:Trigger"/>
+            <xs:element name="Item" type="tns:Item"/>
+            <xs:element name="DataSourceArgument" type="tns:DataSourceArgument"/>
+            <xs:element name="Relation" type="tns:Relation"/>
+          </xs:choice>
+        </xs:sequence>
+        <xs:attribute name="Alias" type="xs:string"/>
+        <xs:attribute name="BackColor" type="xs:string"/>
+        <xs:attribute name="Comment" type="xs:string"/>
+        <xs:attribute name="DMLArraySize" type="xs:integer"/>
+        <xs:attribute name="DMLDataName" type="xs:string"/>
+        <xs:attribute name="DMLDataType" type="xs:string"/>
+        <xs:attribute name="DMLReturnValue" type="xs:boolean"/>
+        <xs:attribute name="DatabaseBlock" type="xs:boolean"/>
+        <xs:attribute name="DeleteAllowed" type="xs:boolean"/>
+        <xs:attribute name="DeleteProcedureName" type="xs:string"/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="EnforcedColumnSecurity" type="xs:boolean"/>
+        <xs:attribute name="EnforcedPrimaryKey" type="xs:boolean"/>
+        <xs:attribute name="FillPattern" type="xs:string"/>
+        <xs:attribute name="ForegroundColor" type="xs:string"/>
+        <xs:attribute name="IncludeRefitem" type="xs:boolean"/>
+        <xs:attribute name="InsertAllowed" type="xs:boolean"/>
+        <xs:attribute name="InsertProcedureName" type="xs:string"/>
+        <xs:attribute name="KeyMode" type="xs:string"/>
+        <xs:attribute name="LanguageDirection" type="xs:string"/>
+        <xs:attribute name="LockMode" type="xs:string"/>
+        <xs:attribute name="LockProcedureName" type="xs:string"/>
+        <xs:attribute name="MaximumQueryTime" type="xs:integer"/>
+        <xs:attribute name="MaximumRecordsFetched" type="xs:integer"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="NavigationStyle" type="xs:string"/>
+        <xs:attribute name="NextNavigationBlockName" type="xs:string"/>
+        <xs:attribute name="OptionHint" type="xs:string"/>
+        <xs:attribute name="OrderByClause" type="xs:string"/>
+        <xs:attribute name="ParentFilename" type="xs:string"/>
+        <xs:attribute name="ParentFilepath" type="xs:string"/>
+        <xs:attribute name="ParentModule" type="xs:string"/>
+        <xs:attribute name="ParentModuleType" type="xs:integer"/>
+        <xs:attribute name="ParentName" type="xs:string"/>
+        <xs:attribute name="ParentType" type="xs:integer"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="PrecompSummary" type="xs:boolean"/>
+        <xs:attribute name="PreviousNavigationBlockName" type="xs:string"/>
+        <xs:attribute name="QueryAllRecords" type="xs:boolean"/>
+        <xs:attribute name="QueryAllowed" type="xs:boolean"/>
+        <xs:attribute name="QueryDataSourceName" type="xs:string"/>
+        <xs:attribute name="QueryDataSourceType" type="xs:string"/>
+        <xs:attribute name="RecordOrientation" type="xs:string"/>
+        <xs:attribute name="RecordVisualAttributeGroupName" type="xs:string"/>
+        <xs:attribute name="RecordsBufferedCount" type="xs:integer"/>
+        <xs:attribute name="RecordsDisplayCount" type="xs:integer"/>
+        <xs:attribute name="RecordsFetchedCount" type="xs:integer"/>
+        <xs:attribute name="ReverseDirection" type="xs:boolean"/>
+        <xs:attribute name="ScrollbarCanvasName" type="xs:string"/>
+        <xs:attribute name="ScrollbarLength" type="xs:integer"/>
+        <xs:attribute name="ScrollbarOrientation" type="xs:string"/>
+        <xs:attribute name="ScrollbarTabPageName" type="xs:string"/>
+        <xs:attribute name="ScrollbarWidth" type="xs:integer"/>
+        <xs:attribute name="ScrollbarXPosition" type="xs:integer"/>
+        <xs:attribute name="ScrollbarYPosition" type="xs:integer"/>
+        <xs:attribute name="ShowScrollbar" type="xs:boolean"/>
+        <xs:attribute name="SingleRecord" type="xs:boolean"/>
+        <xs:attribute name="SmartClass" type="xs:boolean"/>
+        <xs:attribute name="SubclassObjectGroup" type="xs:boolean"/>
+        <xs:attribute name="UpdateAllowed" type="xs:boolean"/>
+        <xs:attribute name="UpdateChangedColumns" type="xs:boolean"/>
+        <xs:attribute name="UpdateProcedureName" type="xs:string"/>
+        <xs:attribute name="VisualAttributeName" type="xs:string"/>
+        <xs:attribute name="WhereClause" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="DataSourceColumn">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence/>
+        <xs:attribute name="DSCLength" type="xs:integer"/>
+        <xs:attribute name="DSCMandatory" type="xs:boolean"/>
+        <xs:attribute name="DSCName" type="xs:string"/>
+        <xs:attribute name="DSCNochildren" type="xs:boolean"/>
+        <xs:attribute name="DSCParentName" type="xs:string"/>
+        <xs:attribute name="DSCPrecision" type="xs:integer"/>
+        <xs:attribute name="DSCScale" type="xs:integer"/>
+        <xs:attribute name="DSCType" type="xs:string"/>
+        <xs:attribute name="DSCTypeName" type="xs:string"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="SubclassSubObject" type="xs:boolean"/>
+        <xs:attribute name="Type" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Trigger">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence/>
+        <xs:attribute name="Comment" type="xs:string"/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="DisplayInKeyboardHelp" type="xs:boolean"/>
+        <xs:attribute name="ExecuteHierarchy" type="xs:string"/>
+        <xs:attribute name="FireInQuery" type="xs:boolean"/>
+        <xs:attribute name="Hide" type="xs:boolean"/>
+        <xs:attribute name="KeyboardHelpText" type="xs:string"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="ParentFilename" type="xs:string"/>
+        <xs:attribute name="ParentFilepath" type="xs:string"/>
+        <xs:attribute name="ParentModule" type="xs:string"/>
+        <xs:attribute name="ParentModuleType" type="xs:integer"/>
+        <xs:attribute name="ParentName" type="xs:string"/>
+        <xs:attribute name="ParentSourceLevel1ObjectName" type="xs:string"/>
+        <xs:attribute name="ParentSourceLevel1ObjectType" type="xs:integer"/>
+        <xs:attribute name="ParentSourceLevel2ObjectName" type="xs:string"/>
+        <xs:attribute name="ParentSourceLevel2ObjectType" type="xs:integer"/>
+        <xs:attribute name="ParentType" type="xs:integer"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="SmartClass" type="xs:boolean"/>
+        <xs:attribute name="SubclassObjectGroup" type="xs:boolean"/>
+        <xs:attribute name="SubclassSubObject" type="xs:boolean"/>
+        <xs:attribute name="TriggerInternalType" type="xs:integer"/>
+        <xs:attribute name="TriggerStyle" type="xs:string"/>
+        <xs:attribute name="TriggerText" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Item">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="RadioButton" type="tns:RadioButton"/>
+            <xs:element name="ListItemElement" type="tns:IndexedListWithName"/>
+            <xs:element name="Trigger" type="tns:Trigger"/>
+          </xs:choice>
+        </xs:sequence>
+        <xs:attribute name="AccessKey" type="xs:string"/>
+        <xs:attribute name="AudioChannels" type="xs:string"/>
+        <xs:attribute name="AutoHint" type="xs:boolean"/>
+        <xs:attribute name="AutoSkip" type="xs:boolean"/>
+        <xs:attribute name="BackColor" type="xs:string"/>
+        <xs:attribute name="Bevel" type="xs:string"/>
+        <xs:attribute name="CalculateMode" type="xs:string"/>
+        <xs:attribute name="CanvasName" type="xs:string"/>
+        <xs:attribute name="CaseInsensitiveQuery" type="xs:boolean"/>
+        <xs:attribute name="CaseRestriction" type="xs:string"/>
+        <xs:attribute name="CheckBoxOtherValues" type="xs:string"/>
+        <xs:attribute name="CheckedValue" type="xs:string"/>
+        <xs:attribute name="ColumnName" type="xs:string"/>
+        <xs:attribute name="CommMode" type="xs:string"/>
+        <xs:attribute name="Comment" type="xs:string"/>
+        <xs:attribute name="Compress" type="xs:string"/>
+        <xs:attribute name="CompressionQuality" type="xs:string"/>
+        <xs:attribute name="ConcealData" type="xs:boolean"/>
+        <xs:attribute name="CopyValueFromItem" type="xs:string"/>
+        <xs:attribute name="DataLengthSemantics" type="xs:string"/>
+        <xs:attribute name="DataSourceBlock" type="xs:string"/>
+        <xs:attribute name="DataSourceXAxis" type="xs:string"/>
+        <xs:attribute name="DataSourceYAxis" type="xs:string"/>
+        <xs:attribute name="DataType" type="xs:string"/>
+        <xs:attribute name="DatabaseItem" type="xs:boolean"/>
+        <xs:attribute name="DefaultButton" type="xs:boolean"/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="DisplayQuality" type="xs:string"/>
+        <xs:attribute name="DistanceBetweenRecords" type="xs:integer"/>
+        <xs:attribute name="EditName" type="xs:string"/>
+        <xs:attribute name="EditXPosition" type="xs:integer"/>
+        <xs:attribute name="EditYPosition" type="xs:integer"/>
+        <xs:attribute name="Enabled" type="xs:boolean"/>
+        <xs:attribute name="ExecuteMode" type="xs:string"/>
+        <xs:attribute name="Filename" type="xs:string"/>
+        <xs:attribute name="FillPattern" type="xs:string"/>
+        <xs:attribute name="FixedLength" type="xs:boolean"/>
+        <xs:attribute name="FontName" type="xs:string"/>
+        <xs:attribute name="FontSize" type="xs:integer"/>
+        <xs:attribute name="FontSpacing" type="xs:string"/>
+        <xs:attribute name="FontStyle" type="xs:string"/>
+        <xs:attribute name="FontWeight" type="xs:string"/>
+        <xs:attribute name="ForegroundColor" type="xs:string"/>
+        <xs:attribute name="FormatMask" type="xs:string"/>
+        <xs:attribute name="Formula" type="xs:string"/>
+        <xs:attribute name="Height" type="xs:integer"/>
+        <xs:attribute name="HelpBookTopic" type="xs:string"/>
+        <xs:attribute name="HighestAllowedValue" type="xs:string"/>
+        <xs:attribute name="Hint" type="xs:string"/>
+        <xs:attribute name="IconFilename" type="xs:string"/>
+        <xs:attribute name="Iconic" type="xs:boolean"/>
+        <xs:attribute name="ImageDepth" type="xs:string"/>
+        <xs:attribute name="ImageFormat" type="xs:string"/>
+        <xs:attribute name="ImplementationClass" type="xs:string"/>
+        <xs:attribute name="InitializeKeyboardDirection" type="xs:string"/>
+        <xs:attribute name="InitializeValue" type="xs:string"/>
+        <xs:attribute name="InsertAllowed" type="xs:boolean"/>
+        <xs:attribute name="ItemType" type="xs:string"/>
+        <xs:attribute name="ItemsDisplay" type="xs:integer"/>
+        <xs:attribute name="Justification" type="xs:string"/>
+        <xs:attribute name="KeepCursorPosition" type="xs:boolean"/>
+        <xs:attribute name="KeyboardNavigable" type="xs:boolean"/>
+        <xs:attribute name="KeyboardState" type="xs:string"/>
+        <xs:attribute name="Label" type="xs:string"/>
+        <xs:attribute name="LanguageDirection" type="xs:string"/>
+        <xs:attribute name="ListElementCount" type="xs:integer"/>
+        <xs:attribute name="ListStyle" type="xs:string"/>
+        <xs:attribute name="LockRecord" type="xs:boolean"/>
+        <xs:attribute name="LovName" type="xs:string"/>
+        <xs:attribute name="LovXPosition" type="xs:integer"/>
+        <xs:attribute name="LovYPosition" type="xs:integer"/>
+        <xs:attribute name="LowestAllowedValue" type="xs:string"/>
+        <xs:attribute name="MaximumLength" type="xs:integer"/>
+        <xs:attribute name="MouseNavigate" type="xs:boolean"/>
+        <xs:attribute name="MultiLine" type="xs:boolean"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="NextNavigationItemName" type="xs:string"/>
+        <xs:attribute name="OleActionStyle" type="xs:string"/>
+        <xs:attribute name="OleClass" type="xs:string"/>
+        <xs:attribute name="OleInPlaceAction" type="xs:boolean"/>
+        <xs:attribute name="OleInsideOutSupport" type="xs:boolean"/>
+        <xs:attribute name="OlePopupMenuItems" type="xs:integer"/>
+        <xs:attribute name="OleResizStyle" type="xs:string"/>
+        <xs:attribute name="OleShowPopupMenu" type="xs:boolean"/>
+        <xs:attribute name="OleShowTenantTypeType" type="xs:boolean"/>
+        <xs:attribute name="OleTenantTypeAspect" type="xs:string"/>
+        <xs:attribute name="OleTenantTypeType" type="xs:string"/>
+        <xs:attribute name="OtherValues" type="xs:string"/>
+        <xs:attribute name="ParentFilename" type="xs:string"/>
+        <xs:attribute name="ParentFilepath" type="xs:string"/>
+        <xs:attribute name="ParentModule" type="xs:string"/>
+        <xs:attribute name="ParentModuleType" type="xs:integer"/>
+        <xs:attribute name="ParentName" type="xs:string"/>
+        <xs:attribute name="ParentSourceLevel1ObjectName" type="xs:string"/>
+        <xs:attribute name="ParentSourceLevel1ObjectType" type="xs:integer"/>
+        <xs:attribute name="ParentType" type="xs:integer"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="PopupMenuName" type="xs:string"/>
+        <xs:attribute name="PreviousNavigationItemName" type="xs:string"/>
+        <xs:attribute name="PrimaryKey" type="xs:boolean"/>
+        <xs:attribute name="Prompt" type="xs:string"/>
+        <xs:attribute name="PromptAlign" type="xs:string"/>
+        <xs:attribute name="PromptAlignOffset" type="xs:integer"/>
+        <xs:attribute name="PromptAttachmentEdge" type="xs:string"/>
+        <xs:attribute name="PromptAttachmentOffset" type="xs:integer"/>
+        <xs:attribute name="PromptBackColor" type="xs:string"/>
+        <xs:attribute name="PromptDisplayStyle" type="xs:string"/>
+        <xs:attribute name="PromptFillPattern" type="xs:string"/>
+        <xs:attribute name="PromptFontName" type="xs:string"/>
+        <xs:attribute name="PromptFontSize" type="xs:integer"/>
+        <xs:attribute name="PromptFontSpacing" type="xs:string"/>
+        <xs:attribute name="PromptFontStyle" type="xs:string"/>
+        <xs:attribute name="PromptFontWeight" type="xs:string"/>
+        <xs:attribute name="PromptForegroundColor" type="xs:string"/>
+        <xs:attribute name="PromptJustification" type="xs:string"/>
+        <xs:attribute name="PromptReadingOrder" type="xs:string"/>
+        <xs:attribute name="PromptVisualAttributeName" type="xs:string"/>
+        <xs:attribute name="QueryAllowed" type="xs:boolean"/>
+        <xs:attribute name="QueryLength" type="xs:integer"/>
+        <xs:attribute name="QueryName" type="xs:string"/>
+        <xs:attribute name="QueryOnly" type="xs:boolean"/>
+        <xs:attribute name="ReadingOrder" type="xs:string"/>
+        <xs:attribute name="RecordGroupName" type="xs:string"/>
+        <xs:attribute name="RecordVisualAttributeGroupName" type="xs:string"/>
+        <xs:attribute name="Rendered" type="xs:boolean"/>
+        <xs:attribute name="Required" type="xs:boolean"/>
+        <xs:attribute name="ShowFastForward" type="xs:boolean"/>
+        <xs:attribute name="ShowHorizontalScrollbar" type="xs:boolean"/>
+        <xs:attribute name="ShowPlay" type="xs:boolean"/>
+        <xs:attribute name="ShowRecord" type="xs:boolean"/>
+        <xs:attribute name="ShowRewind" type="xs:boolean"/>
+        <xs:attribute name="ShowSlider" type="xs:boolean"/>
+        <xs:attribute name="ShowTime" type="xs:boolean"/>
+        <xs:attribute name="ShowVerticalScrollbar" type="xs:boolean"/>
+        <xs:attribute name="ShowVolume" type="xs:boolean"/>
+        <xs:attribute name="SizingStyle" type="xs:string"/>
+        <xs:attribute name="SmartClass" type="xs:boolean"/>
+        <xs:attribute name="SoundFormat" type="xs:string"/>
+        <xs:attribute name="SoundQuality" type="xs:string"/>
+        <xs:attribute name="SubclassSubObject" type="xs:boolean"/>
+        <xs:attribute name="SummaryBlockName" type="xs:string"/>
+        <xs:attribute name="SummaryFunction" type="xs:string"/>
+        <xs:attribute name="SummaryItemName" type="xs:string"/>
+        <xs:attribute name="SynchronizedItemName" type="xs:string"/>
+        <xs:attribute name="TabPageName" type="xs:string"/>
+        <xs:attribute name="Tooltip" type="xs:string"/>
+        <xs:attribute name="TooltipVisualAttributeGroup" type="xs:string"/>
+        <xs:attribute name="TreeAllowEmpBranch" type="xs:boolean"/>
+        <xs:attribute name="TreeDataQuery" type="xs:string"/>
+        <xs:attribute name="TreeMultiSelect" type="xs:boolean"/>
+        <xs:attribute name="TreeShowLines" type="xs:boolean"/>
+        <xs:attribute name="TreeShowSymbol" type="xs:boolean"/>
+        <xs:attribute name="UncheckedValue" type="xs:string"/>
+        <xs:attribute name="UpdateAllowed" type="xs:boolean"/>
+        <xs:attribute name="UpdateCommit" type="xs:boolean"/>
+        <xs:attribute name="UpdateIfNull" type="xs:boolean"/>
+        <xs:attribute name="UpdateQuery" type="xs:boolean"/>
+        <xs:attribute name="ValidateFromList" type="xs:boolean"/>
+        <xs:attribute name="Visible" type="xs:boolean"/>
+        <xs:attribute name="VisualAttributeName" type="xs:string"/>
+        <xs:attribute name="Width" type="xs:integer"/>
+        <xs:attribute name="WrapStyle" type="xs:string"/>
+        <xs:attribute name="XPosition" type="xs:integer"/>
+        <xs:attribute name="YPosition" type="xs:integer"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="RadioButton">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence/>
+        <xs:attribute name="AccessKey" type="xs:string"/>
+        <xs:attribute name="BackColor" type="xs:string"/>
+        <xs:attribute name="Comment" type="xs:string"/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="DistanceBetweenRecords" type="xs:integer"/>
+        <xs:attribute name="Enabled" type="xs:boolean"/>
+        <xs:attribute name="FillPattern" type="xs:string"/>
+        <xs:attribute name="FontName" type="xs:string"/>
+        <xs:attribute name="FontSize" type="xs:integer"/>
+        <xs:attribute name="FontSpacing" type="xs:string"/>
+        <xs:attribute name="FontStyle" type="xs:string"/>
+        <xs:attribute name="FontWeight" type="xs:string"/>
+        <xs:attribute name="ForegroundColor" type="xs:string"/>
+        <xs:attribute name="Height" type="xs:integer"/>
+        <xs:attribute name="Label" type="xs:string"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="ParentFilename" type="xs:string"/>
+        <xs:attribute name="ParentFilepath" type="xs:string"/>
+        <xs:attribute name="ParentModule" type="xs:string"/>
+        <xs:attribute name="ParentModuleType" type="xs:integer"/>
+        <xs:attribute name="ParentName" type="xs:string"/>
+        <xs:attribute name="ParentSourceLevel1ObjectName" type="xs:string"/>
+        <xs:attribute name="ParentSourceLevel1ObjectType" type="xs:integer"/>
+        <xs:attribute name="ParentSourceLevel2ObjectName" type="xs:string"/>
+        <xs:attribute name="ParentSourceLevel2ObjectType" type="xs:integer"/>
+        <xs:attribute name="ParentType" type="xs:integer"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="Prompt" type="xs:string"/>
+        <xs:attribute name="PromptAlign" type="xs:string"/>
+        <xs:attribute name="PromptAlignOffset" type="xs:integer"/>
+        <xs:attribute name="PromptAttachmentEdge" type="xs:string"/>
+        <xs:attribute name="PromptAttachmentOffset" type="xs:integer"/>
+        <xs:attribute name="PromptBackColor" type="xs:string"/>
+        <xs:attribute name="PromptDisplayStyle" type="xs:string"/>
+        <xs:attribute name="PromptFillPattern" type="xs:string"/>
+        <xs:attribute name="PromptFontName" type="xs:string"/>
+        <xs:attribute name="PromptFontSize" type="xs:integer"/>
+        <xs:attribute name="PromptFontSpacing" type="xs:string"/>
+        <xs:attribute name="PromptFontStyle" type="xs:string"/>
+        <xs:attribute name="PromptFontWeight" type="xs:string"/>
+        <xs:attribute name="PromptForegroundColor" type="xs:string"/>
+        <xs:attribute name="PromptJustification" type="xs:string"/>
+        <xs:attribute name="PromptReadingOrder" type="xs:string"/>
+        <xs:attribute name="PromptVisualAttributeName" type="xs:string"/>
+        <xs:attribute name="RadioButtonValue" type="xs:string"/>
+        <xs:attribute name="SmartClass" type="xs:boolean"/>
+        <xs:attribute name="SubclassSubObject" type="xs:boolean"/>
+        <xs:attribute name="Visible" type="xs:boolean"/>
+        <xs:attribute name="VisualAttributeName" type="xs:string"/>
+        <xs:attribute name="Width" type="xs:integer"/>
+        <xs:attribute name="XPosition" type="xs:integer"/>
+        <xs:attribute name="YPosition" type="xs:integer"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="IndexedListWithName">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence/>
+        <xs:attribute name="Index" type="xs:integer" use="required"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="Value" type="xs:string" use="required"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="DataSourceArgument">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence/>
+        <xs:attribute name="DSAMode" type="xs:string"/>
+        <xs:attribute name="DSAName" type="xs:string"/>
+        <xs:attribute name="DSAType" type="xs:string"/>
+        <xs:attribute name="DSATypeName" type="xs:string"/>
+        <xs:attribute name="DSAValue" type="xs:string"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="SubclassSubObject" type="xs:boolean"/>
+        <xs:attribute name="Type" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Relation">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence/>
+        <xs:attribute name="AutoQuery" type="xs:boolean"/>
+        <xs:attribute name="Comment" type="xs:string"/>
+        <xs:attribute name="Deferred" type="xs:boolean"/>
+        <xs:attribute name="DeleteRecord" type="xs:string"/>
+        <xs:attribute name="DetailBlock" type="xs:string"/>
+        <xs:attribute name="DetailItemref" type="xs:string"/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="JoinCondition" type="xs:string"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="PreventMasterlessOperations" type="xs:boolean"/>
+        <xs:attribute name="RelationType" type="xs:string"/>
+        <xs:attribute name="SubclassSubObject" type="xs:boolean"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Canvas">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Graphics" type="tns:Graphics"/>
+            <xs:element name="TabPage" type="tns:TabPage"/>
+            <xs:element name="VisualState" type="tns:VisualState"/>
+          </xs:choice>
+        </xs:sequence>
+        <xs:attribute name="BackColor" type="xs:string"/>
+        <xs:attribute name="Bevel" type="xs:string"/>
+        <xs:attribute name="CanvasType" type="xs:string"/>
+        <xs:attribute name="Comment" type="xs:string"/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="DisplayViewport" type="xs:boolean"/>
+        <xs:attribute name="FillPattern" type="xs:string"/>
+        <xs:attribute name="FontName" type="xs:string"/>
+        <xs:attribute name="FontSize" type="xs:integer"/>
+        <xs:attribute name="FontSpacing" type="xs:string"/>
+        <xs:attribute name="FontStyle" type="xs:string"/>
+        <xs:attribute name="FontWeight" type="xs:string"/>
+        <xs:attribute name="ForegroundColor" type="xs:string"/>
+        <xs:attribute name="Height" type="xs:integer"/>
+        <xs:attribute name="HelpBookTopic" type="xs:string"/>
+        <xs:attribute name="LanguageDirection" type="xs:string"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="ParentFilename" type="xs:string"/>
+        <xs:attribute name="ParentFilepath" type="xs:string"/>
+        <xs:attribute name="ParentModule" type="xs:string"/>
+        <xs:attribute name="ParentModuleType" type="xs:integer"/>
+        <xs:attribute name="ParentName" type="xs:string"/>
+        <xs:attribute name="ParentType" type="xs:integer"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="PopupMenuName" type="xs:string"/>
+        <xs:attribute name="RaiseOnEnter" type="xs:boolean"/>
+        <xs:attribute name="ShowHorizontalScrollbar" type="xs:boolean"/>
+        <xs:attribute name="ShowVerticalScrollbar" type="xs:boolean"/>
+        <xs:attribute name="SmartClass" type="xs:boolean"/>
+        <xs:attribute name="SubclassObjectGroup" type="xs:boolean"/>
+        <xs:attribute name="TabActionStyle" type="xs:integer"/>
+        <xs:attribute name="TabAttachmentEdge" type="xs:string"/>
+        <xs:attribute name="TabStyle" type="xs:string"/>
+        <xs:attribute name="TabWidthStyle" type="xs:integer"/>
+        <xs:attribute name="ViewportHeight" type="xs:integer"/>
+        <xs:attribute name="ViewportWidth" type="xs:integer"/>
+        <xs:attribute name="ViewportXPosition" type="xs:integer"/>
+        <xs:attribute name="ViewportXPositionOnCanvas" type="xs:integer"/>
+        <xs:attribute name="ViewportYPosition" type="xs:integer"/>
+        <xs:attribute name="ViewportYPositionOnCanvas" type="xs:integer"/>
+        <xs:attribute name="Visible" type="xs:boolean"/>
+        <xs:attribute name="VisualAttributeName" type="xs:string"/>
+        <xs:attribute name="Width" type="xs:integer"/>
+        <xs:attribute name="WindowName" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Graphics">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Graphics" type="tns:Graphics"/>
+            <xs:element name="CompoundText" type="tns:CompoundText"/>
+            <xs:element name="Point" type="tns:Point"/>
+          </xs:choice>
+        </xs:sequence>
+        <xs:attribute name="AllowExpansion" type="xs:boolean"/>
+        <xs:attribute name="AllowMultiLinePrompts" type="xs:boolean"/>
+        <xs:attribute name="AllowStartAttachmentPrompts" type="xs:boolean"/>
+        <xs:attribute name="AllowTopAttachmentPrompts" type="xs:boolean"/>
+        <xs:attribute name="ArrowStyle" type="xs:string"/>
+        <xs:attribute name="BackColor" type="xs:string"/>
+        <xs:attribute name="Bevel" type="xs:string"/>
+        <xs:attribute name="BoundingBoxScalable" type="xs:boolean"/>
+        <xs:attribute name="CapStyle" type="xs:string"/>
+        <xs:attribute name="ClipHeight" type="xs:integer"/>
+        <xs:attribute name="ClipWidth" type="xs:integer"/>
+        <xs:attribute name="ClipXPosition" type="xs:integer"/>
+        <xs:attribute name="ClipYPosition" type="xs:integer"/>
+        <xs:attribute name="Closed" type="xs:boolean"/>
+        <xs:attribute name="CornerRadiusX" type="xs:integer"/>
+        <xs:attribute name="CornerRadiusY" type="xs:integer"/>
+        <xs:attribute name="CustomSpacing" type="xs:integer"/>
+        <xs:attribute name="DashStyle" type="xs:string"/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="DisplayQuality" type="xs:string"/>
+        <xs:attribute name="DistanceBetweenRecords" type="xs:integer"/>
+        <xs:attribute name="Dither" type="xs:boolean"/>
+        <xs:attribute name="EdgeBackColor" type="xs:string"/>
+        <xs:attribute name="EdgeForegroundColor" type="xs:string"/>
+        <xs:attribute name="EdgePattern" type="xs:string"/>
+        <xs:attribute name="FillPattern" type="xs:string"/>
+        <xs:attribute name="FixedBoundingBox" type="xs:boolean"/>
+        <xs:attribute name="FontScaleable" type="xs:boolean"/>
+        <xs:attribute name="ForegroundColor" type="xs:string"/>
+        <xs:attribute name="FrameAlign" type="xs:string"/>
+        <xs:attribute name="FrameTitle" type="xs:string"/>
+        <xs:attribute name="FrameTitleAlign" type="xs:string"/>
+        <xs:attribute name="FrameTitleBackColor" type="xs:string"/>
+        <xs:attribute name="FrameTitleFillPattern" type="xs:string"/>
+        <xs:attribute name="FrameTitleFontName" type="xs:string"/>
+        <xs:attribute name="FrameTitleFontSize" type="xs:integer"/>
+        <xs:attribute name="FrameTitleFontSpacing" type="xs:string"/>
+        <xs:attribute name="FrameTitleFontStyle" type="xs:string"/>
+        <xs:attribute name="FrameTitleFontWeight" type="xs:string"/>
+        <xs:attribute name="FrameTitleForegroundColor" type="xs:string"/>
+        <xs:attribute name="FrameTitleOffset" type="xs:integer"/>
+        <xs:attribute name="FrameTitleSpacing" type="xs:integer"/>
+        <xs:attribute name="FrameTitleVisualAttributeName" type="xs:string"/>
+        <xs:attribute name="GraphicsFontColor" type="xs:string"/>
+        <xs:attribute name="GraphicsFontColorCode" type="xs:integer"/>
+        <xs:attribute name="GraphicsFontName" type="xs:string"/>
+        <xs:attribute name="GraphicsFontSize" type="xs:integer"/>
+        <xs:attribute name="GraphicsFontSpacing" type="xs:string"/>
+        <xs:attribute name="GraphicsFontStyle" type="xs:integer"/>
+        <xs:attribute name="GraphicsFontWeight" type="xs:string"/>
+        <xs:attribute name="GraphicsText" type="xs:string"/>
+        <xs:attribute name="GraphicsType" type="xs:string"/>
+        <xs:attribute name="Height" type="xs:integer"/>
+        <xs:attribute name="HorizontalJustification" type="xs:string"/>
+        <xs:attribute name="HorizontalMargin" type="xs:integer"/>
+        <xs:attribute name="HorizontalObjectOffset" type="xs:integer"/>
+        <xs:attribute name="HorizontalOrigin" type="xs:string"/>
+        <xs:attribute name="ImageDepth" type="xs:string"/>
+        <xs:attribute name="ImageFilename" type="xs:string"/>
+        <xs:attribute name="ImageFormat" type="xs:string"/>
+        <xs:attribute name="InternalEndAngle" type="xs:integer"/>
+        <xs:attribute name="InternalLineWidth" type="xs:integer"/>
+        <xs:attribute name="InternalRotationAngle" type="xs:integer"/>
+        <xs:attribute name="InternalStartAngle" type="xs:integer"/>
+        <xs:attribute name="JoinStyle" type="xs:string"/>
+        <xs:attribute name="LanguageDirection" type="xs:string"/>
+        <xs:attribute name="LayoutDataBlockName" type="xs:string"/>
+        <xs:attribute name="LayoutStyle" type="xs:string"/>
+        <xs:attribute name="LineSpacing" type="xs:string"/>
+        <xs:attribute name="MaximumObjs" type="xs:integer"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="ParentFilename" type="xs:string"/>
+        <xs:attribute name="ParentFilepath" type="xs:string"/>
+        <xs:attribute name="ParentModule" type="xs:string"/>
+        <xs:attribute name="ParentModuleType" type="xs:integer"/>
+        <xs:attribute name="ParentName" type="xs:string"/>
+        <xs:attribute name="ParentType" type="xs:integer"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="RecordsDisplayCount" type="xs:integer"/>
+        <xs:attribute name="ScrollbarAlign" type="xs:string"/>
+        <xs:attribute name="ScrollbarWidth" type="xs:integer"/>
+        <xs:attribute name="ShowScrollbar" type="xs:boolean"/>
+        <xs:attribute name="Shrinkwrap" type="xs:boolean"/>
+        <xs:attribute name="SingleObjectAlign" type="xs:string"/>
+        <xs:attribute name="SmartClass" type="xs:boolean"/>
+        <xs:attribute name="StartPromptAlign" type="xs:string"/>
+        <xs:attribute name="StartPromptOffset" type="xs:integer"/>
+        <xs:attribute name="SubclassSubObject" type="xs:boolean"/>
+        <xs:attribute name="TabPageName" type="xs:string"/>
+        <xs:attribute name="TitleReadingOrder" type="xs:string"/>
+        <xs:attribute name="TopPromptAlign" type="xs:string"/>
+        <xs:attribute name="TopPromptOffset" type="xs:integer"/>
+        <xs:attribute name="UpdateLayout" type="xs:string"/>
+        <xs:attribute name="VerticalFill" type="xs:boolean"/>
+        <xs:attribute name="VerticalJustification" type="xs:string"/>
+        <xs:attribute name="VerticalMargin" type="xs:integer"/>
+        <xs:attribute name="VerticalObjectOffset" type="xs:integer"/>
+        <xs:attribute name="VerticalOrigin" type="xs:string"/>
+        <xs:attribute name="VisualAttributeName" type="xs:string"/>
+        <xs:attribute name="Width" type="xs:integer"/>
+        <xs:attribute name="WrapText" type="xs:boolean"/>
+        <xs:attribute name="XPosition" type="xs:integer"/>
+        <xs:attribute name="YPosition" type="xs:integer"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="CompoundText">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence>
+          <xs:element name="TextSegment" type="tns:TextSegment" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="SubclassSubObject" type="xs:boolean"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="TextSegment">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="FontName" type="xs:string"/>
+        <xs:attribute name="FontSize" type="xs:integer"/>
+        <xs:attribute name="FontSpacing" type="xs:string"/>
+        <xs:attribute name="FontStyle" type="xs:string"/>
+        <xs:attribute name="FontWeight" type="xs:string"/>
+        <xs:attribute name="ForegroundColor" type="xs:string"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="SubclassSubObject" type="xs:boolean"/>
+        <xs:attribute name="Text" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Point">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="SubclassSubObject" type="xs:boolean"/>
+        <xs:attribute name="XPosition" type="xs:integer"/>
+        <xs:attribute name="YPosition" type="xs:integer"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="TabPage">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence>
+          <xs:element name="Graphics" type="tns:Graphics" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="BackColor" type="xs:string"/>
+        <xs:attribute name="Comment" type="xs:string"/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="Enabled" type="xs:boolean"/>
+        <xs:attribute name="FillPattern" type="xs:string"/>
+        <xs:attribute name="ForegroundColor" type="xs:string"/>
+        <xs:attribute name="Label" type="xs:string"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="ParentFilename" type="xs:string"/>
+        <xs:attribute name="ParentFilepath" type="xs:string"/>
+        <xs:attribute name="ParentModule" type="xs:string"/>
+        <xs:attribute name="ParentModuleType" type="xs:integer"/>
+        <xs:attribute name="ParentName" type="xs:string"/>
+        <xs:attribute name="ParentSourceLevel1ObjectName" type="xs:string"/>
+        <xs:attribute name="ParentSourceLevel1ObjectType" type="xs:integer"/>
+        <xs:attribute name="ParentType" type="xs:integer"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="SmartClass" type="xs:boolean"/>
+        <xs:attribute name="SubclassSubObject" type="xs:boolean"/>
+        <xs:attribute name="Visible" type="xs:boolean"/>
+        <xs:attribute name="VisualAttributeName" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="VisualState">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence/>
+        <xs:attribute name="ArrowStyle" type="xs:string"/>
+        <xs:attribute name="BackColor" type="xs:string"/>
+        <xs:attribute name="BoundingBoxScalable" type="xs:boolean"/>
+        <xs:attribute name="CapStyle" type="xs:string"/>
+        <xs:attribute name="CenterTracking" type="xs:boolean"/>
+        <xs:attribute name="CharacterCellHden" type="xs:integer"/>
+        <xs:attribute name="CharacterCellHnum" type="xs:integer"/>
+        <xs:attribute name="CharacterCellVden" type="xs:integer"/>
+        <xs:attribute name="CharacterCellVnum" type="xs:integer"/>
+        <xs:attribute name="Closed" type="xs:boolean"/>
+        <xs:attribute name="CornerRadiusX" type="xs:integer"/>
+        <xs:attribute name="CornerRadiusY" type="xs:integer"/>
+        <xs:attribute name="DashStyle" type="xs:string"/>
+        <xs:attribute name="DisplayQuality" type="xs:string"/>
+        <xs:attribute name="Dither" type="xs:boolean"/>
+        <xs:attribute name="DrawingHden" type="xs:integer"/>
+        <xs:attribute name="DrawingHnum" type="xs:integer"/>
+        <xs:attribute name="DrawingWden" type="xs:integer"/>
+        <xs:attribute name="DrawingWnum" type="xs:integer"/>
+        <xs:attribute name="EdgeBackColor" type="xs:string"/>
+        <xs:attribute name="EdgeForegroundColor" type="xs:string"/>
+        <xs:attribute name="EdgePattern" type="xs:string"/>
+        <xs:attribute name="EditorHeight" type="xs:integer"/>
+        <xs:attribute name="EditorWidth" type="xs:integer"/>
+        <xs:attribute name="FillPattern" type="xs:string"/>
+        <xs:attribute name="FixedBoundingBox" type="xs:boolean"/>
+        <xs:attribute name="FontName" type="xs:string"/>
+        <xs:attribute name="FontScaleable" type="xs:boolean"/>
+        <xs:attribute name="FontSize" type="xs:integer"/>
+        <xs:attribute name="FontSpacing" type="xs:string"/>
+        <xs:attribute name="FontStyle" type="xs:string"/>
+        <xs:attribute name="FontWeight" type="xs:string"/>
+        <xs:attribute name="ForegroundColor" type="xs:string"/>
+        <xs:attribute name="FrameTitleAlign" type="xs:string"/>
+        <xs:attribute name="FrameTitleOffset" type="xs:integer"/>
+        <xs:attribute name="FrameTitleSpacing" type="xs:integer"/>
+        <xs:attribute name="GridFlag" type="xs:boolean"/>
+        <xs:attribute name="GridIntervalCnt" type="xs:integer"/>
+        <xs:attribute name="GridSnapCnt" type="xs:integer"/>
+        <xs:attribute name="GridUnitCnt" type="xs:integer"/>
+        <xs:attribute name="GridsnapFlag" type="xs:boolean"/>
+        <xs:attribute name="InternalLineWidth" type="xs:integer"/>
+        <xs:attribute name="InternalRotationAngle" type="xs:integer"/>
+        <xs:attribute name="PageCountSeq" type="xs:boolean"/>
+        <xs:attribute name="PagebreakFlag" type="xs:boolean"/>
+        <xs:attribute name="ResizableFlag" type="xs:boolean"/>
+        <xs:attribute name="RulerFlag" type="xs:boolean"/>
+        <xs:attribute name="RulerGuideFlag" type="xs:boolean"/>
+        <xs:attribute name="RulerMajor" type="xs:integer"/>
+        <xs:attribute name="RulerMinor" type="xs:integer"/>
+        <xs:attribute name="RulerUnit" type="xs:integer"/>
+        <xs:attribute name="ShowCanvas" type="xs:boolean"/>
+        <xs:attribute name="ShowView" type="xs:boolean"/>
+        <xs:attribute name="StatusLineFlag" type="xs:boolean"/>
+        <xs:attribute name="ToolpaletteFlag" type="xs:boolean"/>
+        <xs:attribute name="VisualStateValid" type="xs:boolean"/>
+        <xs:attribute name="WindowHeight" type="xs:integer"/>
+        <xs:attribute name="WindowWidth" type="xs:integer"/>
+        <xs:attribute name="WindowXPosition" type="xs:integer"/>
+        <xs:attribute name="WindowYPosition" type="xs:integer"/>
+        <xs:attribute name="WrapText" type="xs:boolean"/>
+        <xs:attribute name="ZoomLevel" type="xs:integer"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Coordinate">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence/>
+        <xs:attribute name="CharacterCellHeight" type="xs:integer"/>
+        <xs:attribute name="CharacterCellWidth" type="xs:integer"/>
+        <xs:attribute name="CoordinateSystem" type="xs:string"/>
+        <xs:attribute name="DefaultFontScaling" type="xs:boolean"/>
+        <xs:attribute name="RealUnit" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Editor">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence/>
+        <xs:attribute name="BackColor" type="xs:string"/>
+        <xs:attribute name="BottomTitle" type="xs:string"/>
+        <xs:attribute name="Comment" type="xs:string"/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="FillPattern" type="xs:string"/>
+        <xs:attribute name="FontName" type="xs:string"/>
+        <xs:attribute name="FontSize" type="xs:integer"/>
+        <xs:attribute name="FontSpacing" type="xs:string"/>
+        <xs:attribute name="FontStyle" type="xs:string"/>
+        <xs:attribute name="FontWeight" type="xs:string"/>
+        <xs:attribute name="ForegroundColor" type="xs:string"/>
+        <xs:attribute name="Height" type="xs:integer"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="ParentFilename" type="xs:string"/>
+        <xs:attribute name="ParentFilepath" type="xs:string"/>
+        <xs:attribute name="ParentModule" type="xs:string"/>
+        <xs:attribute name="ParentModuleType" type="xs:integer"/>
+        <xs:attribute name="ParentName" type="xs:string"/>
+        <xs:attribute name="ParentType" type="xs:integer"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="ShowHorizontalScrollbar" type="xs:boolean"/>
+        <xs:attribute name="ShowVerticalScrollbar" type="xs:boolean"/>
+        <xs:attribute name="SmartClass" type="xs:boolean"/>
+        <xs:attribute name="SubclassObjectGroup" type="xs:boolean"/>
+        <xs:attribute name="Title" type="xs:string"/>
+        <xs:attribute name="VisualAttributeName" type="xs:string"/>
+        <xs:attribute name="Width" type="xs:integer"/>
+        <xs:attribute name="WrapStyle" type="xs:string"/>
+        <xs:attribute name="XPosition" type="xs:integer"/>
+        <xs:attribute name="YPosition" type="xs:integer"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Font">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence/>
+        <xs:attribute name="FontName" type="xs:string"/>
+        <xs:attribute name="FontSize" type="xs:integer"/>
+        <xs:attribute name="FontSpacing" type="xs:string"/>
+        <xs:attribute name="FontStyle" type="xs:string"/>
+        <xs:attribute name="FontWeight" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="FormModule">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Trigger" type="tns:Trigger"/>
+            <xs:element name="LOV" type="tns:LOV"/>
+            <xs:element name="ObjectGroup" type="tns:ObjectGroup"/>
+            <xs:element name="Window" type="tns:Window"/>
+            <xs:element name="VisualAttribute" type="tns:VisualAttribute"/>
+            <xs:element name="ModuleParameter" type="tns:ModuleParameter"/>
+            <xs:element name="Canvas" type="tns:Canvas"/>
+            <xs:element name="Alert" type="tns:Alert"/>
+            <xs:element name="Block" type="tns:Block"/>
+            <xs:element name="PropertyClass" type="tns:PropertyClass"/>
+            <xs:element name="RecordGroup" type="tns:RecordGroup"/>
+            <xs:element name="Report" type="tns:Report"/>
+            <xs:element name="Menu" type="tns:Menu"/>
+            <xs:element name="Coordinate" type="tns:Coordinate"/>
+            <xs:element name="AttachedLibrary" type="tns:AttachedLibrary"/>
+            <xs:element name="Editor" type="tns:Editor"/>
+            <xs:element name="ProgramUnit" type="tns:ProgramUnit"/>
+          </xs:choice>
+        </xs:sequence>
+        <xs:attribute name="Comment" type="xs:string"/>
+        <xs:attribute name="ConsoleWindow" type="xs:string"/>
+        <xs:attribute name="CursorMode" type="xs:string"/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="FirstNavigationBlockName" type="xs:string"/>
+        <xs:attribute name="HelpBookTitle" type="xs:string"/>
+        <xs:attribute name="HorizontalToolbarCanvas" type="xs:string"/>
+        <xs:attribute name="InitializeMenu" type="xs:string"/>
+        <xs:attribute name="InteractionMode" type="xs:string"/>
+        <xs:attribute name="IsolationMode" type="xs:string"/>
+        <xs:attribute name="LanguageDirection" type="xs:string"/>
+        <xs:attribute name="MaximumQueryTime" type="xs:integer"/>
+        <xs:attribute name="MaximumRecordsFetched" type="xs:integer"/>
+        <xs:attribute name="MenuModule" type="xs:string"/>
+        <xs:attribute name="MenuRole" type="xs:string"/>
+        <xs:attribute name="MouseNavigationLimit" type="xs:string"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="NewdeferReqEnf" type="xs:integer"/>
+        <xs:attribute name="ParentFilename" type="xs:string"/>
+        <xs:attribute name="ParentFilepath" type="xs:string"/>
+        <xs:attribute name="ParentModule" type="xs:string"/>
+        <xs:attribute name="ParentModuleType" type="xs:integer"/>
+        <xs:attribute name="ParentName" type="xs:string"/>
+        <xs:attribute name="ParentType" type="xs:integer"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="RecordVisualAttributeGroupName" type="xs:string"/>
+        <xs:attribute name="RuntimeComp" type="xs:string"/>
+        <xs:attribute name="SavepointMode" type="xs:boolean"/>
+        <xs:attribute name="Title" type="xs:string"/>
+        <xs:attribute name="Use3dControls" type="xs:boolean"/>
+        <xs:attribute name="ValidationUnit" type="xs:string"/>
+        <xs:attribute name="VerticalToolbarCanvas" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="LOV">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence>
+          <xs:element name="LOVColumnMapping" type="tns:LOVColumnMapping" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="AutoColumnWidth" type="xs:boolean"/>
+        <xs:attribute name="AutoDisplay" type="xs:boolean"/>
+        <xs:attribute name="AutoPosition" type="xs:boolean"/>
+        <xs:attribute name="AutoRefresh" type="xs:boolean"/>
+        <xs:attribute name="AutoSelect" type="xs:boolean"/>
+        <xs:attribute name="AutoSkip" type="xs:boolean"/>
+        <xs:attribute name="BackColor" type="xs:string"/>
+        <xs:attribute name="Comment" type="xs:string"/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="FillPattern" type="xs:string"/>
+        <xs:attribute name="FilterBeforeDisplay" type="xs:boolean"/>
+        <xs:attribute name="FontName" type="xs:string"/>
+        <xs:attribute name="FontSize" type="xs:integer"/>
+        <xs:attribute name="FontSpacing" type="xs:string"/>
+        <xs:attribute name="FontStyle" type="xs:string"/>
+        <xs:attribute name="FontWeight" type="xs:string"/>
+        <xs:attribute name="ForegroundColor" type="xs:string"/>
+        <xs:attribute name="Height" type="xs:integer"/>
+        <xs:attribute name="LanguageDirection" type="xs:string"/>
+        <xs:attribute name="ListType" type="xs:string"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="OldLovText" type="xs:string"/>
+        <xs:attribute name="ParentFilename" type="xs:string"/>
+        <xs:attribute name="ParentFilepath" type="xs:string"/>
+        <xs:attribute name="ParentModule" type="xs:string"/>
+        <xs:attribute name="ParentModuleType" type="xs:integer"/>
+        <xs:attribute name="ParentName" type="xs:string"/>
+        <xs:attribute name="ParentType" type="xs:integer"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="RecordGroupName" type="xs:string"/>
+        <xs:attribute name="SmartClass" type="xs:boolean"/>
+        <xs:attribute name="SubclassObjectGroup" type="xs:boolean"/>
+        <xs:attribute name="Title" type="xs:string"/>
+        <xs:attribute name="VisualAttributeName" type="xs:string"/>
+        <xs:attribute name="Width" type="xs:integer"/>
+        <xs:attribute name="XPosition" type="xs:integer"/>
+        <xs:attribute name="YPosition" type="xs:integer"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="LOVColumnMapping">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="DisplayWidth" type="xs:integer"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="ReturnItem" type="xs:string"/>
+        <xs:attribute name="Title" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="ObjectGroup">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence>
+          <xs:element name="ObjectGroupChild" type="tns:ObjectGroupChild" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="Comment" type="xs:string"/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="ObjectGroupType" type="xs:integer"/>
+        <xs:attribute name="ParentFilename" type="xs:string"/>
+        <xs:attribute name="ParentFilepath" type="xs:string"/>
+        <xs:attribute name="ParentModule" type="xs:string"/>
+        <xs:attribute name="ParentModuleType" type="xs:integer"/>
+        <xs:attribute name="ParentName" type="xs:string"/>
+        <xs:attribute name="ParentType" type="xs:integer"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="SmartClass" type="xs:boolean"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="ObjectGroupChild">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="SubclassSubObject" type="xs:boolean"/>
+        <xs:attribute name="Type" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Window">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence/>
+        <xs:attribute name="BackColor" type="xs:string"/>
+        <xs:attribute name="Bevel" type="xs:string"/>
+        <xs:attribute name="ClearAllowed" type="xs:boolean"/>
+        <xs:attribute name="Comment" type="xs:string"/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="FillPattern" type="xs:string"/>
+        <xs:attribute name="FontName" type="xs:string"/>
+        <xs:attribute name="FontSize" type="xs:integer"/>
+        <xs:attribute name="FontSpacing" type="xs:string"/>
+        <xs:attribute name="FontStyle" type="xs:string"/>
+        <xs:attribute name="FontWeight" type="xs:string"/>
+        <xs:attribute name="ForegroundColor" type="xs:string"/>
+        <xs:attribute name="Height" type="xs:integer"/>
+        <xs:attribute name="HelpBookTopic" type="xs:string"/>
+        <xs:attribute name="HideOnExit" type="xs:boolean"/>
+        <xs:attribute name="HorizontalToolbarCanvasName" type="xs:string"/>
+        <xs:attribute name="IconFilename" type="xs:string"/>
+        <xs:attribute name="InheritMenu" type="xs:boolean"/>
+        <xs:attribute name="LanguageDirection" type="xs:string"/>
+        <xs:attribute name="MaximizeAllowed" type="xs:boolean"/>
+        <xs:attribute name="MinimizeAllowed" type="xs:boolean"/>
+        <xs:attribute name="MinimizeTitle" type="xs:string"/>
+        <xs:attribute name="Modal" type="xs:boolean"/>
+        <xs:attribute name="MoveAllowed" type="xs:boolean"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="ParentFilename" type="xs:string"/>
+        <xs:attribute name="ParentFilepath" type="xs:string"/>
+        <xs:attribute name="ParentModule" type="xs:string"/>
+        <xs:attribute name="ParentModuleType" type="xs:integer"/>
+        <xs:attribute name="ParentName" type="xs:string"/>
+        <xs:attribute name="ParentType" type="xs:integer"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="PrimaryCanvas" type="xs:string"/>
+        <xs:attribute name="ResizeAllowed" type="xs:boolean"/>
+        <xs:attribute name="ShowHorizontalScrollbar" type="xs:boolean"/>
+        <xs:attribute name="ShowVerticalScrollbar" type="xs:boolean"/>
+        <xs:attribute name="SmartClass" type="xs:boolean"/>
+        <xs:attribute name="SubclassObjectGroup" type="xs:boolean"/>
+        <xs:attribute name="Title" type="xs:string"/>
+        <xs:attribute name="VerticalToolbarCanvasName" type="xs:string"/>
+        <xs:attribute name="VisualAttributeName" type="xs:string"/>
+        <xs:attribute name="Width" type="xs:integer"/>
+        <xs:attribute name="WindowStyle" type="xs:string"/>
+        <xs:attribute name="XPosition" type="xs:integer"/>
+        <xs:attribute name="YPosition" type="xs:integer"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="VisualAttribute">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence/>
+        <xs:attribute name="BackColor" type="xs:string"/>
+        <xs:attribute name="Comment" type="xs:string"/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="FillPattern" type="xs:string"/>
+        <xs:attribute name="FontName" type="xs:string"/>
+        <xs:attribute name="FontSize" type="xs:integer"/>
+        <xs:attribute name="FontSpacing" type="xs:string"/>
+        <xs:attribute name="FontStyle" type="xs:string"/>
+        <xs:attribute name="FontWeight" type="xs:string"/>
+        <xs:attribute name="ForegroundColor" type="xs:string"/>
+        <xs:attribute name="FrameTitleBackColor" type="xs:string"/>
+        <xs:attribute name="FrameTitleFillPattern" type="xs:string"/>
+        <xs:attribute name="FrameTitleFontName" type="xs:string"/>
+        <xs:attribute name="FrameTitleFontSize" type="xs:integer"/>
+        <xs:attribute name="FrameTitleFontSpacing" type="xs:string"/>
+        <xs:attribute name="FrameTitleFontStyle" type="xs:string"/>
+        <xs:attribute name="FrameTitleFontWeight" type="xs:string"/>
+        <xs:attribute name="FrameTitleForegroundColor" type="xs:string"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="ParentFilename" type="xs:string"/>
+        <xs:attribute name="ParentFilepath" type="xs:string"/>
+        <xs:attribute name="ParentModule" type="xs:string"/>
+        <xs:attribute name="ParentModuleType" type="xs:integer"/>
+        <xs:attribute name="ParentName" type="xs:string"/>
+        <xs:attribute name="ParentType" type="xs:integer"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="PromptBackColor" type="xs:string"/>
+        <xs:attribute name="PromptFillPattern" type="xs:string"/>
+        <xs:attribute name="PromptFontName" type="xs:string"/>
+        <xs:attribute name="PromptFontSize" type="xs:integer"/>
+        <xs:attribute name="PromptFontSpacing" type="xs:string"/>
+        <xs:attribute name="PromptFontStyle" type="xs:string"/>
+        <xs:attribute name="PromptFontWeight" type="xs:string"/>
+        <xs:attribute name="PromptForegroundColor" type="xs:string"/>
+        <xs:attribute name="SmartClass" type="xs:boolean"/>
+        <xs:attribute name="SubclassObjectGroup" type="xs:boolean"/>
+        <xs:attribute name="VisualAttributeType" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="ModuleParameter">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence/>
+        <xs:attribute name="Comment" type="xs:string"/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="ParameterDataType" type="xs:string"/>
+        <xs:attribute name="ParameterInitializeValue" type="xs:string"/>
+        <xs:attribute name="ParentFilename" type="xs:string"/>
+        <xs:attribute name="ParentFilepath" type="xs:string"/>
+        <xs:attribute name="ParentModule" type="xs:string"/>
+        <xs:attribute name="ParentModuleType" type="xs:integer"/>
+        <xs:attribute name="ParentName" type="xs:string"/>
+        <xs:attribute name="ParentType" type="xs:integer"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="SmartClass" type="xs:boolean"/>
+        <xs:attribute name="SubclassObjectGroup" type="xs:boolean"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="PropertyClass">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence>
+          <xs:element name="Trigger" type="tns:Trigger" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="SmartClass" type="xs:boolean"/>
+        <xs:attribute name="AccessKey" type="xs:string"/>
+        <xs:attribute name="AlertMessage" type="xs:string"/>
+        <xs:attribute name="AlertStyle" type="xs:string"/>
+        <xs:attribute name="Alias" type="xs:string"/>
+        <xs:attribute name="AllowExpansion" type="xs:boolean"/>
+        <xs:attribute name="AllowMultiLinePrompts" type="xs:boolean"/>
+        <xs:attribute name="AllowStartAttachmentPrompts" type="xs:boolean"/>
+        <xs:attribute name="AllowTopAttachmentPrompts" type="xs:boolean"/>
+        <xs:attribute name="ArrowStyle" type="xs:string"/>
+        <xs:attribute name="AudioChannels" type="xs:string"/>
+        <xs:attribute name="AutoColumnWidth" type="xs:boolean"/>
+        <xs:attribute name="AutoDisplay" type="xs:boolean"/>
+        <xs:attribute name="AutoHint" type="xs:boolean"/>
+        <xs:attribute name="AutoPosition" type="xs:boolean"/>
+        <xs:attribute name="AutoQuery" type="xs:boolean"/>
+        <xs:attribute name="AutoRefresh" type="xs:boolean"/>
+        <xs:attribute name="AutoSelect" type="xs:boolean"/>
+        <xs:attribute name="AutoSkip" type="xs:boolean"/>
+        <xs:attribute name="BackColor" type="xs:string"/>
+        <xs:attribute name="Bevel" type="xs:string"/>
+        <xs:attribute name="BottomTitle" type="xs:string"/>
+        <xs:attribute name="BoundingBoxScalable" type="xs:boolean"/>
+        <xs:attribute name="Button1Label" type="xs:string"/>
+        <xs:attribute name="Button2Label" type="xs:string"/>
+        <xs:attribute name="Button3Label" type="xs:string"/>
+        <xs:attribute name="CalculateMode" type="xs:string"/>
+        <xs:attribute name="CanvasName" type="xs:string"/>
+        <xs:attribute name="CanvasType" type="xs:string"/>
+        <xs:attribute name="CapStyle" type="xs:string"/>
+        <xs:attribute name="CaseInsensitiveQuery" type="xs:boolean"/>
+        <xs:attribute name="CaseRestriction" type="xs:string"/>
+        <xs:attribute name="CenterTracking" type="xs:boolean"/>
+        <xs:attribute name="CharacterCellHden" type="xs:integer"/>
+        <xs:attribute name="CharacterCellHeight" type="xs:integer"/>
+        <xs:attribute name="CharacterCellHnum" type="xs:integer"/>
+        <xs:attribute name="CharacterCellVden" type="xs:integer"/>
+        <xs:attribute name="CharacterCellVnum" type="xs:integer"/>
+        <xs:attribute name="CharacterCellWidth" type="xs:integer"/>
+        <xs:attribute name="CheckBoxOtherValues" type="xs:string"/>
+        <xs:attribute name="CheckedValue" type="xs:string"/>
+        <xs:attribute name="ClearAllowed" type="xs:boolean"/>
+        <xs:attribute name="ClipHeight" type="xs:integer"/>
+        <xs:attribute name="ClipWidth" type="xs:integer"/>
+        <xs:attribute name="ClipXPosition" type="xs:integer"/>
+        <xs:attribute name="ClipYPosition" type="xs:integer"/>
+        <xs:attribute name="Closed" type="xs:boolean"/>
+        <xs:attribute name="ColumnDataType" type="xs:string"/>
+        <xs:attribute name="ColumnName" type="xs:string"/>
+        <xs:attribute name="ColumnValuesCount" type="xs:integer"/>
+        <xs:attribute name="CommMode" type="xs:string"/>
+        <xs:attribute name="CommandText" type="xs:string"/>
+        <xs:attribute name="CommandType" type="xs:string"/>
+        <xs:attribute name="Comment" type="xs:string"/>
+        <xs:attribute name="Compress" type="xs:string"/>
+        <xs:attribute name="CompressionQuality" type="xs:string"/>
+        <xs:attribute name="ConcealData" type="xs:boolean"/>
+        <xs:attribute name="ConsoleWindow" type="xs:string"/>
+        <xs:attribute name="CoordinateSystem" type="xs:string"/>
+        <xs:attribute name="CopyValueFromItem" type="xs:string"/>
+        <xs:attribute name="CornerRadiusX" type="xs:integer"/>
+        <xs:attribute name="CornerRadiusY" type="xs:integer"/>
+        <xs:attribute name="CursorMode" type="xs:string"/>
+        <xs:attribute name="CustomSpacing" type="xs:integer"/>
+        <xs:attribute name="DMLArraySize" type="xs:integer"/>
+        <xs:attribute name="DMLDataName" type="xs:string"/>
+        <xs:attribute name="DMLDataType" type="xs:string"/>
+        <xs:attribute name="DMLReturnValue" type="xs:boolean"/>
+        <xs:attribute name="DSAMode" type="xs:string"/>
+        <xs:attribute name="DSAName" type="xs:string"/>
+        <xs:attribute name="DSAType" type="xs:string"/>
+        <xs:attribute name="DSATypeName" type="xs:string"/>
+        <xs:attribute name="DSAValue" type="xs:string"/>
+        <xs:attribute name="DSCLength" type="xs:integer"/>
+        <xs:attribute name="DSCMandatory" type="xs:boolean"/>
+        <xs:attribute name="DSCName" type="xs:string"/>
+        <xs:attribute name="DSCNochildren" type="xs:boolean"/>
+        <xs:attribute name="DSCParentName" type="xs:string"/>
+        <xs:attribute name="DSCPrecision" type="xs:integer"/>
+        <xs:attribute name="DSCScale" type="xs:integer"/>
+        <xs:attribute name="DSCType" type="xs:string"/>
+        <xs:attribute name="DSCTypeName" type="xs:string"/>
+        <xs:attribute name="DashStyle" type="xs:string"/>
+        <xs:attribute name="DataLengthSemantics" type="xs:string"/>
+        <xs:attribute name="DataSourceBlock" type="xs:string"/>
+        <xs:attribute name="DataSourceXAxis" type="xs:string"/>
+        <xs:attribute name="DataSourceYAxis" type="xs:string"/>
+        <xs:attribute name="DataType" type="xs:string"/>
+        <xs:attribute name="DatabaseBlock" type="xs:boolean"/>
+        <xs:attribute name="DatabaseItem" type="xs:boolean"/>
+        <xs:attribute name="DefaultAlertButton" type="xs:string"/>
+        <xs:attribute name="DefaultButton" type="xs:boolean"/>
+        <xs:attribute name="DefaultFontScaling" type="xs:boolean"/>
+        <xs:attribute name="Deferred" type="xs:boolean"/>
+        <xs:attribute name="DeleteAllowed" type="xs:boolean"/>
+        <xs:attribute name="DeleteProcedureName" type="xs:string"/>
+        <xs:attribute name="DeleteRecord" type="xs:string"/>
+        <xs:attribute name="DetailBlock" type="xs:string"/>
+        <xs:attribute name="DetailItemref" type="xs:string"/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="DisplayInKeyboardHelp" type="xs:boolean"/>
+        <xs:attribute name="DisplayNoPriv" type="xs:boolean"/>
+        <xs:attribute name="DisplayQuality" type="xs:string"/>
+        <xs:attribute name="DisplayViewport" type="xs:boolean"/>
+        <xs:attribute name="DisplayWidth" type="xs:integer"/>
+        <xs:attribute name="DistanceBetweenRecords" type="xs:integer"/>
+        <xs:attribute name="Dither" type="xs:boolean"/>
+        <xs:attribute name="DrawingHden" type="xs:integer"/>
+        <xs:attribute name="DrawingHnum" type="xs:integer"/>
+        <xs:attribute name="DrawingWden" type="xs:integer"/>
+        <xs:attribute name="DrawingWnum" type="xs:integer"/>
+        <xs:attribute name="EdgeBackColor" type="xs:string"/>
+        <xs:attribute name="EdgeForegroundColor" type="xs:string"/>
+        <xs:attribute name="EdgePattern" type="xs:string"/>
+        <xs:attribute name="EditName" type="xs:string"/>
+        <xs:attribute name="EditXPosition" type="xs:integer"/>
+        <xs:attribute name="EditYPosition" type="xs:integer"/>
+        <xs:attribute name="EditorHeight" type="xs:integer"/>
+        <xs:attribute name="EditorWidth" type="xs:integer"/>
+        <xs:attribute name="Enabled" type="xs:boolean"/>
+        <xs:attribute name="EnforcedColumnSecurity" type="xs:boolean"/>
+        <xs:attribute name="EnforcedPrimaryKey" type="xs:boolean"/>
+        <xs:attribute name="ExecuteHierarchy" type="xs:string"/>
+        <xs:attribute name="ExecuteMode" type="xs:string"/>
+        <xs:attribute name="Filename" type="xs:string"/>
+        <xs:attribute name="FillPattern" type="xs:string"/>
+        <xs:attribute name="FilterBeforeDisplay" type="xs:boolean"/>
+        <xs:attribute name="FireInQuery" type="xs:boolean"/>
+        <xs:attribute name="FirstNavigationBlockName" type="xs:string"/>
+        <xs:attribute name="FixedBoundingBox" type="xs:boolean"/>
+        <xs:attribute name="FixedLength" type="xs:boolean"/>
+        <xs:attribute name="FontName" type="xs:string"/>
+        <xs:attribute name="FontScaleable" type="xs:boolean"/>
+        <xs:attribute name="FontSize" type="xs:integer"/>
+        <xs:attribute name="FontSpacing" type="xs:string"/>
+        <xs:attribute name="FontStyle" type="xs:string"/>
+        <xs:attribute name="FontWeight" type="xs:string"/>
+        <xs:attribute name="ForegroundColor" type="xs:string"/>
+        <xs:attribute name="FormatMask" type="xs:string"/>
+        <xs:attribute name="Formula" type="xs:string"/>
+        <xs:attribute name="FrameAlign" type="xs:string"/>
+        <xs:attribute name="FrameTitle" type="xs:string"/>
+        <xs:attribute name="FrameTitleAlign" type="xs:string"/>
+        <xs:attribute name="FrameTitleBackColor" type="xs:string"/>
+        <xs:attribute name="FrameTitleFillPattern" type="xs:string"/>
+        <xs:attribute name="FrameTitleFontName" type="xs:string"/>
+        <xs:attribute name="FrameTitleFontSize" type="xs:integer"/>
+        <xs:attribute name="FrameTitleFontSpacing" type="xs:string"/>
+        <xs:attribute name="FrameTitleFontStyle" type="xs:string"/>
+        <xs:attribute name="FrameTitleFontWeight" type="xs:string"/>
+        <xs:attribute name="FrameTitleForegroundColor" type="xs:string"/>
+        <xs:attribute name="FrameTitleOffset" type="xs:integer"/>
+        <xs:attribute name="FrameTitleSpacing" type="xs:integer"/>
+        <xs:attribute name="FrameTitleVisualAttributeName" type="xs:string"/>
+        <xs:attribute name="GraphicsFontColor" type="xs:string"/>
+        <xs:attribute name="GraphicsFontColorCode" type="xs:integer"/>
+        <xs:attribute name="GraphicsFontName" type="xs:string"/>
+        <xs:attribute name="GraphicsFontSize" type="xs:integer"/>
+        <xs:attribute name="GraphicsFontSpacing" type="xs:string"/>
+        <xs:attribute name="GraphicsFontStyle" type="xs:integer"/>
+        <xs:attribute name="GraphicsFontWeight" type="xs:string"/>
+        <xs:attribute name="GraphicsText" type="xs:string"/>
+        <xs:attribute name="GraphicsType" type="xs:string"/>
+        <xs:attribute name="GridFlag" type="xs:boolean"/>
+        <xs:attribute name="GridIntervalCnt" type="xs:integer"/>
+        <xs:attribute name="GridSnapCnt" type="xs:integer"/>
+        <xs:attribute name="GridUnitCnt" type="xs:integer"/>
+        <xs:attribute name="GridsnapFlag" type="xs:boolean"/>
+        <xs:attribute name="Height" type="xs:integer"/>
+        <xs:attribute name="HelpBookTitle" type="xs:string"/>
+        <xs:attribute name="HelpBookTopic" type="xs:string"/>
+        <xs:attribute name="Hide" type="xs:boolean"/>
+        <xs:attribute name="HideOnExit" type="xs:boolean"/>
+        <xs:attribute name="HighestAllowedValue" type="xs:string"/>
+        <xs:attribute name="Hint" type="xs:string"/>
+        <xs:attribute name="HorizontalJustification" type="xs:string"/>
+        <xs:attribute name="HorizontalMargin" type="xs:integer"/>
+        <xs:attribute name="HorizontalObjectOffset" type="xs:integer"/>
+        <xs:attribute name="HorizontalOrigin" type="xs:string"/>
+        <xs:attribute name="HorizontalToolbarCanvas" type="xs:string"/>
+        <xs:attribute name="HorizontalToolbarCanvasName" type="xs:string"/>
+        <xs:attribute name="IconFilename" type="xs:string"/>
+        <xs:attribute name="IconInMenu" type="xs:boolean"/>
+        <xs:attribute name="Iconic" type="xs:boolean"/>
+        <xs:attribute name="ImageDepth" type="xs:string"/>
+        <xs:attribute name="ImageFormat" type="xs:string"/>
+        <xs:attribute name="ImplementationClass" type="xs:string"/>
+        <xs:attribute name="IncludeRefitem" type="xs:boolean"/>
+        <xs:attribute name="InheritMenu" type="xs:boolean"/>
+        <xs:attribute name="InitializeKeyboardDirection" type="xs:string"/>
+        <xs:attribute name="InitializeMenu" type="xs:string"/>
+        <xs:attribute name="InitializeValue" type="xs:string"/>
+        <xs:attribute name="InsertAllowed" type="xs:boolean"/>
+        <xs:attribute name="InsertProcedureName" type="xs:string"/>
+        <xs:attribute name="InteractionMode" type="xs:string"/>
+        <xs:attribute name="InternalEndAngle" type="xs:integer"/>
+        <xs:attribute name="InternalLineWidth" type="xs:integer"/>
+        <xs:attribute name="InternalRotationAngle" type="xs:integer"/>
+        <xs:attribute name="InternalStartAngle" type="xs:integer"/>
+        <xs:attribute name="IsolationMode" type="xs:string"/>
+        <xs:attribute name="ItemType" type="xs:string"/>
+        <xs:attribute name="ItemsDisplay" type="xs:integer"/>
+        <xs:attribute name="JoinCondition" type="xs:string"/>
+        <xs:attribute name="JoinStyle" type="xs:string"/>
+        <xs:attribute name="Justification" type="xs:string"/>
+        <xs:attribute name="KeepCursorPosition" type="xs:boolean"/>
+        <xs:attribute name="KeyMode" type="xs:string"/>
+        <xs:attribute name="KeyboardAccelerator" type="xs:string"/>
+        <xs:attribute name="KeyboardHelpText" type="xs:string"/>
+        <xs:attribute name="KeyboardNavigable" type="xs:boolean"/>
+        <xs:attribute name="KeyboardState" type="xs:string"/>
+        <xs:attribute name="Label" type="xs:string"/>
+        <xs:attribute name="LanguageDirection" type="xs:string"/>
+        <xs:attribute name="LayoutDataBlockName" type="xs:string"/>
+        <xs:attribute name="LayoutStyle" type="xs:string"/>
+        <xs:attribute name="LibraryLocation" type="xs:string"/>
+        <xs:attribute name="LibrarySource" type="xs:string"/>
+        <xs:attribute name="LineSpacing" type="xs:string"/>
+        <xs:attribute name="ListElementCount" type="xs:integer"/>
+        <xs:attribute name="ListStyle" type="xs:string"/>
+        <xs:attribute name="ListType" type="xs:string"/>
+        <xs:attribute name="LockMode" type="xs:string"/>
+        <xs:attribute name="LockProcedureName" type="xs:string"/>
+        <xs:attribute name="LockRecord" type="xs:boolean"/>
+        <xs:attribute name="LovName" type="xs:string"/>
+        <xs:attribute name="LovXPosition" type="xs:integer"/>
+        <xs:attribute name="LovYPosition" type="xs:integer"/>
+        <xs:attribute name="LowestAllowedValue" type="xs:string"/>
+        <xs:attribute name="MagicItem" type="xs:string"/>
+        <xs:attribute name="MainMenu" type="xs:string"/>
+        <xs:attribute name="MaximizeAllowed" type="xs:boolean"/>
+        <xs:attribute name="MaximumLength" type="xs:integer"/>
+        <xs:attribute name="MaximumObjs" type="xs:integer"/>
+        <xs:attribute name="MaximumQueryTime" type="xs:integer"/>
+        <xs:attribute name="MaximumRecordsFetched" type="xs:integer"/>
+        <xs:attribute name="MenuDirectory" type="xs:string"/>
+        <xs:attribute name="MenuFilename" type="xs:string"/>
+        <xs:attribute name="MenuItemCode" type="xs:string"/>
+        <xs:attribute name="MenuItemRadioGroup" type="xs:string"/>
+        <xs:attribute name="MenuItemType" type="xs:string"/>
+        <xs:attribute name="MenuModule" type="xs:string"/>
+        <xs:attribute name="MenuRole" type="xs:string"/>
+        <xs:attribute name="MinimizeAllowed" type="xs:boolean"/>
+        <xs:attribute name="MinimizeTitle" type="xs:string"/>
+        <xs:attribute name="Modal" type="xs:boolean"/>
+        <xs:attribute name="MouseNavigate" type="xs:boolean"/>
+        <xs:attribute name="MouseNavigationLimit" type="xs:string"/>
+        <xs:attribute name="MoveAllowed" type="xs:boolean"/>
+        <xs:attribute name="MultiLine" type="xs:boolean"/>
+        <xs:attribute name="Name" type="xs:string"/>
+        <xs:attribute name="NavigationStyle" type="xs:string"/>
+        <xs:attribute name="NewdeferReqEnf" type="xs:integer"/>
+        <xs:attribute name="NextNavigationBlockName" type="xs:string"/>
+        <xs:attribute name="NextNavigationItemName" type="xs:string"/>
+        <xs:attribute name="ObjectCount" type="xs:integer"/>
+        <xs:attribute name="ObjectGroupType" type="xs:integer"/>
+        <xs:attribute name="OldLovText" type="xs:string"/>
+        <xs:attribute name="OleActionStyle" type="xs:string"/>
+        <xs:attribute name="OleClass" type="xs:string"/>
+        <xs:attribute name="OleInPlaceAction" type="xs:boolean"/>
+        <xs:attribute name="OleInsideOutSupport" type="xs:boolean"/>
+        <xs:attribute name="OlePopupMenuItems" type="xs:integer"/>
+        <xs:attribute name="OleResizStyle" type="xs:string"/>
+        <xs:attribute name="OleShowPopupMenu" type="xs:boolean"/>
+        <xs:attribute name="OleShowTenantTypeType" type="xs:boolean"/>
+        <xs:attribute name="OleTenantTypeAspect" type="xs:string"/>
+        <xs:attribute name="OleTenantTypeType" type="xs:string"/>
+        <xs:attribute name="OptionHint" type="xs:string"/>
+        <xs:attribute name="OrderByClause" type="xs:string"/>
+        <xs:attribute name="OtherValues" type="xs:string"/>
+        <xs:attribute name="PageCountSeq" type="xs:boolean"/>
+        <xs:attribute name="PagebreakFlag" type="xs:boolean"/>
+        <xs:attribute name="ParameterDataType" type="xs:string"/>
+        <xs:attribute name="ParameterInitializeValue" type="xs:string"/>
+        <xs:attribute name="ParentFilename" type="xs:string"/>
+        <xs:attribute name="ParentFilepath" type="xs:string"/>
+        <xs:attribute name="ParentModule" type="xs:string"/>
+        <xs:attribute name="ParentModuleType" type="xs:integer"/>
+        <xs:attribute name="ParentName" type="xs:string"/>
+        <xs:attribute name="ParentSourceLevel1ObjectName" type="xs:string"/>
+        <xs:attribute name="ParentSourceLevel1ObjectType" type="xs:integer"/>
+        <xs:attribute name="ParentSourceLevel2ObjectName" type="xs:string"/>
+        <xs:attribute name="ParentSourceLevel2ObjectType" type="xs:integer"/>
+        <xs:attribute name="ParentType" type="xs:integer"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="PopupMenuName" type="xs:string"/>
+        <xs:attribute name="PrecompSummary" type="xs:boolean"/>
+        <xs:attribute name="PreventMasterlessOperations" type="xs:boolean"/>
+        <xs:attribute name="PreviousNavigationBlockName" type="xs:string"/>
+        <xs:attribute name="PreviousNavigationItemName" type="xs:string"/>
+        <xs:attribute name="PrimaryCanvas" type="xs:string"/>
+        <xs:attribute name="PrimaryKey" type="xs:boolean"/>
+        <xs:attribute name="ProgramUnitText" type="xs:string"/>
+        <xs:attribute name="ProgramUnitType" type="xs:string"/>
+        <xs:attribute name="Prompt" type="xs:string"/>
+        <xs:attribute name="PromptAlign" type="xs:string"/>
+        <xs:attribute name="PromptAlignOffset" type="xs:integer"/>
+        <xs:attribute name="PromptAttachmentEdge" type="xs:string"/>
+        <xs:attribute name="PromptAttachmentOffset" type="xs:integer"/>
+        <xs:attribute name="PromptBackColor" type="xs:string"/>
+        <xs:attribute name="PromptDisplayStyle" type="xs:string"/>
+        <xs:attribute name="PromptFillPattern" type="xs:string"/>
+        <xs:attribute name="PromptFontName" type="xs:string"/>
+        <xs:attribute name="PromptFontSize" type="xs:integer"/>
+        <xs:attribute name="PromptFontSpacing" type="xs:string"/>
+        <xs:attribute name="PromptFontStyle" type="xs:string"/>
+        <xs:attribute name="PromptFontWeight" type="xs:string"/>
+        <xs:attribute name="PromptForegroundColor" type="xs:string"/>
+        <xs:attribute name="PromptJustification" type="xs:string"/>
+        <xs:attribute name="PromptReadingOrder" type="xs:string"/>
+        <xs:attribute name="PromptVisualAttributeName" type="xs:string"/>
+        <xs:attribute name="QueryAllRecords" type="xs:boolean"/>
+        <xs:attribute name="QueryAllowed" type="xs:boolean"/>
+        <xs:attribute name="QueryDataSourceName" type="xs:string"/>
+        <xs:attribute name="QueryDataSourceType" type="xs:string"/>
+        <xs:attribute name="QueryLength" type="xs:integer"/>
+        <xs:attribute name="QueryName" type="xs:string"/>
+        <xs:attribute name="QueryOnly" type="xs:boolean"/>
+        <xs:attribute name="RadioButtonValue" type="xs:string"/>
+        <xs:attribute name="RaiseOnEnter" type="xs:boolean"/>
+        <xs:attribute name="ReadingOrder" type="xs:string"/>
+        <xs:attribute name="RealUnit" type="xs:string"/>
+        <xs:attribute name="RecordGroupFetchSize" type="xs:integer"/>
+        <xs:attribute name="RecordGroupName" type="xs:string"/>
+        <xs:attribute name="RecordGroupQuery" type="xs:string"/>
+        <xs:attribute name="RecordGroupType" type="xs:string"/>
+        <xs:attribute name="RecordOrientation" type="xs:string"/>
+        <xs:attribute name="RecordVisualAttributeGroupName" type="xs:string"/>
+        <xs:attribute name="RecordsBufferedCount" type="xs:integer"/>
+        <xs:attribute name="RecordsDisplayCount" type="xs:integer"/>
+        <xs:attribute name="RecordsFetchedCount" type="xs:integer"/>
+        <xs:attribute name="RelationType" type="xs:string"/>
+        <xs:attribute name="Rendered" type="xs:boolean"/>
+        <xs:attribute name="ReportDestinationFormat" type="xs:string"/>
+        <xs:attribute name="ReportDestinationName" type="xs:string"/>
+        <xs:attribute name="ReportDestinationType" type="xs:string"/>
+        <xs:attribute name="ReportParameters" type="xs:string"/>
+        <xs:attribute name="ReportServer" type="xs:string"/>
+        <xs:attribute name="Required" type="xs:boolean"/>
+        <xs:attribute name="ResizableFlag" type="xs:boolean"/>
+        <xs:attribute name="ResizeAllowed" type="xs:boolean"/>
+        <xs:attribute name="ReturnItem" type="xs:string"/>
+        <xs:attribute name="ReverseDirection" type="xs:boolean"/>
+        <xs:attribute name="RoleCount" type="xs:integer"/>
+        <xs:attribute name="RulerFlag" type="xs:boolean"/>
+        <xs:attribute name="RulerGuideFlag" type="xs:boolean"/>
+        <xs:attribute name="RulerMajor" type="xs:integer"/>
+        <xs:attribute name="RulerMinor" type="xs:integer"/>
+        <xs:attribute name="RulerUnit" type="xs:integer"/>
+        <xs:attribute name="RuntimeComp" type="xs:string"/>
+        <xs:attribute name="SavepointMode" type="xs:boolean"/>
+        <xs:attribute name="ScrollbarAlign" type="xs:string"/>
+        <xs:attribute name="ScrollbarCanvasName" type="xs:string"/>
+        <xs:attribute name="ScrollbarLength" type="xs:integer"/>
+        <xs:attribute name="ScrollbarOrientation" type="xs:string"/>
+        <xs:attribute name="ScrollbarTabPageName" type="xs:string"/>
+        <xs:attribute name="ScrollbarWidth" type="xs:integer"/>
+        <xs:attribute name="ScrollbarXPosition" type="xs:integer"/>
+        <xs:attribute name="ScrollbarYPosition" type="xs:integer"/>
+        <xs:attribute name="ShareLibrary" type="xs:boolean"/>
+        <xs:attribute name="ShowCanvas" type="xs:boolean"/>
+        <xs:attribute name="ShowFastForward" type="xs:boolean"/>
+        <xs:attribute name="ShowHorizontalScrollbar" type="xs:boolean"/>
+        <xs:attribute name="ShowPlay" type="xs:boolean"/>
+        <xs:attribute name="ShowRecord" type="xs:boolean"/>
+        <xs:attribute name="ShowRewind" type="xs:boolean"/>
+        <xs:attribute name="ShowScrollbar" type="xs:boolean"/>
+        <xs:attribute name="ShowSlider" type="xs:boolean"/>
+        <xs:attribute name="ShowTime" type="xs:boolean"/>
+        <xs:attribute name="ShowVerticalScrollbar" type="xs:boolean"/>
+        <xs:attribute name="ShowView" type="xs:boolean"/>
+        <xs:attribute name="ShowVolume" type="xs:boolean"/>
+        <xs:attribute name="Shrinkwrap" type="xs:boolean"/>
+        <xs:attribute name="SingleObjectAlign" type="xs:string"/>
+        <xs:attribute name="SingleRecord" type="xs:boolean"/>
+        <xs:attribute name="SizingStyle" type="xs:string"/>
+        <xs:attribute name="SoundFormat" type="xs:string"/>
+        <xs:attribute name="SoundQuality" type="xs:string"/>
+        <xs:attribute name="StartPromptAlign" type="xs:string"/>
+        <xs:attribute name="StartPromptOffset" type="xs:integer"/>
+        <xs:attribute name="StartupCode" type="xs:string"/>
+        <xs:attribute name="StatusLineFlag" type="xs:boolean"/>
+        <xs:attribute name="SubMenuName" type="xs:string"/>
+        <xs:attribute name="SubTitle" type="xs:string"/>
+        <xs:attribute name="SubclassObjectGroup" type="xs:boolean"/>
+        <xs:attribute name="SubclassSubObject" type="xs:boolean"/>
+        <xs:attribute name="SummaryBlockName" type="xs:string"/>
+        <xs:attribute name="SummaryFunction" type="xs:string"/>
+        <xs:attribute name="SummaryItemName" type="xs:string"/>
+        <xs:attribute name="SynchronizedItemName" type="xs:string"/>
+        <xs:attribute name="TabActionStyle" type="xs:integer"/>
+        <xs:attribute name="TabAttachmentEdge" type="xs:string"/>
+        <xs:attribute name="TabPageName" type="xs:string"/>
+        <xs:attribute name="TabStyle" type="xs:string"/>
+        <xs:attribute name="TabWidthStyle" type="xs:integer"/>
+        <xs:attribute name="TearOffMenu" type="xs:boolean"/>
+        <xs:attribute name="Text" type="xs:string"/>
+        <xs:attribute name="Title" type="xs:string"/>
+        <xs:attribute name="TitleReadingOrder" type="xs:string"/>
+        <xs:attribute name="ToolpaletteFlag" type="xs:boolean"/>
+        <xs:attribute name="Tooltip" type="xs:string"/>
+        <xs:attribute name="TooltipVisualAttributeGroup" type="xs:string"/>
+        <xs:attribute name="TopPromptAlign" type="xs:string"/>
+        <xs:attribute name="TopPromptOffset" type="xs:integer"/>
+        <xs:attribute name="TreeAllowEmpBranch" type="xs:boolean"/>
+        <xs:attribute name="TreeDataQuery" type="xs:string"/>
+        <xs:attribute name="TreeMultiSelect" type="xs:boolean"/>
+        <xs:attribute name="TreeShowLines" type="xs:boolean"/>
+        <xs:attribute name="TreeShowSymbol" type="xs:boolean"/>
+        <xs:attribute name="TriggerInternalType" type="xs:integer"/>
+        <xs:attribute name="TriggerStyle" type="xs:string"/>
+        <xs:attribute name="TriggerText" type="xs:string"/>
+        <xs:attribute name="UncheckedValue" type="xs:string"/>
+        <xs:attribute name="UpdateAllowed" type="xs:boolean"/>
+        <xs:attribute name="UpdateChangedColumns" type="xs:boolean"/>
+        <xs:attribute name="UpdateCommit" type="xs:boolean"/>
+        <xs:attribute name="UpdateIfNull" type="xs:boolean"/>
+        <xs:attribute name="UpdateLayout" type="xs:string"/>
+        <xs:attribute name="UpdateProcedureName" type="xs:string"/>
+        <xs:attribute name="UpdateQuery" type="xs:boolean"/>
+        <xs:attribute name="Use3dControls" type="xs:boolean"/>
+        <xs:attribute name="UseSecurity" type="xs:boolean"/>
+        <xs:attribute name="ValidateFromList" type="xs:boolean"/>
+        <xs:attribute name="ValidationUnit" type="xs:string"/>
+        <xs:attribute name="VerticalFill" type="xs:boolean"/>
+        <xs:attribute name="VerticalJustification" type="xs:string"/>
+        <xs:attribute name="VerticalMargin" type="xs:integer"/>
+        <xs:attribute name="VerticalObjectOffset" type="xs:integer"/>
+        <xs:attribute name="VerticalOrigin" type="xs:string"/>
+        <xs:attribute name="VerticalToolbarCanvas" type="xs:string"/>
+        <xs:attribute name="VerticalToolbarCanvasName" type="xs:string"/>
+        <xs:attribute name="ViewportHeight" type="xs:integer"/>
+        <xs:attribute name="ViewportWidth" type="xs:integer"/>
+        <xs:attribute name="ViewportXPosition" type="xs:integer"/>
+        <xs:attribute name="ViewportXPositionOnCanvas" type="xs:integer"/>
+        <xs:attribute name="ViewportYPosition" type="xs:integer"/>
+        <xs:attribute name="ViewportYPositionOnCanvas" type="xs:integer"/>
+        <xs:attribute name="Visible" type="xs:boolean"/>
+        <xs:attribute name="VisibleInHorizontalMenuToolbar" type="xs:boolean"/>
+        <xs:attribute name="VisibleInMenu" type="xs:boolean"/>
+        <xs:attribute name="VisibleInVerticalMenuToolbar" type="xs:boolean"/>
+        <xs:attribute name="VisualAttributeName" type="xs:string"/>
+        <xs:attribute name="VisualAttributeType" type="xs:string"/>
+        <xs:attribute name="VisualStateValid" type="xs:boolean"/>
+        <xs:attribute name="WhereClause" type="xs:string"/>
+        <xs:attribute name="Width" type="xs:integer"/>
+        <xs:attribute name="WindowHeight" type="xs:integer"/>
+        <xs:attribute name="WindowName" type="xs:string"/>
+        <xs:attribute name="WindowStyle" type="xs:string"/>
+        <xs:attribute name="WindowWidth" type="xs:integer"/>
+        <xs:attribute name="WindowXPosition" type="xs:integer"/>
+        <xs:attribute name="WindowYPosition" type="xs:integer"/>
+        <xs:attribute name="WrapStyle" type="xs:string"/>
+        <xs:attribute name="WrapText" type="xs:boolean"/>
+        <xs:attribute name="XPosition" type="xs:integer"/>
+        <xs:attribute name="YPosition" type="xs:integer"/>
+        <xs:attribute name="ZoomLevel" type="xs:integer"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="RecordGroup">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence>
+          <xs:element name="RecordGroupColumn" type="tns:RecordGroupColumn" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="Comment" type="xs:string"/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="ParentFilename" type="xs:string"/>
+        <xs:attribute name="ParentFilepath" type="xs:string"/>
+        <xs:attribute name="ParentModule" type="xs:string"/>
+        <xs:attribute name="ParentModuleType" type="xs:integer"/>
+        <xs:attribute name="ParentName" type="xs:string"/>
+        <xs:attribute name="ParentType" type="xs:integer"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="RecordGroupFetchSize" type="xs:integer"/>
+        <xs:attribute name="RecordGroupQuery" type="xs:string"/>
+        <xs:attribute name="RecordGroupType" type="xs:string"/>
+        <xs:attribute name="SmartClass" type="xs:boolean"/>
+        <xs:attribute name="SubclassObjectGroup" type="xs:boolean"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="RecordGroupColumn">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence>
+          <xs:element name="RecordGroupColumnRow" type="tns:IndexedListWithoutName" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="ColumnDataType" type="xs:string"/>
+        <xs:attribute name="ColumnValuesCount" type="xs:integer"/>
+        <xs:attribute name="DataLengthSemantics" type="xs:string"/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="MaximumLength" type="xs:integer"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="IndexedListWithoutName">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence/>
+        <xs:attribute name="Index" type="xs:integer" use="required"/>
+        <xs:attribute name="Value" type="xs:string" use="required"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Report">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence/>
+        <xs:attribute name="CommMode" type="xs:string"/>
+        <xs:attribute name="Comment" type="xs:string"/>
+        <xs:attribute name="DataSourceBlock" type="xs:string"/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="ExecuteMode" type="xs:string"/>
+        <xs:attribute name="Filename" type="xs:string"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="ParentFilename" type="xs:string"/>
+        <xs:attribute name="ParentFilepath" type="xs:string"/>
+        <xs:attribute name="ParentModule" type="xs:string"/>
+        <xs:attribute name="ParentModuleType" type="xs:integer"/>
+        <xs:attribute name="ParentName" type="xs:string"/>
+        <xs:attribute name="ParentType" type="xs:integer"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="QueryName" type="xs:string"/>
+        <xs:attribute name="ReportDestinationFormat" type="xs:string"/>
+        <xs:attribute name="ReportDestinationName" type="xs:string"/>
+        <xs:attribute name="ReportDestinationType" type="xs:string"/>
+        <xs:attribute name="ReportParameters" type="xs:string"/>
+        <xs:attribute name="ReportServer" type="xs:string"/>
+        <xs:attribute name="SmartClass" type="xs:boolean"/>
+        <xs:attribute name="SubclassObjectGroup" type="xs:boolean"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Menu">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence>
+          <xs:element name="MenuItem" type="tns:MenuItem" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="BottomTitle" type="xs:string"/>
+        <xs:attribute name="Comment" type="xs:string"/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="ParentFilename" type="xs:string"/>
+        <xs:attribute name="ParentFilepath" type="xs:string"/>
+        <xs:attribute name="ParentModule" type="xs:string"/>
+        <xs:attribute name="ParentModuleType" type="xs:integer"/>
+        <xs:attribute name="ParentName" type="xs:string"/>
+        <xs:attribute name="ParentType" type="xs:integer"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="SmartClass" type="xs:boolean"/>
+        <xs:attribute name="SubTitle" type="xs:string"/>
+        <xs:attribute name="SubclassObjectGroup" type="xs:boolean"/>
+        <xs:attribute name="TearOffMenu" type="xs:boolean"/>
+        <xs:attribute name="Title" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="MenuItem">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence>
+          <xs:element name="MenuItemRole" type="tns:IndexedListWithoutName" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="CommandText" type="xs:string"/>
+        <xs:attribute name="CommandType" type="xs:string"/>
+        <xs:attribute name="Comment" type="xs:string"/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="DisplayNoPriv" type="xs:boolean"/>
+        <xs:attribute name="Enabled" type="xs:boolean"/>
+        <xs:attribute name="FontName" type="xs:string"/>
+        <xs:attribute name="FontSize" type="xs:integer"/>
+        <xs:attribute name="FontSpacing" type="xs:string"/>
+        <xs:attribute name="FontStyle" type="xs:string"/>
+        <xs:attribute name="FontWeight" type="xs:string"/>
+        <xs:attribute name="Hint" type="xs:string"/>
+        <xs:attribute name="IconFilename" type="xs:string"/>
+        <xs:attribute name="IconInMenu" type="xs:boolean"/>
+        <xs:attribute name="KeyboardAccelerator" type="xs:string"/>
+        <xs:attribute name="Label" type="xs:string"/>
+        <xs:attribute name="MagicItem" type="xs:string"/>
+        <xs:attribute name="MenuItemCode" type="xs:string"/>
+        <xs:attribute name="MenuItemRadioGroup" type="xs:string"/>
+        <xs:attribute name="MenuItemType" type="xs:string"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="ParentFilename" type="xs:string"/>
+        <xs:attribute name="ParentFilepath" type="xs:string"/>
+        <xs:attribute name="ParentModule" type="xs:string"/>
+        <xs:attribute name="ParentModuleType" type="xs:integer"/>
+        <xs:attribute name="ParentName" type="xs:string"/>
+        <xs:attribute name="ParentSourceLevel1ObjectName" type="xs:string"/>
+        <xs:attribute name="ParentSourceLevel1ObjectType" type="xs:integer"/>
+        <xs:attribute name="ParentType" type="xs:integer"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="RoleCount" type="xs:integer"/>
+        <xs:attribute name="SmartClass" type="xs:boolean"/>
+        <xs:attribute name="SubMenuName" type="xs:string"/>
+        <xs:attribute name="SubclassSubObject" type="xs:boolean"/>
+        <xs:attribute name="Visible" type="xs:boolean"/>
+        <xs:attribute name="VisibleInHorizontalMenuToolbar" type="xs:boolean"/>
+        <xs:attribute name="VisibleInMenu" type="xs:boolean"/>
+        <xs:attribute name="VisibleInVerticalMenuToolbar" type="xs:boolean"/>
+        <xs:attribute name="VisualAttributeName" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="ProgramUnit">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence/>
+        <xs:attribute name="Comment" type="xs:string"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="ParentFilename" type="xs:string"/>
+        <xs:attribute name="ParentFilepath" type="xs:string"/>
+        <xs:attribute name="ParentModule" type="xs:string"/>
+        <xs:attribute name="ParentModuleType" type="xs:integer"/>
+        <xs:attribute name="ParentName" type="xs:string"/>
+        <xs:attribute name="ParentType" type="xs:integer"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="ProgramUnitText" type="xs:string"/>
+        <xs:attribute name="ProgramUnitType" type="xs:string"/>
+        <xs:attribute name="SmartClass" type="xs:boolean"/>
+        <xs:attribute name="SubclassObjectGroup" type="xs:boolean"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="MenuModule">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="ProgramUnit" type="tns:ProgramUnit"/>
+            <xs:element name="PropertyClass" type="tns:PropertyClass"/>
+            <xs:element name="AttachedLibrary" type="tns:AttachedLibrary"/>
+            <xs:element name="VisualAttribute" type="tns:VisualAttribute"/>
+            <xs:element name="ObjectGroup" type="tns:ObjectGroup"/>
+            <xs:element name="Menu" type="tns:Menu"/>
+            <xs:element name="MenuModuleRole" type="tns:IndexedListWithoutName"/>
+          </xs:choice>
+        </xs:sequence>
+        <xs:attribute name="Comment" type="xs:string"/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="MainMenu" type="xs:string"/>
+        <xs:attribute name="MenuDirectory" type="xs:string"/>
+        <xs:attribute name="MenuFilename" type="xs:string"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="ParentFilename" type="xs:string"/>
+        <xs:attribute name="ParentFilepath" type="xs:string"/>
+        <xs:attribute name="ParentModule" type="xs:string"/>
+        <xs:attribute name="ParentModuleType" type="xs:integer"/>
+        <xs:attribute name="ParentName" type="xs:string"/>
+        <xs:attribute name="ParentType" type="xs:integer"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+        <xs:attribute name="RoleCount" type="xs:integer"/>
+        <xs:attribute name="ShareLibrary" type="xs:boolean"/>
+        <xs:attribute name="StartupCode" type="xs:string"/>
+        <xs:attribute name="UseSecurity" type="xs:boolean"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Module">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence>
+          <xs:element name="FormModule" type="tns:FormModule" minOccurs="0"/>
+          <xs:element name="ObjectLibrary" type="tns:ObjectLibrary" minOccurs="0"/>
+          <xs:element name="MenuModule" type="tns:MenuModule" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="version" type="xs:long"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="ObjectLibrary">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="RecordGroupColumn" type="tns:RecordGroupColumn"/>
+            <xs:element name="ProgramUnit" type="tns:ProgramUnit"/>
+            <xs:element name="LOV" type="tns:LOV"/>
+            <xs:element name="Graphics" type="tns:Graphics"/>
+            <xs:element name="AttachedLibrary" type="tns:AttachedLibrary"/>
+            <xs:element name="MenuItem" type="tns:MenuItem"/>
+            <xs:element name="VisualState" type="tns:VisualState"/>
+            <xs:element name="Relation" type="tns:Relation"/>
+            <xs:element name="Coordinate" type="tns:Coordinate"/>
+            <xs:element name="Item" type="tns:Item"/>
+            <xs:element name="PropertyClass" type="tns:PropertyClass"/>
+            <xs:element name="RadioButton" type="tns:RadioButton"/>
+            <xs:element name="Block" type="tns:Block"/>
+            <xs:element name="RecordGroup" type="tns:RecordGroup"/>
+            <xs:element name="Trigger" type="tns:Trigger"/>
+            <xs:element name="ObjectGroup" type="tns:ObjectGroup"/>
+            <xs:element name="Point" type="tns:Point"/>
+            <xs:element name="TabPage" type="tns:TabPage"/>
+            <xs:element name="TextSegment" type="tns:TextSegment"/>
+            <xs:element name="VisualAttribute" type="tns:VisualAttribute"/>
+            <xs:element name="DataSourceColumn" type="tns:DataSourceColumn"/>
+            <xs:element name="Font" type="tns:Font"/>
+            <xs:element name="ModuleParameter" type="tns:ModuleParameter"/>
+            <xs:element name="LOVColumnMapping" type="tns:LOVColumnMapping"/>
+            <xs:element name="Window" type="tns:Window"/>
+            <xs:element name="Alert" type="tns:Alert"/>
+            <xs:element name="CompoundText" type="tns:CompoundText"/>
+            <xs:element name="ObjectLibraryTab" type="tns:ObjectLibraryTab"/>
+            <xs:element name="Canvas" type="tns:Canvas"/>
+            <xs:element name="Report" type="tns:Report"/>
+            <xs:element name="Editor" type="tns:Editor"/>
+            <xs:element name="DataSourceArgument" type="tns:DataSourceArgument"/>
+            <xs:element name="Menu" type="tns:Menu"/>
+          </xs:choice>
+        </xs:sequence>
+        <xs:attribute name="Comment" type="xs:string"/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="ObjectCount" type="xs:integer"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="ObjectLibraryTab">
+    <xs:complexContent>
+      <xs:extension base="formsObject">
+        <xs:sequence>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Report" type="tns:Report"/>
+            <xs:element name="MenuItem" type="tns:MenuItem"/>
+            <xs:element name="RadioButton" type="tns:RadioButton"/>
+            <xs:element name="DataSourceColumn" type="tns:DataSourceColumn"/>
+            <xs:element name="Trigger" type="tns:Trigger"/>
+            <xs:element name="Point" type="tns:Point"/>
+            <xs:element name="Relation" type="tns:Relation"/>
+            <xs:element name="VisualAttribute" type="tns:VisualAttribute"/>
+            <xs:element name="Canvas" type="tns:Canvas"/>
+            <xs:element name="Coordinate" type="tns:Coordinate"/>
+            <xs:element name="Graphics" type="tns:Graphics"/>
+            <xs:element name="DataSourceArgument" type="tns:DataSourceArgument"/>
+            <xs:element name="ObjectGroup" type="tns:ObjectGroup"/>
+            <xs:element name="Alert" type="tns:Alert"/>
+            <xs:element name="Block" type="tns:Block"/>
+            <xs:element name="LOVColumnMapping" type="tns:LOVColumnMapping"/>
+            <xs:element name="Font" type="tns:Font"/>
+            <xs:element name="ProgramUnit" type="tns:ProgramUnit"/>
+            <xs:element name="Window" type="tns:Window"/>
+            <xs:element name="LOV" type="tns:LOV"/>
+            <xs:element name="Menu" type="tns:Menu"/>
+            <xs:element name="TabPage" type="tns:TabPage"/>
+            <xs:element name="CompoundText" type="tns:CompoundText"/>
+            <xs:element name="ModuleParameter" type="tns:ModuleParameter"/>
+            <xs:element name="VisualState" type="tns:VisualState"/>
+            <xs:element name="RecordGroupColumn" type="tns:RecordGroupColumn"/>
+            <xs:element name="AttachedLibrary" type="tns:AttachedLibrary"/>
+            <xs:element name="PropertyClass" type="tns:PropertyClass"/>
+            <xs:element name="TextSegment" type="tns:TextSegment"/>
+            <xs:element name="Item" type="tns:Item"/>
+            <xs:element name="RecordGroup" type="tns:RecordGroup"/>
+            <xs:element name="Editor" type="tns:Editor"/>
+          </xs:choice>
+        </xs:sequence>
+        <xs:attribute name="Comment" type="xs:string"/>
+        <xs:attribute name="DirtyInfo" type="xs:boolean"/>
+        <xs:attribute name="Label" type="xs:string"/>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="ObjectCount" type="xs:integer"/>
+        <xs:attribute name="PersistentClientInfoLength" type="xs:integer"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+</xs:schema>
+

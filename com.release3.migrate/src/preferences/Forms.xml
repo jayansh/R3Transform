@@ -1,0 +1,59 @@
+<GridBeanPreferences>
+  <columnInfo>
+    <columnType>migrateBox</columnType>
+    <dbColumnName></dbColumnName>
+    <modelAccessName>migrate</modelAccessName>
+    <sortOrder>2</sortOrder>
+    <sortType>asc</sortType>
+    <sortable>true</sortable>
+    <uiColumnName>Migrate</uiColumnName>
+    <visible>true</visible>
+  </columnInfo>
+
+  <columnInfo>
+    <columnType>outputText</columnType>
+    <dbColumnName></dbColumnName>
+    <modelAccessName>fileName</modelAccessName>
+    <sortOrder>1</sortOrder>
+    <sortType>asc</sortType>
+    <sortable>true</sortable>
+    <uiColumnName>Form name</uiColumnName>
+    <visible>true</visible>
+  </columnInfo>
+  <columnInfo>
+    <columnType>helper</columnType>
+    <dbColumnName></dbColumnName>
+    <modelAccessName>fileInfo</modelAccessName>
+    <sortOrder>2</sortOrder>
+    <sortType>asc</sortType>
+    <sortable>true</sortable>
+    <uiColumnName>Helper</uiColumnName>
+    <visible>true</visible>
+  </columnInfo>
+  <columnInfo>
+    <columnType>remove</columnType>
+    <dbColumnName></dbColumnName>
+    <modelAccessName>fileInfo</modelAccessName>
+    <sortOrder>2</sortOrder>
+    <sortType>asc</sortType>
+    <sortable>true</sortable>
+    <uiColumnName>Remove</uiColumnName>
+    <visible>true</visible>
+  </columnInfo>
+
+  <columnInfo>
+    <columnType>refresh</columnType>
+    <dbColumnName></dbColumnName>
+    <modelAccessName>fileInfo</modelAccessName>
+    <sortOrder>2</sortOrder>
+    <sortType>asc</sortType>
+    <sortable>true</sortable>
+    <uiColumnName>Refresh</uiColumnName>
+    <visible>true</visible>
+  </columnInfo>
+
+  <pagesize>5</pagesize>
+
+  <customComponent>/FormsGrid_customcomponents.jspx</customComponent>
+</GridBeanPreferences>
+

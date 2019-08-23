@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Ui Plug-in
+Bundle-SymbolicName: com.release3.transform.ui
+Bundle-Version: 1.0.0
+Bundle-Activator: com.release3.transform.ui.Activator
+Bundle-Vendor: RELEASE3
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.release3.transform.lib;bundle-version="1.0.0",
+ com.release3.tf.core.form;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Export-Package: com.release3.cleanupwizard,
+ com.release3.transform.pref
+Import-Package: com.converter.premigration

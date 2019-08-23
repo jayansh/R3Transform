@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Special Char Preferences
+Bundle-SymbolicName: com.release3.tf.ui.specialchar.pref;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.release3.tf.ui.specialchar.pref.SpecialCharPrefPlugin
+Bundle-Vendor: RELEASE3
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.release3.transform.lib;bundle-version="1.0.1",
+ com.release3.tf.jaxb;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Export-Package: com.release3.tf.ui.specialchar.pref,
+ com.release3.tf.ui.specialchar.pref.model

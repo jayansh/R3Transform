@@ -1,0 +1,10 @@
+Fixing source code repository:
+1. DBCommand modified for getting connection.(New connection is only return If connection is null.)
+2. com.release3.migrate.XmlGen is depricated and moved to com.release3.tf.core.form.XmlGen.
+3 Sequence support is added.
+4. Clear Block Support added.
+5. com.release3.tf.javagen.PlSqlParser.java is modified added (text = text.replace("/*", "--");	text = text.replace("*/", "");) at line 33 and 34.
+6.Generating NonCrud only if moveToDB option is true.
+7.Code for generating javaMethod stub.
+8. Fix for pls/sql formatting.
+9. Enabling new/delete/save button in Premigration process.

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.release3.com/transform/lov"
+	xmlns:tns="http://www.release3.com/transform/lov"
+	elementFormDefault="qualified" xmlns:Q1="http://xmlns.oracle.com/Forms">
+    <xs:import schemaLocation="schema1.xsd" namespace="http://xmlns.oracle.com/Forms"></xs:import>
+    <xs:import schemaLocation="formsObject.xsd" />
+	<xs:element name="LOVRecordGroupModelList">
+		<xs:complexType>
+
+
+			<xs:sequence>
+				<xs:element name="LOVRecordGroupModel" maxOccurs="unbounded" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="LOV" type="Q1:LOV"></xs:element>
+							<xs:element name="RecordGroup" type="Q1:RecordGroup"></xs:element>
+							<xs:element name="TableName" type="xs:string" />
+<xs:element name="ContainsMultipleTable"
+								type="xs:boolean" />
+
+
+
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+
+
+	</xs:element>
+</xs:schema>

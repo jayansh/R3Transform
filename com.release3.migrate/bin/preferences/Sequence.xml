@@ -1,0 +1,29 @@
+<GridBeanPreferences>
+  <columnInfo>
+    <columnType>ItemDropDown</columnType>
+    <dbColumnName></dbColumnName>
+    <modelAccessName>item</modelAccessName>
+    <sortOrder>2</sortOrder>
+    <sortType>asc</sortType>
+    <sortable>true</sortable>
+    <uiColumnName>Item</uiColumnName>
+    <visible>true</visible>
+  </columnInfo>
+
+  <columnInfo>
+    <columnType>SequenceDown</columnType>
+    <dbColumnName></dbColumnName>
+    <modelAccessName>seq</modelAccessName>
+    <sortOrder>2</sortOrder>
+    <sortType>asc</sortType>
+    <sortable>true</sortable>
+    <uiColumnName>Sequence</uiColumnName>
+    <visible>true</visible>
+  </columnInfo>
+
+  <pagesize>5</pagesize>
+
+
+  <customComponent>/SequenceGrid_customcomponents.jspx</customComponent>
+</GridBeanPreferences>
+

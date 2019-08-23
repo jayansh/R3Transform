@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<R3Builtlist Name="" xmlns="http://www.release3.com/R3Builtin/builtinlist"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.release3.com/R3Builtin/builtinlist R3builtinlist.xsd ">
+	<BuiltinAction FormBuiltin="ABORT_QUERY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="ADD_GROUP_COLUMN">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="ADD_GROUP_ROW">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="ADD_LIST_ELEMENT">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="ADD_PARAMETER">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="CALL_FORM">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="CALL_INPUT">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="CANCEL_REPORT_OBJECT">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="CHECK_RECORD_UNIQUENESS">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="CHECKBOX_CHECKED">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="CLEAR_BLOCK">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="CLEAR_EOL">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="CLEAR_FORM">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="CLEAR_ITEM">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="CLEAR_LIST">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="CLEAR_MESSAGE">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="CLEAR_RECORD">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="CLOSE_FORM">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="COMMIT_FORM">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="CONVERT_OTHER_VALUE">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="COPY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="COPY_REGION">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="COPY_REPORT_OUTPUT">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="COUNT_QUERY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="CREATE_GROUP">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="CREATE_GROUP_FROM_QUERY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="CREATE_PARAMETER_LIST">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="CREATE_QUERIED_RECORD">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="CREATE_RECORD">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="CREATE_TIMER">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="CREATE_VAR">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="CUT_REGION">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="DBMS_ERROR_CODE">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="DBMS_ERROR_TEXT">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="DEFAULT_VALUE">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="DELETE_GROUP">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="DELETE_GROUP_ROW">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="DELETE_LIST_ELEMENT">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="DELETE_PARAMETER">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="DELETE_RECORD">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="DELETE_TIMER">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="DESTROY_PARAMETER_LIST">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="DISPLAY_ERROR">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="DISPLAY_ITEM">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="DOWN">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="DO_KEY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="DUMMY_REFERENCE">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="DUPLICATE_ITEM">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="DUPLICATE_RECORD">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="EDIT_TEXTITEM">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="ENFORCE_COLUMN_SECURITY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="ENTER">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="ENTER_QUERY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="ERASE">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="ERROR_CODE">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="ERROR_TEXT">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="ERROR_TYPE">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="EXECUTE_QUERY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="EXECUTE_TRIGGER">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="EXIT_FORM">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="FETCH_RECORDS">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="FIND_ALERT">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="FIND_BLOCK">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="FIND_CANVAS">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="FIND_COLUMN">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="FIND_EDITOR">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="FIND_FORM">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="FIND_GROUP">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="FIND_ITEM">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="FIND_LOV">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="FIND_MENU_ITEM">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="FIND_RELATION">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="FIND_REPORT_OBJECT">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="FIND_TAB_PAGE">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="FIND_TIMER">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="FIND_VIEW">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="FIND_WINDOW">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="FIRST_RECORD">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="FORM_FAILURE">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="FORM_FATAL">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="FORM_SUCCESS">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="FORMS_DDL">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GENERATE_SEQUENCE_NUMBER">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_APPLICATION_PROPERTY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_BLOCK_PROPERTY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_CANVAS_PROPERTY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_FILE_NAME">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_FORM_PROPERTY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_GROUP_CHAR_CELL">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_GROUP_DATE_CELL">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_GROUP_NUMBER_CELL">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_GROUP_RECORD_NUMBER">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_GROUP_ROW_COUNT">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_GROUP_SELECTION">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_GROUP_SELECTION_COUNT">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_ITEM_INSTANCE_PROPERTY">
+		<JavaEquivalentBuiltin>"CRUD - commentout, non-CRUD: get_item_property method"
+		</JavaEquivalentBuiltin>
+		
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_ITEM_PROPERTY">
+		<JavaEquivalentBuiltin>"CRUD - commentout, non-CRUD: get_item_property method"
+		</JavaEquivalentBuiltin>
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_LIST_ELEMENT_COUNT">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_LIST_ELEMENT_LABEL">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_LIST_ELEMENT_VALUE">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_LOV_PROPERTY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_MENU_ITEM_PROPERTY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_MESSAGE">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_PARAMETER_ATTR">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_PARAMETER_LIST">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_RADIO_BUTTON_PROPERTY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_RECORD_PROPERTY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_RELATION_PROPERTY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_REPORT_OBJECT_PROPERTY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_TAB_PAGE_PROPERTY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_VAR_BOUNDS">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_VAR_DIMS">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_VAR_TYPE">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_VIEW_PROPERTY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GET_WINDOW_PROPERTY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GO_BLOCK">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GO_FORM">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GO_ITEM">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="GO_RECORD">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="HELP">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="HIDE_VIEW">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="HIDE_WINDOW">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="HOST">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="ID_NULL">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="IMAGE_SCROLL">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="IMAGE_ZOOM">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="INSERT_RECORD">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="ISSUE_ROLLBACK">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="ISSUE_SAVEPOINT">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="LAST_RECORD">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="LIST_VALUES">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="LOCK_RECORD">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="LOGON">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="LOGON_SCREEN">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="LOGOUT">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="MESSAGE">
+		<JavaEquivalentBuiltin>message</JavaEquivalentBuiltin>
+		<CrudEquivalentBuiltin>message</CrudEquivalentBuiltin>
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="MESSAGE_CODE">
+		<JavaEquivalentBuiltin>messageCode</JavaEquivalentBuiltin>
+		<CrudEquivalentBuiltin>messageCode</CrudEquivalentBuiltin>
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="MESSAGE_TEXT">
+		<JavaEquivalentBuiltin>messageText</JavaEquivalentBuiltin>
+		<CrudEquivalentBuiltin>messageText</CrudEquivalentBuiltin>
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="MESSAGE_TYPE">
+		<JavaEquivalentBuiltin>messageType</JavaEquivalentBuiltin>
+		<CrudEquivalentBuiltin>messageType</CrudEquivalentBuiltin>
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="MOVE_WINDOW">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="NAME_IN">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="NEW_FORM">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="NEXT_BLOCK">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="NEXT_ITEM">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="NEXT_FORM">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="NEXT_KEY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="NEXT_RECORD">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="NEXT_SET">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="OPEN_FORM">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="PASTE_REGION">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="PAUSE">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="POPULATE_GROUP">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="POPULATE_GROUP_WITH_QUERY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="POPULATE_LIST">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="POST">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="PREVIOUS_BLOCK">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="PREVIOUS_FORM">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="PREVIOUS_ITEM">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="PREVIOUS_RECORD">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="PRINT">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="READ_IMAGE_FILE">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="RECALCULATE">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="REDISPLAY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="REPLACE_CONTENT_VIEW">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="REPLACE_MENU">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="REPORT_OBJECT_STATUS">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="RESET_GROUP_SELECTION">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="RESIZE_WINDOW">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="RETRIEVE_LIST">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="RUN_PRODUCT">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="RUN_REPORT_OBJECT">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SCROLL_DOWN">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SCROLL_UP">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SCROLL_VIEW">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SELECT_ALL">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SELECT_RECORDS">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SET_ALERT_BUTTON_PROPERTY">
+		<JavaEquivalentBuiltin>setItemProperty</JavaEquivalentBuiltin>
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SET_ALERT_PROPERTY">
+		<JavaEquivalentBuiltin>setItemProperty</JavaEquivalentBuiltin>
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SET_APPLICATION_PROPERTY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SET_BLOCK_PROPERTY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SET_CANVAS_PROPERTY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SET_FORM_PROPERTY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SET_GROUP_CHAR_CELL">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SET_GROUP_DATE_CELL">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SET_GROUP_NUMBER_CELL">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SET_GROUP_SELECTION">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SET_ITEM_INSTANCE_PROPERTY">
+			<JavaEquivalentBuiltin>setItemProperty</JavaEquivalentBuiltin>
+			<CrudEquivalentBuiltin>set_item_property</CrudEquivalentBuiltin>
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SET_ITEM_PROPERTY">
+		<JavaEquivalentBuiltin>setItemProperty</JavaEquivalentBuiltin>
+		<CrudEquivalentBuiltin>set_item_property</CrudEquivalentBuiltin>
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SET_LOV_COLUMN_PROPERTY">
+		<JavaEquivalentBuiltin>setItemProperty</JavaEquivalentBuiltin>
+		<CrudEquivalentBuiltin>set_item_property</CrudEquivalentBuiltin>
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SET_LOV_PROPERTY">
+		<JavaEquivalentBuiltin>setItemProperty</JavaEquivalentBuiltin>
+		<CrudEquivalentBuiltin>set_item_property</CrudEquivalentBuiltin>
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SET_MENU_ITEM_PROPERTY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SET_PARAMETER_ATTR">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SET_RADIO_BUTTON_PROPERTY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SET_RECORD_PROPERTY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SET_RELATION_PROPERTY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SET_REPORT_OBJECT_PROPERTY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SET_TAB_PAGE_PROPERTY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SET_TIMER">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SET_VIEW_PROPERTY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SET_WINDOW_PROPERTY">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SHOW_ALERT">
+		<JavaEquivalentBuiltin>showAlert</JavaEquivalentBuiltin>
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SHOW_EDITOR">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SHOW_KEYS">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SHOW_LOV">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SHOW_VIEW">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SHOW_WINDOW">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="SYNCHRONIZE">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="UNSET_GROUP_SELECTION">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="UP">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="UPDATE_CHART">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="UPDATE_RECORD">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="USER_EXIT">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="VALIDATE">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="WEB.SHOW_DOCUMENT">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+	<BuiltinAction FormBuiltin="WRITE_IMAGE_FILE">
+		<!--<JavaEquivalentBuiltin>"comment out"</JavaEquivalentBuiltin>-->
+	</BuiltinAction>
+
+</R3Builtlist>

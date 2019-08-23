@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Core Plug-in
+Bundle-SymbolicName: com.release3.tf.core;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: com.release3.tf.core.TFCorePlugin
+Bundle-Vendor: RELEASE3
+Require-Bundle: org.eclipse.core.runtime,
+ com.release3.transform.lib;bundle-version="1.0.0",
+ org.eclipse.core.databinding;bundle-version="1.3.100",
+ org.eclipse.core.databinding.beans;bundle-version="1.2.100",
+ org.eclipse.jface.databinding;bundle-version="1.4.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Export-Package: com.converter.premigration,
+ com.release3.tf.core;uses:="org.eclipse.core.runtime,com.converter.premigration,org.osgi.framework",
+ com.release3.transform.validators,
+ com.sun.crypto.provider
+Bundle-ClassPath: sunjce_provider.jar,
+ .
+Import-Package: org.eclipse.jface.fieldassist

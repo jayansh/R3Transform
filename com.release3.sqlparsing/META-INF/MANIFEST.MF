@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SqlParsing
+Bundle-SymbolicName: com.release3.sqlparsing
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.release3.sqlparsing.Activator
+Bundle-Vendor: RELEASE3
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.4.0",
+ com.release3.transform.lib;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Export-Package: com.converter.toolkit.sqlparsing;uses:="javax.swing",
+ com.release3.sqlparsing;uses:="org.eclipse.core.runtime,org.osgi.framework"
+Bundle-RequiredExecutionEnvironment: J2SE-1.5

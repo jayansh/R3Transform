@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<R3PlSqlMap xmlns="http://www.release3.com/PlSqlMap"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.release3.com/PlSqlMap R3PlSqlMap.xsd "
+	Name="BUTTON_DEPT">
+	<!-- All childrens of Rec are optional. In case if child is null, it will 
+		not be written to xml file. e.g. in case <ItemName> tag is null for a <Rec> 
+		below. -->
+	<Rec Name="DEPT.ON-POPULATE-DETAILS">
+		<BlockName>DEPT</BlockName>
+	<!-- 	<ItemName> is absent here, as it is null for block level trigger. -->
+		<Type>TRIGGER</Type>
+		<Source>FORM</Source>
+		<Category>R</Category>
+		<Processing>NONCRUD</Processing>
+		<AssociatedWith>null</AssociatedWith>
+		<Occurances>2</Occurances>
+		<Migrate>N</Migrate>
+		<SqlStatement>
+			DECLARE recstat VARCHAR2(20) := :System.record_status;
+			startitm VARCHAR2(61) := :System.cursor_item; rel_id
+			Relation;
+
+			BEGIN IF ( recstat = 'NEW' or recstat = 'INSERT' ) THEN
+			RETURN; END IF;
+
+			IF ( (:DEPT.DEPTNO is not null) ) THEN rel_id :=
+			Find_Relation('DEPT.DEPT_EMP'); Query_Master_Details(rel_id,
+			'EMP'); END IF;
+
+
+			IF ( :System.cursor_item &lt;&gt; startitm ) THEN
+			Go_Item(startitm); Check_Package_Failure; END IF; END;
+		</SqlStatement>
+		<Builtins>null</Builtins>
+		<Alternative>null</Alternative>
+	</Rec>
+	<Rec Name="DEPT.ON-CHECK-DELETE-MASTER">
+		<BlockName>DEPT</BlockName>
+		<Type>TRIGGER</Type>
+		<Source>FORM</Source>
+		<Category>R</Category>
+		<Processing>NONCRUD</Processing>
+		<AssociatedWith>null</AssociatedWith>
+		<Occurances>0</Occurances>
+		<Migrate>N</Migrate>
+		<SqlStatement>DECLARE 
+  Dummy_Define CHAR(1); 
+
+  CURSOR EMP_cur IS      
+    SELECT 1 FROM EMP E     
+    WHERE E.DEPTNO = :DEPT.DEPTNO; 
+
+BEGIN 
+
+  OPEN EMP_cur;     
+  FETCH EMP_cur INTO Dummy_Define;     
+  IF ( EMP_cur%found ) THEN     
+    Message('Cannot delete master record when matching detail records exist.');     
+    CLOSE EMP_cur;     
+    RAISE Form_Trigger_Failure;     
+  END IF; 
+  CLOSE EMP_cur; 
+
+END;</SqlStatement>
+		<!-- <Builtins> and <Alternative> tags are absent here. -->
+	</Rec>
+	<Rec Name="CONTROLS.PUSH_POST_QUERY.WHEN-BUTTON-PRESSED">
+		<BlockName>CONTROLS</BlockName>
+		<ItemName>null</ItemName>
+		<Type>TRIGGER</Type>
+		<Source>FORM</Source>
+		<Category>R</Category>
+		<Processing>NONCRUD</Processing>
+		<Occurances>0</Occurances>
+		<Migrate>Y</Migrate>
+		<SqlStatement>begin 
+ 
+   select count(empno) into :dept.EMP_COUNT 
+     from emp 
+     where deptno = :dept.deptno ; 
+     
+  set_item_property('dept.LOC',enabled,property_false); 
+     
+ exception 
+  when others then 
+  :dept.EMP_COUNT := 0; 
+
+ END;</SqlStatement>
+		<Builtins>set_item_property</Builtins>
+		<Alternative>METHOD_set_item_property</Alternative>
+	</Rec>
+	<Rec Name="ON-CLEAR-DETAILS">
+	<!-- <BlockName> absent here means it is form level trigger. -->
+		<Type>TRIGGER</Type>
+		<Source>FORM</Source>
+		<Category>U</Category>
+		<Processing>NONCRUD</Processing>
+		<AssociatedWith>ON-POPULATE-DETAILS, QUERY_MASTER_DETAILS, CLEAR_ALL_MASTER_DETAILS</AssociatedWith>
+		<Occurances>0</Occurances>
+		<Migrate>N</Migrate>
+		<SqlStatement>SqlStatement</SqlStatement>
+		<Builtins>Builtins</Builtins>
+		<Alternative>Alternative</Alternative>
+	</Rec>
+	<Rec Name="QUERY_MASTER_DETAILS">
+		<BlockName>BlockName</BlockName>
+		<ItemName>ItemName</ItemName>
+		<Type>PROCEDURE</Type>
+		<Source>FORM</Source>
+		<Category>U</Category>
+		<Processing>NONCRUD</Processing>
+		<AssociatedWith>ON-POPULATE-DETAILS</AssociatedWith>
+		<Occurances>1</Occurances>
+		<Migrate>N</Migrate>
+		<SqlStatement>PROCEDURE Query_Master_Details(rel_id Relation,detail VARCHAR2) IS 
+  oldmsg VARCHAR2(2); 
+  reldef VARCHAR2(5);  
+BEGIN 
+
+  reldef := Get_Relation_Property(rel_id, DEFERRED_COORDINATION); 
+  oldmsg := :System.Message_Level; 
+
+  IF reldef = 'FALSE' THEN 
+    Go_Block(detail); 
+    Check_Package_Failure; 
+    :System.Message_Level := '10'; 
+    Execute_Query; 
+    :System.Message_Level := oldmsg; 
+  ELSE 
+
+    Set_Block_Property(detail, COORDINATION_STATUS, NON_COORDINATED); 
+  END IF; 
+ 
+EXCEPTION 
+    WHEN Form_Trigger_Failure THEN 
+      :System.Message_Level := oldmsg; 
+      RAISE; 
+END Query_Master_Details;</SqlStatement>
+
+	</Rec>
+	<Rec Name="CLEAR_ALL_MASTER_DETAILS">
+
+		<Type>PROCEDURE</Type>
+		<Source>FORM</Source>
+		<Category>U</Category>
+		<Processing>NONCRUD</Processing>
+		<Occurances>1</Occurances>
+		<Migrate>N</Migrate>
+		<SqlStatement>PROCEDURE Clear_All_Master_Details IS 
+  mastblk  VARCHAR2(30);   
+  coordop  VARCHAR2(30);   
+  trigblk  VARCHAR2(30);  
+  startitm VARCHAR2(61);  
+  frmstat  VARCHAR2(15);   
+  curblk   VARCHAR2(30);   
+  currel   VARCHAR2(30);   
+  curdtl   VARCHAR2(30);  
+ 
+  FUNCTION First_Changed_Block_Below(Master VARCHAR2) 
+  RETURN VARCHAR2 IS 
+    curblk VARCHAR2(30);  
+    currel VARCHAR2(30);   
+    retblk VARCHAR2(30);   
+  BEGIN 
+ 
+    curblk := Master; 
+    currel := Get_Block_Property(curblk,  FIRST_MASTER_RELATION); 
+ 
+    WHILE currel IS NOT NULL LOOP 
+ 
+      curblk := Get_Relation_Property(currel, DETAIL_NAME); 
+
+      IF ( Get_Block_Property(curblk, STATUS) = 'CHANGED' ) THEN 
+        RETURN curblk; 
+      ELSE 
+ 
+        retblk := First_Changed_Block_Below(curblk); 
+
+        IF retblk IS NOT NULL THEN 
+          RETURN retblk; 
+        ELSE 
+
+          currel := Get_Relation_Property(currel, NEXT_MASTER_RELATION); 
+        END IF; 
+      END IF; 
+    END LOOP; 
+ 
+
+    RETURN NULL; 
+  END First_Changed_Block_Below; 
+ 
+BEGIN 
+
+  mastblk  := :System.Master_Block; 
+  coordop  := :System.Coordination_Operation; 
+  trigblk  := :System.Trigger_Block; 
+  startitm := :System.Cursor_Item; 
+  frmstat  := :System.Form_Status; 
+ 
+ 
+  IF coordop NOT IN ('CLEAR_RECORD', 'SYNCHRONIZE_BLOCKS') THEN 
+ 
+    IF mastblk = trigblk THEN 
+ 
+      IF frmstat = 'CHANGED' THEN 
+        curblk := First_Changed_Block_Below(mastblk); 
+
+        IF curblk IS NOT NULL THEN 
+          Go_Block(curblk); 
+          Check_Package_Failure; 
+          Clear_Block(ASK_COMMIT); 
+
+          IF NOT ( :System.Form_Status = 'QUERY' 
+                   OR :System.Block_Status = 'NEW' ) THEN 
+            RAISE Form_Trigger_Failure; 
+          END IF; 
+        END IF; 
+      END IF; 
+    END IF; 
+  END IF; 
+ 
+ 
+  currel := Get_Block_Property(trigblk, FIRST_MASTER_RELATION); 
+  WHILE currel IS NOT NULL LOOP 
+    curdtl := Get_Relation_Property(currel, DETAIL_NAME); 
+    IF Get_Block_Property(curdtl, STATUS) &lt;&gt; 'NEW'  THEN 
+      Go_Block(curdtl); 
+      Check_Package_Failure; 
+      Clear_Block(NO_VALIDATE); 
+      IF :System.Block_Status &lt;&gt; 'NEW' THEN 
+        RAISE Form_Trigger_Failure; 
+      END IF; 
+    END IF; 
+    currel := Get_Relation_Property(currel, NEXT_MASTER_RELATION); 
+  END LOOP; 
+ 
+
+  IF :System.Cursor_Item &lt;&gt; startitm THEN 
+    Go_Item(startitm); 
+    Check_Package_Failure; 
+  END IF; 
+ 
+EXCEPTION 
+  WHEN Form_Trigger_Failure THEN 
+    IF :System.Cursor_Item &lt;&gt; startitm THEN 
+      Go_Item(startitm); 
+    END IF; 
+    RAISE; 
+ 
+END Clear_All_Master_Details; </SqlStatement>
+
+	</Rec>
+
+
+
+</R3PlSqlMap>

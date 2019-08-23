@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Rules xmlns:tns="http://www.release3.com/rules"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.release3.com/rules rules.xsd ">
+	<tns:DatabaseBlockRule name="Rule1">
+		<tns:IsDBBlockType>true</tns:IsDBBlockType>
+		<tns:QueryDataSourceType>Table</tns:QueryDataSourceType>
+		<tns:HasQueryDataSourceName>true</tns:HasQueryDataSourceName>
+		<tns:Result>DBBlock</tns:Result>
+	</tns:DatabaseBlockRule>
+	<tns:DatabaseBlockRule name="Rule2">
+		<tns:IsDBBlockType>true</tns:IsDBBlockType>
+		<tns:QueryDataSourceType>Other</tns:QueryDataSourceType>
+		<tns:HasQueryDataSourceName>true</tns:HasQueryDataSourceName>
+		<tns:Result>DBBlock</tns:Result>
+	</tns:DatabaseBlockRule>
+	<tns:DatabaseBlockRule name="Rule3">
+		<tns:IsDBBlockType>true</tns:IsDBBlockType>
+		<tns:QueryDataSourceType>Table</tns:QueryDataSourceType>
+		<tns:HasQueryDataSourceName>false</tns:HasQueryDataSourceName>
+		<tns:Result>DBBlock</tns:Result>
+	</tns:DatabaseBlockRule>
+	<tns:DatabaseBlockRule name="Rule4">
+		<tns:IsDBBlockType>true</tns:IsDBBlockType>
+		<tns:QueryDataSourceType>Other</tns:QueryDataSourceType>
+		<tns:HasQueryDataSourceName>false</tns:HasQueryDataSourceName>
+		<tns:Result>NonDBBlock</tns:Result>
+	</tns:DatabaseBlockRule>
+	<tns:DatabaseBlockRule name="Rule5">
+		<tns:IsDBBlockType>false</tns:IsDBBlockType>
+		<tns:QueryDataSourceType>Table</tns:QueryDataSourceType>
+		<tns:HasQueryDataSourceName>true</tns:HasQueryDataSourceName>
+		<tns:Result>NonDBBlock</tns:Result>
+	</tns:DatabaseBlockRule>
+	<tns:DatabaseBlockRule name="Rule6">
+		<tns:IsDBBlockType>false</tns:IsDBBlockType>
+		<tns:QueryDataSourceType>Other</tns:QueryDataSourceType>
+		<tns:HasQueryDataSourceName>true</tns:HasQueryDataSourceName>
+		<tns:Result>NonDBBlock</tns:Result>
+	</tns:DatabaseBlockRule>
+	<tns:DatabaseBlockRule name="Rule7">
+		<tns:IsDBBlockType>false</tns:IsDBBlockType>
+		<tns:QueryDataSourceType>Table</tns:QueryDataSourceType>
+		<tns:HasQueryDataSourceName>false</tns:HasQueryDataSourceName>
+		<tns:Result>NonDBBlock</tns:Result>
+	</tns:DatabaseBlockRule>
+	<tns:DatabaseBlockRule name="Rule8">
+		<tns:IsDBBlockType>false</tns:IsDBBlockType>
+		<tns:QueryDataSourceType>Other</tns:QueryDataSourceType>
+		<tns:HasQueryDataSourceName>false</tns:HasQueryDataSourceName>
+		<tns:Result>NonDBBlock</tns:Result>
+	</tns:DatabaseBlockRule>
+</tns:Rules>

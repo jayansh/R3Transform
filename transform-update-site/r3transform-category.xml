@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/R3Transform.feature_1.0.0.jar" id="R3Transform.feature" version="1.0.0">
+      <category name="com.release3.transform"/>
+   </feature>
+   <category-def name="com.release3.transform" label="R3Transform"/>
+</site>

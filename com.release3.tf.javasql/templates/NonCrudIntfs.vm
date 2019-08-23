@@ -1,0 +1,12 @@
+package ${applicationName}.${formName}.control;
+import		javax.faces.event.ActionEvent;	
+public interface ${formName}_NonCrudIntfs{
+	
+#foreach ($mapEntry in $nonCrudMethodsMap.entrySet())
+	
+	   			public void ${mapEntry.key};
+    			
+    
+    			
+#end
+   }

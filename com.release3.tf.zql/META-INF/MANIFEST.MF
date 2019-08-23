@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Zql
+Bundle-SymbolicName: com.release3.tf.zql
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.release3.tf.zql.ZQLPlugin
+Bundle-Vendor: RELEASE3
+Require-Bundle: org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy

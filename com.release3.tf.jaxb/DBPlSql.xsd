@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.release3.com/DBPlSql"
+	xmlns:tns="http://www.release3.com/DBPlSql" elementFormDefault="qualified">
+
+	<element name="DBPlSql">
+		<complexType>
+			<sequence>
+				<element name="Row" maxOccurs="unbounded" minOccurs="0">
+					<complexType>
+						<sequence>
+							<element name="ObjectName" type="string"></element>
+							<element name="ObjectType" type="string"></element>
+							<element name="FuncProcName" type="string"></element>
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+
+
+
+
+</schema>

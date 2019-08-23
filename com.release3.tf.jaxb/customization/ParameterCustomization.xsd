@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.release3.com/Customization/Parameter"
+	xmlns:tns="http://www.release3.com/Customization/Parameter"
+	elementFormDefault="qualified">
+
+	<element name="Parameter" type="tns:ParameterType"></element>
+
+	<complexType name="ParameterType">
+		<attribute name="Name" type="string"></attribute>
+		<attribute name="Block" type="string"></attribute>
+		<attribute name="Item" type="string"></attribute>
+		<attribute name="Type" type="string"></attribute>
+		<attribute name="ViewPortForm" type="string"></attribute>
+		<attribute name="ViewPort" type="string"></attribute>
+		<attribute name="Canvas" type="string"></attribute>
+		<attribute name="Formname" type="string"></attribute>
+		<attribute name="Selected" type="boolean"></attribute>
+	</complexType>
+</schema>

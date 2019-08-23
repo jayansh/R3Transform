@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="com.release3.transform.pref.R3TransformPreferenceInitializer">
+      </initializer>
+   </extension>
+   <extension
+         id="com.release3.transform.pref"
+         name="com.release3.transform.pref"
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="com.release3.transform.pref.TransformWorkbenchPreferencePage"
+            id="com.release3.transform.pref.preferencePages.Transform"
+            name="Transform Preferences">
+      </page><page
+            category="com.release3.transform.pref.preferencePages.Transform"
+            class="com.release3.transform.pref.DatabasePreferencePage"
+            id="com.release3.transform.pref.DatabasePreferencePage"
+            name="Database Preferences">
+      </page>
+      <page
+            category="com.release3.transform.pref.preferencePages.Transform"
+            class="com.release3.transform.pref.UserLoginPreferencePage"
+            id="com.release3.transform.pref.userlogin"
+            name="User Connection Preferences">
+      </page>
+      <page
+            category="com.release3.transform.pref.preferencePages.Transform"
+            class="com.release3.transform.pref.TriggerListPreferencePage"
+            id="com.release3.transform.pref.TriggerListPreference"
+            name="TriggerList Preference">
+      </page>
+      <page
+            category="com.release3.transform.pref.preferencePages.Transform"
+            class="com.release3.transform.pref.SqlwaysWorkbenchPreferencePage"
+            id="com.release3.transform.pref.SQLWays"
+            name="Ispirer SQLWays Preferences">
+      </page>
+   </extension>
+
+</plugin>

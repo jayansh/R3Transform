@@ -1,0 +1,20 @@
+package ${applicationName}.${formName}.model;
+
+public class ${formName}_${blockName}_UI{
+	
+    #foreach( $builtin in $builtinList )
+    			private String
+    			${builtin.getItemName()}${builtin.getPropertyName()};
+    			public void set${builtin.getItemName()}${builtin.getPropertyName()}(String
+    			propertyValue){
+    			this.${builtin.getItemName()}${builtin.getPropertyName()}=propertyValue;
+    			}
+    
+    			public
+    			String get${builtin.getItemName()}${builtin.getPropertyName()}(){
+    			return
+    			this.${builtin.getItemName()}${builtin.getPropertyName()};
+    			}
+    			
+    	#end	
+}

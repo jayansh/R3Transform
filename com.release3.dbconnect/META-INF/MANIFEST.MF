@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Dbconnect Plug-in
+Bundle-SymbolicName: com.release3.dbconnect
+Bundle-Version: 1.0.0
+Bundle-Activator: com.release3.dbconnect.DBConnectorPlugin
+Bundle-Vendor: RELEASE3
+Require-Bundle: org.eclipse.core.runtime,
+ com.release3.tf.core.form;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: lib/db2jcc_license_cu.jar,
+ lib/db2jcc.jar,
+ lib/edb-jdbc14.jar,
+ lib/ojdbc14.jar,
+ .
+Export-Package: com.release3.dbconnect

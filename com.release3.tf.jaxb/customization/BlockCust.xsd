@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.release3.com/Customization/BlockCust"
+	xmlns:tns="http://www.release3.com/Customization/BlockCust"
+	elementFormDefault="qualified" xmlns:Q1="http://www.release3.com/Customization/Sequence" xmlns:Q2="http://www.release3.com/Customization/Parameter">
+	
+
+
+    <import schemaLocation="ParameterCustomization.xsd" namespace="http://www.release3.com/Customization/Parameter"></import>
+    <import schemaLocation="SequenceCustomization.xsd" namespace="http://www.release3.com/Customization/Sequence"></import>
+    <element name="BlockCust" type="tns:BlockCustType"></element>
+
+	<complexType name="BlockCustType">
+		<sequence>
+			<element name="Parameter" maxOccurs="unbounded"
+				minOccurs="0" type="Q2:ParameterType">
+			</element>
+			<element name="Sequence" maxOccurs="unbounded" minOccurs="0"
+				type="Q1:SequenceType">
+			</element>
+		</sequence>
+		<attribute name="Name" type="string"></attribute>
+		<attribute name="Immediate" type="boolean"></attribute>
+	</complexType>
+</schema>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="r3transform.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="R3 Perspective"
+            class="r3transform.Perspective"
+            id="R3Transform.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            name="R3Transform"
+            allowMultiple="false"
+            icon="icons/r3_temp16X16.GIF"
+            class="r3transform.View"
+            id="R3Transform.view">
+      </view>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="R3Transform.application"
+            name="R3Transform">
+         <property
+               name="appName"
+               value="R3Transform">
+         </property>
+         <property
+               name="aboutImage"
+               value="transform_logo2.GIF">
+         </property>
+         <property
+               name="aboutText"
+               value="Release3 Transform Toolkit - Freeware Edition&#x0A;Version: 6.0 M3&#x0A;Release Date: 06 May 2013&#x0A;(c) Copyright Release3 - A Div. of ObanSoft Inc. and others  2012. All rights reserved.&#x0A;Visit http://www.release3.com">
+         </property>
+         <property
+               name="windowImages"
+               value="icons/r3_temp16X16.GIF">
+         </property>
+         <property
+               name="startupProgressRect"
+               value="20,290,430,15">
+         </property>
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
+         <property
+               name="startupForegroundColor"
+               value="804000">
+         </property>
+         <property
+               name="startupMessageRect"
+               value="20,270,429,15">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="com.release3.transform.commands.ExitHandler"
+            id="R3Transform.Exit"
+            name="Exit">
+      </command>
+      <command
+            defaultHandler="com.release3.transform.commands.SwitchWorkspaceHandler"
+            id="R3Transform.switchWorkspace"
+            name="Switch Workspace">
+      </command>
+       <command
+            defaultHandler="com.release3.transform.commands.OpenFileHandler"
+            id="launcher.openFile"
+            name="Open file">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu">
+         <menu
+               id="fileMenu"
+               label="File"
+               sibling_order="&lt;command&#x0D;&#x0A;                  commandId=&quot;launcher.openFile&quot;&#x0D;&#x0A;                  style=&quot;push&quot;&#x0D;&#x0A;                  tooltip=&quot;Open file&quot;&gt;&#x0D;&#x0A;            &lt;/command&gt;">
+            <command
+                  commandId="org.eclipse.ui.edit.text.openLocalFile"
+                  label="Open file"
+                  style="push"
+                  tooltip="Open file">
+            </command>
+            <command
+                  commandId="R3Transform.switchWorkspace"
+                  label="Switch Workspace"
+                  style="push"
+                  tooltip="Switch Workspace">
+            </command>
+            <command
+                  commandId="org.eclipse.ui.file.exit"
+                  label="Exit"
+                  style="push"
+                  tooltip="Exits the application">
+            </command>
+         </menu>
+         <menu
+               id="editMenu"
+               label="Edit">
+            <command
+                  commandId="org.eclipse.ui.edit.undo"
+                  label="Undo"
+                  style="push">
+            </command>
+            <command
+                  commandId="org.eclipse.ui.edit.redo"
+                  label="Redo"
+                  style="push">
+            </command>
+            <separator
+                  name="R3Transform.separator3"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="org.eclipse.ui.edit.cut"
+                  label="Cut"
+                  style="push">
+            </command>
+            <command
+                  commandId="org.eclipse.ui.edit.copy"
+                  label="Copy"
+                  style="push">
+            </command>
+            <command
+                  commandId="org.eclipse.ui.edit.paste"
+                  label="Paste"
+                  style="push">
+            </command>
+            <separator
+                  name="R3Transform.separator1"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="org.eclipse.ui.edit.delete"
+                  label="Delete"
+                  style="push">
+            </command>
+            <command
+                  commandId="org.eclipse.ui.edit.selectAll"
+                  label="Select All"
+                  style="push">
+            </command>
+            <separator
+                  name="R3Transform.separator2"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="org.eclipse.ui.edit.findReplace"
+                  label="Find/Replace"
+                  style="push"
+                  tooltip="Find/Replace">
+            </command>
+         </menu>
+         <menu
+               id="windowMenu"
+               label="Window">
+            <command
+                  commandId="org.eclipse.ui.views.showView"
+                  id="showView"
+                  style="push"
+                  tooltip="Show View">
+            </command>
+            <command
+                  commandId="org.eclipse.ui.window.preferences"
+                  id="preferences"
+                  style="push"
+                  tooltip="preferences">
+            </command>
+         </menu>
+         <menu
+               id="helpMenu"
+               label="Help">
+            <command
+                  commandId="org.eclipse.ui.help.aboutAction"
+                  id="About"
+                  style="push"
+                  tooltip="About R3Transform">
+            </command>
+         </menu>
+      </menuContribution>
+     
+     <menuContribution locationURI="menu:org.eclipse.ui.main.menu?after=editMenu">
+        <menu label="Search"
+              mnemonic="%searchMenu.mnemonic"
+              id="org.eclipse.search.menu">
+           <separator name="internalDialogGroup" visible="false" />
+           <separator name="dialogGroup" visible="false" />
+           <separator name="fileSearchContextMenuActionsGroup"
+                      visible="true" />
+           <separator name="contextMenuActionsGroup" visible="true" />
+           <separator name="occurencesActionsGroup" visible="true" />
+           <separator name="extraSearchGroup" visible="true" />
+        </menu>
+     </menuContribution>
+      
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="findReplace.toolbar">
+            <command
+                  commandId="org.eclipse.ui.edit.findReplace"
+                  disabledIcon="icons/r3_temp16X16.GIF"
+                  icon="icons/r3_temp16X16.GIF"
+                  id="findReplace"
+                  style="push">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            id="R3Transform.actionSwitchWorkspace"
+            label="Switch Workspace"
+            visible="true">
+         <action
+               class="r3transform.ActionSwitchWorkspace"
+               id="R3Transform.actionSwitchWorkspace"
+               label="Switch Workspace"
+               menubarPath="file/switchWorkspace"
+               style="push"
+               tooltip="Switch Workspace">
+         </action>
+      </actionSet>
+   </extension>
+   <extension
+         id="SpecialCharPreference"
+         name="SpecialCharPreference"
+         point="com.release3.tf.ui.specialchar.pref.SpecialCharPreference">
+      <class
+            class="com.release3.transform.ui.SpecialCharPreference">
+      </class>
+   </extension>
+
+</plugin>

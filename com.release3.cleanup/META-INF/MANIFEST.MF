@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Cleanup
+Bundle-SymbolicName: com.release3.cleanup
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.release3.cleanup.Activator
+Bundle-Vendor: RELEASE3
+Require-Bundle: org.eclipse.core.runtime,
+ org.apache.log4j;bundle-version="1.2.12",
+ org.apache.ant
+Bundle-ActivationPolicy: lazy
+Import-Package: org.apache.log4j,
+ org.apache.tools.ant
+Export-Package: com.release3.cleanup;uses:="org.eclipse.core.runtime,org.osgi.framework,org.apache.tools.ant"

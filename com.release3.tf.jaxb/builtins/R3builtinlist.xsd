@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.release3.com/R3Builtin/builtinlist"
+	 elementFormDefault="qualified" xmlns:Q1="http://www.release3.com/R3Builtin/builtinlist">
+
+    
+			<element name="R3Builtlist" >
+				<complexType>
+					<sequence>
+						
+						<element name="BuiltinAction"
+							type="Q1:BuiltinsMap" maxOccurs="unbounded" minOccurs="0">
+						</element>
+					</sequence>
+					<attribute name="Name" type="string"></attribute>
+				</complexType>
+			</element>
+		
+    <complexType name="BuiltinsMap">
+    	<sequence>
+
+    		<element name="JavaEquivalentBuiltin" type="string"
+    			maxOccurs="1" minOccurs="0">
+    		</element>
+    		<element name="CrudEquivalentBuiltin" type="string" maxOccurs="1" minOccurs="0"></element>
+    	</sequence>
+    	<attribute name="FormBuiltin" type="string"></attribute>
+    </complexType>
+</schema>

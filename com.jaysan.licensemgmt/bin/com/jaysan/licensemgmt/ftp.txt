@@ -1,0 +1,8 @@
+keytool -genkey -keystore ftpPrivateKeys.store -alias TF -validity 36500
+
+keytool -export -keystore ftpPrivateKeys.store -alias TF
+
+keytool -import -keystore ftpPublicCerts.store -alias TF
+
+CN=TF Demo, OU=TransForm, O=Release3, L=Mississauga, ST=on, C=ca
+password=Jaysan@123

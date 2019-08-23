@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.release3.com/rules"
+	xmlns:tns="http://www.release3.com/rules" elementFormDefault="qualified">
+	<element name="Rules">
+
+		<complexType >
+		
+			
+			<sequence>
+				<element name="DatabaseBlockRule" maxOccurs="8" minOccurs="1" >
+					<complexType>
+						<sequence>
+							<element name="IsDBBlockType" type="boolean"></element>
+
+							<element name="QueryDataSourceType">
+
+								<simpleType>
+									<restriction base="string">
+										<enumeration value="Table" />
+										<enumeration value="Other" />
+									</restriction>
+								</simpleType>
+
+							</element>
+
+							<element name="HasQueryDataSourceName" type="boolean"></element>
+
+							<element name="Result">
+								<simpleType>
+									<restriction base="string">
+										<enumeration value="DBBlock" />
+										<enumeration value="NonDBBlock" />
+									</restriction>
+								</simpleType>
+
+							</element>
+
+						</sequence>
+						<attribute name="name" use="required"/>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+
+	</element>
+
+
+
+
+
+</schema>

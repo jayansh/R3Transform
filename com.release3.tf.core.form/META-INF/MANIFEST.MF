@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Form Plug-in
+Bundle-SymbolicName: com.release3.tf.core.form
+Bundle-Version: 1.1.0
+Bundle-Activator: com.release3.tf.core.form.FormPlugin
+Bundle-Vendor: RELEASE3
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ui;bundle-version="3.4.2",
+ com.release3.transform.lib;bundle-version="1.0.0",
+ com.release3.tf.core;bundle-version="1.0.0",
+ com.release3.sqlparsing;bundle-version="1.0.0",
+ com.release3.tf.jaxb;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Export-Package: com.converter.toolkit.ui.control,
+ com.converter.toolkit.ui.custom,
+ com.release3.tf.core.form,
+ com.release3.tf.migration.model,
+ com.release3.transform.constants,
+ oracle.jdbc.driver
+Bundle-ClassPath: ojdbc14.jar,
+ .

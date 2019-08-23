@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<R3TriggerList Name="TRIGGER_LIST" xmlns="http://www.release3.com/R3Builtin/triglist"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.release3.com/R3Builtin/triglist R3TriggerList.xsd ">
+	
+<Rec Name="Key-up">
+<Jequiv>keyup</Jequiv>
+</Rec>
+
+<Rec Name="Key-down">
+<Jequiv>keydown</Jequiv>
+</Rec>
+
+<Rec Name="Key-next">
+<Jequiv>keydown</Jequiv>
+</Rec>
+
+<Rec Name="Key-press">
+<Jequiv>keypress</Jequiv>
+</Rec>
+
+<Rec Name="Lock-XXX">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="On-Check-Delete-Master">
+<Jequiv>onchange</Jequiv>
+</Rec>
+
+<Rec Name="On-Check-Unique ">
+<Jequiv>AJavamethod</Jequiv>
+</Rec>
+
+<Rec Name="On-Clear-Details">
+<Jequiv>onclear</Jequiv>
+</Rec>
+
+<Rec Name="On-Close ">
+<Jequiv>onclose</Jequiv>
+</Rec>
+
+<Rec Name="On-Column-Security">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="On-Commit ">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="On-Count ">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="On-Delete">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="On-Error">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="On-Fetch ">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="On-Insert">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="On-Lock ">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="On-Logon">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="On-Logout">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="On-Message">
+<Jequiv>requiredMessage</Jequiv>
+</Rec>
+
+<Rec Name="On-Populate-Details">
+<Jequiv>onchange</Jequiv>
+</Rec>
+
+<Rec Name="On-Rollback ">
+<Jequiv>onchange</Jequiv>
+</Rec>
+
+<Rec Name="On-Savepoint ">
+<Jequiv>onchange</Jequiv>
+</Rec>
+
+<Rec Name="On-Select ">
+<Jequiv>onselect</Jequiv>
+</Rec>
+
+<Rec Name="On-Sequence-Number ">
+<Jequiv>onchange</Jequiv>
+</Rec>
+
+<Rec Name="On-Update">
+<Jequiv>AJavamethod</Jequiv>
+</Rec>
+
+<Rec Name="Post-Block">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="Post-Change ">
+<Jequiv>onchange</Jequiv>
+</Rec>
+
+<Rec Name="Post-Database-Commit">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="Post-Delete">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="Post-Form">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="Post-Forms-Commit">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="Post-Insert">
+<Jequiv>AJavamethod</Jequiv>
+</Rec>
+
+<Rec Name="Post-Logon ">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="Post-Logout ">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="Post-Query">
+<Jequiv>crud</Jequiv>
+</Rec>
+
+<Rec Name="Post-Record">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="Post-Select ">
+<Jequiv>on-select</Jequiv>
+</Rec>
+
+<Rec Name="Post-Text-Item">
+<Jequiv>onmouseout</Jequiv>
+</Rec>
+
+<Rec Name="Post-Update">
+<Jequiv>crud</Jequiv>
+</Rec>
+
+<Rec Name="Pre-Block">
+<Jequiv>AJavamethod</Jequiv>
+</Rec>
+
+<Rec Name="Pre-Commit">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="Pre-Delete">
+<Jequiv>crud</Jequiv>
+</Rec>
+
+<Rec Name="Pre-Form">
+<Jequiv>crud</Jequiv>
+</Rec>
+
+<Rec Name="Pre-Insert">
+<Jequiv>crud</Jequiv>
+</Rec>
+
+<Rec Name="Pre-Logon ">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="Pre-Logout ">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="Pre-Popup-Menu ">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="Pre-Query">
+<Jequiv>crud</Jequiv>
+</Rec>
+
+<Rec Name="Pre-Record">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="Pre-Select ">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="Pre-Text-Item">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="Pre-Update">
+<Jequiv>crud</Jequiv>
+</Rec>
+
+<Rec Name="Query-Procedure ">
+<Jequiv>AJavamethod</Jequiv>
+</Rec>
+
+<Rec Name="Update-Procedure ">
+<Jequiv>AJavamethod</Jequiv>
+</Rec>
+
+<Rec Name="User-Named ">
+<Jequiv>AJavamethod</Jequiv>
+</Rec>
+
+<Rec Name="When-Button-Pressed">
+<Jequiv>onkeydown</Jequiv>
+</Rec>
+
+<Rec Name="When-Checkbox-Changed">
+<Jequiv>onselectionchange</Jequiv>
+</Rec>
+
+<Rec Name="When-Clear-Block">
+<Jequiv>onclear</Jequiv>
+</Rec>
+
+<Rec Name="When-Create-Record">
+<Jequiv>AJavamethod</Jequiv>
+</Rec>
+
+<Rec Name="When-Database-Record">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="When-Form-Navigate ">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="When-Image-Activated">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="When-Image-Pressed">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="When-List-Activated ">
+<Jequiv>onselectionchange</Jequiv>
+</Rec>
+
+<Rec Name="When-Mouse-Click">
+<Jequiv>onclick</Jequiv>
+</Rec>
+
+<Rec Name="When-Mouse-DoubleClick">
+<Jequiv>ondblclick</Jequiv>
+</Rec>
+
+<Rec Name="When-Mouse-Down">
+<Jequiv>onmousedown</Jequiv>
+</Rec>
+
+<Rec Name="When-Mouse-Enter ">
+<Jequiv>onmouseover</Jequiv>
+</Rec>
+
+<Rec Name="When-Mouse-Leave ">
+<Jequiv>onmouseout</Jequiv>
+</Rec>
+
+<Rec Name="When-Mouse-Move ">
+<Jequiv>onmousemove</Jequiv>
+</Rec>
+
+<Rec Name="When-Mouse-Up">
+<Jequiv>onmouseup</Jequiv>
+</Rec>
+
+<Rec Name="When-New-Block-Instance">
+<Jequiv>onfocus</Jequiv>
+</Rec>
+
+<Rec Name="When-New-Form-Instance">
+<Jequiv>AJavamethod</Jequiv>
+</Rec>
+
+<Rec Name="When-New-Item-Instance">
+<Jequiv>onfocus</Jequiv>
+</Rec>
+
+<Rec Name="When-New-Record-Instance">
+<Jequiv>onfocus</Jequiv>
+</Rec>
+
+<Rec Name="When-Radio-Changed">
+<Jequiv>onchange</Jequiv>
+</Rec>
+
+<Rec Name="When-Remove-Record">
+<Jequiv>onchange</Jequiv>
+</Rec>
+
+<Rec Name="When-Tab-Page-Changed ">
+<Jequiv>onchange</Jequiv>
+</Rec>
+
+<Rec Name="When-Timer-Expired">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="When-Validate-Item">
+<Jequiv>validator</Jequiv>
+</Rec>
+
+<Rec Name="When-Validate-Record">
+<Jequiv>validator</Jequiv>
+</Rec>
+
+<Rec Name="When-Window-Activated">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+<Rec Name="When-Window-Closed">
+<Jequiv>onclose</Jequiv>
+</Rec>
+
+<Rec Name="When-Window-Deactivated">
+<Jequiv>onclose</Jequiv>
+</Rec>
+
+<Rec Name="When-Window-Resized">
+<Jequiv>donothing</Jequiv>
+</Rec>
+
+</R3TriggerList>

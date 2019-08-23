@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.release3.com/R3Builtin/triglist"
+	elementFormDefault="qualified">
+
+	<element name="R3TriggerList">
+		<complexType>
+			<sequence>
+				<element name="Rec" maxOccurs="unbounded" minOccurs="0">
+					<complexType>
+						<sequence>
+
+							<element name="Jequiv" type="string"></element>
+						</sequence>
+						<attribute name="Name" type="string"></attribute>
+					</complexType>
+
+				</element>
+			</sequence>
+			<attribute name="Name" type="string"></attribute>
+		</complexType>
+	</element>
+</schema>

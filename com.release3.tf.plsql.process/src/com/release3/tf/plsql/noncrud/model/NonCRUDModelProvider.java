@@ -1,0 +1,41 @@
+package com.release3.tf.plsql.noncrud.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.release3.javasql.JavaPlSqlType;
+import com.release3.tf.plsql.process.NonCRUDAnalysis;
+
+public class NonCRUDModelProvider {
+	private List<JavaPlSqlType> crudList;
+	private static NonCRUDModelProvider content;
+	private NonCRUDAnalysis nonCRUDAnalysis;
+
+	private NonCRUDModelProvider() {
+		crudList = new ArrayList<JavaPlSqlType>();
+	}
+
+	public static NonCRUDModelProvider getInstance() {
+		if (content != null) {
+			return content;
+		} else {
+			content = new NonCRUDModelProvider();
+			return content;
+		}
+	}
+
+	public void setNonCRUDAnalysis(NonCRUDAnalysis nonCRUDAnalysis) {
+		this.nonCRUDAnalysis = nonCRUDAnalysis;
+	}
+
+	public NonCRUDAnalysis getNonCRUDAnalysis() {
+		return nonCRUDAnalysis;
+	}
+
+	public List<JavaPlSqlType> getNonCRUDList() {
+		if (nonCRUDAnalysis != null) {
+			return nonCRUDAnalysis.getNonCrudList();
+		}
+		return crudList;
+	}
+}

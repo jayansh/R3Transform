@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.org/BuiltinsMap/" targetNamespace="http://www.example.org/BuiltinsMap/">
+    <element name="R3Builtins" type="tns:BuiltinsType"></element>
+    
+    <complexType name="BuiltinsType">
+    	<sequence>
+    		<element name="FormName" type="string"></element>
+    		<element name="Builtin" type="tns:BuiltinType"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="BuiltinType">
+    	<sequence>
+    		<element name="FormsProperty" type="string"></element>
+    		<element name="JavaProperty" type="string"></element>
+    	</sequence>
+    </complexType>
+</schema>

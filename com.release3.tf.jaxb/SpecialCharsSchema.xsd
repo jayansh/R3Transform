@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.release3.com/SpecialChars"
+	xmlns:tns="http://www.release3.com/SpecialChars" elementFormDefault="qualified">
+
+	<element name="SpecialCharsReplacerModel">
+		<complexType>
+			<sequence>
+				<element name="SpecialCharsReplacer" type="tns:SpecialCharsReplacer"
+					maxOccurs="unbounded" minOccurs="0"></element>
+			</sequence>
+		</complexType>
+	</element>
+
+	<complexType name="SpecialCharsReplacer">
+		<sequence>
+			<element name="specialChar" type="string"></element>
+			<element name="replacement" type="string"></element>
+		</sequence>
+	</complexType>
+
+
+</schema>

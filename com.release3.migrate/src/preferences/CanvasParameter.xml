@@ -1,0 +1,52 @@
+<GridBeanPreferences>
+
+  <columnInfo>
+    <columnType>convertedFormsDropDown</columnType>
+    <dbColumnName></dbColumnName>
+    <modelAccessName>viewPortForm</modelAccessName>
+    <sortOrder>2</sortOrder>
+    <sortType>asc</sortType>
+    <sortable>true</sortable>
+    <uiColumnName>Forms View Ports</uiColumnName>
+    <visible>true</visible>
+  </columnInfo>
+
+
+  <columnInfo>
+    <columnType>ViewPortsDropDown</columnType>
+    <dbColumnName></dbColumnName>
+    <modelAccessName>viewPort</modelAccessName>
+    <sortOrder>1</sortOrder>
+    <sortType>asc</sortType>
+    <sortable>true</sortable>
+    <uiColumnName>View Port</uiColumnName>
+    <visible>true</visible>
+  </columnInfo>
+
+  <columnInfo>
+    <columnType>convertedFormsDropDown</columnType>
+    <dbColumnName></dbColumnName>
+    <modelAccessName>formname</modelAccessName>
+    <sortOrder>2</sortOrder>
+    <sortType>asc</sortType>
+    <sortable>true</sortable>
+    <uiColumnName>Forms list</uiColumnName>
+    <visible>true</visible>
+  </columnInfo>
+
+  <columnInfo>
+    <columnType>CanvasesDropDown</columnType>
+    <dbColumnName></dbColumnName>
+    <modelAccessName>canvas</modelAccessName>
+    <sortOrder>2</sortOrder>
+    <sortType>asc</sortType>
+    <sortable>true</sortable>
+    <uiColumnName>Canvas</uiColumnName>
+    <visible>true</visible>
+  </columnInfo>
+
+  <customComponent>/ParamGrid_customcomponents.jspx</customComponent>
+  <pagesize>5</pagesize>
+
+</GridBeanPreferences>
+

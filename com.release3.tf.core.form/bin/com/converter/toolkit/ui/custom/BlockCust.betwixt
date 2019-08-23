@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<info primitiveTypes="attribute">
+  <element name="BlockCust">
+    <attribute name="Name" property="name"/>
+    <attribute name="Immediate" property="immediate"/>
+    <element name="Parameter" property="parameter" updater="addParameter"/>
+    <element name="Sequence" property="sequence" updater="addSequence"/>
+     
+  </element>
+</info>
+                

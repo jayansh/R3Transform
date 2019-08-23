@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.release3.com/ProgramUnitGen"
+	elementFormDefault="qualified" xmlns:Q1="http://www.release3.com/ProgramUnitGen"
+	xmlns:Q2="http://xmlns.oracle.com/Forms">
+
+	<import schemaLocation="schema1.xsd" namespace="http://xmlns.oracle.com/Forms"></import>
+	<element name="R3ProgramUnitGen">
+
+		<complexType>
+
+			<sequence>
+				<element name="R3ProgramUnit" maxOccurs="unbounded"
+					minOccurs="0" type="Q1:R3ProgramUnit">
+				</element>
+			</sequence>
+			<attribute name="FormName" type="string"></attribute>
+		</complexType>
+	</element>
+	<complexType name="R3ProgramUnit">
+		<sequence>
+			<element name="R3ProgramUnit" maxOccurs="1" minOccurs="0"
+				type="Q2:ProgramUnit"></element>
+
+		</sequence>
+		<attribute name="toBeMigrate" type="boolean"></attribute>
+		<attribute name="MoveToDB" type="boolean"></attribute>
+		<attribute name="JavaMethod" type="string"></attribute>
+	</complexType>
+
+</schema>

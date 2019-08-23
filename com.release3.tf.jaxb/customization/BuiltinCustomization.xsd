@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.release3.com/Customization/Builtin" xmlns:tns="http://www.release3.com/Customization/Builtin" elementFormDefault="qualified">
+
+    <element name="Builtin" type="tns:BuiltinType"></element>
+    
+    <complexType name="BuiltinType">
+
+		<attribute name="BuiltinName" type="string" />
+		<attribute name="PropertyName" type="string" />
+		<attribute name="PropertyValue" type="string" />
+		<attribute name="ItemName" type="string" />
+		<attribute name="BlockName" type="string" />
+		<attribute name="FormName" type="string" />
+		<attribute name="Method" type="string" />
+		<attribute name="Type" type="string" />
+	</complexType>
+</schema>

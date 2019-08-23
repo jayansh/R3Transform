@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.release3.com/plsqlgen"
+	xmlns:tns="http://www.release3.com/plsqlgen" elementFormDefault="qualified"
+	xmlns:Q1="http://xmlns.oracle.com/Forms">
+	<import schemaLocation="schema1.xsd" namespace="http://xmlns.oracle.com/Forms"></import>
+
+	<element name="R3PreCustomization">
+		<complexType>
+			<sequence>
+				<element name="Trigger" minOccurs="0" maxOccurs="unbounded">
+					<complexType>
+
+						<sequence>
+							<element name="Parameter" type="tns:ParameterType"
+								maxOccurs="unbounded" minOccurs="0">
+							</element>
+							<element name="Builtin" type="tns:BuiltinType" maxOccurs="unbounded"
+								minOccurs="0"></element>
+							<element name="Refresh" type="tns:RefreshType" maxOccurs="unbounded"
+								minOccurs="0">
+							</element>
+						</sequence>
+						<attribute name="Block" use="optional" type="string" />
+						<attribute name="Item" use="optional" type="string" />
+
+
+						<attribute name="Jsfattr" type="string"></attribute>
+						<attribute name="plsql" type="string"></attribute>
+						<attribute name="MethodType" type="string"></attribute>
+					</complexType>
+				</element>
+
+
+			</sequence>
+			<attribute name="Name" type="string"></attribute>
+		</complexType>
+	</element>
+
+	<complexType name="ParameterType">
+		<attribute name="Name" type="string"></attribute>
+		<attribute name="Block" type="string"></attribute>
+		<attribute name="Item" type="string"></attribute>
+		<attribute name="Type" type="string"></attribute>
+		<attribute name="ViewPortForm" type="string"></attribute>
+		<attribute name="ViewPort" type="string"></attribute>
+		<attribute name="Canvas" type="string"></attribute>
+		<attribute name="Formname" type="string"></attribute>
+		<attribute name="Selected" type="boolean"></attribute>
+	</complexType>
+
+	<complexType name="RefreshType">
+		<attribute name="Block" type="string"></attribute>
+	</complexType>
+
+	<complexType name="BuiltinType">
+
+		<attribute name="BuiltinName" type="string" />
+		<attribute name="PropertyName" type="string" />
+		<attribute name="PropertyValue" type="string" />
+		<attribute name="ItemName" type="string" />
+		<attribute name="BlockName" type="string" />
+		<attribute name="FormName" type="string" />
+		<attribute name="Method" type="string" />
+		<attribute name="Type" type="string" />
+	</complexType>
+</schema>

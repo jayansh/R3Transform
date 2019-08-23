@@ -1,0 +1,1445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:R3Reservedlist Name="" xmlns:tns="http://release3.com/FormsKeywords" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://release3.com/FormsKeywords FormsKeywords.xsd ">
+  <Keyword Name=""/>
+  
+  <Keyword Name="ACCESS">
+
+</Keyword>
+<Keyword Name="ACCOUNT">
+
+</Keyword>
+<Keyword Name="ACTIVATE">
+
+</Keyword>
+<Keyword Name="ADD">
+
+</Keyword>
+<Keyword Name="ADMIN">
+
+</Keyword>
+<Keyword Name="ADVISE">
+
+</Keyword>
+<Keyword Name="AFTER">
+
+</Keyword>
+<Keyword Name="ALL">
+
+</Keyword>
+<Keyword Name="ALL_ROWS">
+
+</Keyword>
+<Keyword Name="ALLOCATE">
+
+</Keyword>
+<Keyword Name="ALTER">
+
+</Keyword>
+<Keyword Name="ANALYZE">
+
+</Keyword>
+<Keyword Name="AND">
+
+</Keyword>
+<Keyword Name="ANY">
+
+</Keyword>
+<Keyword Name="ARCHIVE">
+
+</Keyword>
+<Keyword Name="ARCHIVELOG">
+
+</Keyword>
+<Keyword Name="ARRAY">
+
+</Keyword>
+<Keyword Name="AS">
+
+</Keyword>
+<Keyword Name="ASC">
+
+</Keyword>
+<Keyword Name="AT">
+
+</Keyword>
+<Keyword Name="AUDIT">
+
+</Keyword>
+<Keyword Name="AUTHENTICATED">
+
+</Keyword>
+<Keyword Name="AUTHORIZATION">
+
+</Keyword>
+<Keyword Name="AUTOEXTEND">
+
+</Keyword>
+<Keyword Name="AUTOMATIC">
+
+</Keyword>
+<Keyword Name="BACKUP">
+
+</Keyword>
+<Keyword Name="BECOME">
+
+</Keyword>
+<Keyword Name="BEFORE">
+
+</Keyword>
+<Keyword Name="BEGIN">
+
+</Keyword>
+<Keyword Name="BETWEEN">
+
+</Keyword>
+<Keyword Name="BFILE">
+
+</Keyword>
+<Keyword Name="BITMAP">
+
+</Keyword>
+<Keyword Name="BLOB">
+
+</Keyword>
+<Keyword Name="BLOCK">
+
+</Keyword>
+<Keyword Name="BODY">
+
+</Keyword>
+<Keyword Name="BY">
+
+</Keyword>
+<Keyword Name="CACHE">
+
+</Keyword>
+<Keyword Name="CACHE_INSTANCES">
+
+</Keyword>
+<Keyword Name="CANCEL">
+
+</Keyword>
+<Keyword Name="CASCADE">
+
+</Keyword>
+<Keyword Name="CAST">
+
+</Keyword>
+<Keyword Name="CFILE">
+
+</Keyword>
+<Keyword Name="CHAINED">
+
+</Keyword>
+<Keyword Name="CHANGE">
+
+</Keyword>
+<Keyword Name="CHAR">
+
+</Keyword>
+<Keyword Name="CHAR_CS">
+
+</Keyword>
+<Keyword Name="CHARACTER">
+
+</Keyword>
+<Keyword Name="CHECK">
+
+</Keyword>
+<Keyword Name="CHECKPOINT">
+
+</Keyword>
+<Keyword Name="CHOOSE">
+
+</Keyword>
+<Keyword Name="CHUNK">
+
+</Keyword>
+<Keyword Name="CLEAR">
+
+</Keyword>
+<Keyword Name="CLOB">
+
+</Keyword>
+<Keyword Name="CLONE">
+
+</Keyword>
+<Keyword Name="CLOSE">
+
+</Keyword>
+<Keyword Name="CLOSE_CACHED_OPEN_CURSORS">
+
+</Keyword>
+<Keyword Name="CLUSTER">
+
+</Keyword>
+<Keyword Name="COALESCE">
+
+</Keyword>
+<Keyword Name="COLUMN">
+
+</Keyword>
+<Keyword Name="COLUMNS">
+
+</Keyword>
+<Keyword Name="COMMENT">
+
+</Keyword>
+<Keyword Name="COMMIT">
+
+</Keyword>
+<Keyword Name="COMMITTED">
+
+</Keyword>
+<Keyword Name="COMPATIBILITY">
+
+</Keyword>
+<Keyword Name="COMPILE">
+
+</Keyword>
+<Keyword Name="COMPLETE">
+
+</Keyword>
+<Keyword Name="COMPOSITE_LIMIT">
+
+</Keyword>
+<Keyword Name="COMPRESS">
+
+</Keyword>
+<Keyword Name="COMPUTE">
+
+</Keyword>
+<Keyword Name="CONNECT">
+
+</Keyword>
+<Keyword Name="CONNECT_TIME">
+
+</Keyword>
+<Keyword Name="CONSTRAINT">
+
+</Keyword>
+<Keyword Name="CONSTRAINTS">
+
+</Keyword>
+<Keyword Name="CONTENTS">
+
+</Keyword>
+<Keyword Name="CONTINUE">
+
+</Keyword>
+<Keyword Name="CONTROLFILE">
+
+</Keyword>
+<Keyword Name="CONVERT">
+
+</Keyword>
+<Keyword Name="COST">
+
+</Keyword>
+<Keyword Name="CPU_PER_CALL">
+
+</Keyword>
+<Keyword Name="CPU_PER_SESSION">
+
+</Keyword>
+<Keyword Name="CREATE">
+
+</Keyword>
+<Keyword Name="CURREN_USER">
+
+</Keyword>
+<Keyword Name="CURRENT">
+
+</Keyword>
+<Keyword Name="CURRENT_SCHEMA">
+
+</Keyword>
+<Keyword Name="CURSOR">
+
+</Keyword>
+<Keyword Name="CYCLE">
+
+</Keyword>
+<Keyword Name="DANGLING">
+
+</Keyword>
+<Keyword Name="DATABASE">
+
+</Keyword>
+<Keyword Name="DATAFILE">
+
+</Keyword>
+<Keyword Name="DATAFILES">
+
+</Keyword>
+<Keyword Name="DATAOBJNO">
+
+</Keyword>
+<Keyword Name="DATE">
+
+</Keyword>
+<Keyword Name="DBA">
+
+</Keyword>
+<Keyword Name="DBHIGH">
+
+</Keyword>
+<Keyword Name="DBLOW">
+
+</Keyword>
+<Keyword Name="DBMAC">
+
+</Keyword>
+<Keyword Name="DEALLOCATE">
+
+</Keyword>
+<Keyword Name="DEBUG">
+
+</Keyword>
+<Keyword Name="DEC">
+
+</Keyword>
+<Keyword Name="DECIMAL">
+
+</Keyword>
+<Keyword Name="DECLARE">
+
+</Keyword>
+<Keyword Name="DEFAULT">
+
+</Keyword>
+<Keyword Name="DEFERRABLE">
+
+</Keyword>
+<Keyword Name="DEFERRED">
+
+</Keyword>
+<Keyword Name="DEGREE">
+
+</Keyword>
+<Keyword Name="DELETE">
+
+</Keyword>
+<Keyword Name="DEREF">
+
+</Keyword>
+<Keyword Name="DESC">
+
+</Keyword>
+<Keyword Name="DIRECTORY">
+
+</Keyword>
+<Keyword Name="DISABLE">
+
+</Keyword>
+<Keyword Name="DISCONNECT">
+
+</Keyword>
+<Keyword Name="DISMOUNT">
+
+</Keyword>
+<Keyword Name="DISTINCT">
+
+</Keyword>
+<Keyword Name="DISTRIBUTED">
+
+</Keyword>
+<Keyword Name="DML">
+
+</Keyword>
+<Keyword Name="DOUBLE">
+
+</Keyword>
+<Keyword Name="DROP">
+
+</Keyword>
+<Keyword Name="DUMP">
+
+</Keyword>
+<Keyword Name="EACH">
+
+</Keyword>
+<Keyword Name="ELSE">
+
+</Keyword>
+<Keyword Name="ENABLE">
+
+</Keyword>
+<Keyword Name="END">
+
+</Keyword>
+<Keyword Name="ENFORCE">
+
+</Keyword>
+<Keyword Name="ENTRY">
+
+</Keyword>
+<Keyword Name="ESCAPE">
+
+</Keyword>
+<Keyword Name="EXCEPT">
+
+</Keyword>
+<Keyword Name="EXCEPTIONS">
+
+</Keyword>
+<Keyword Name="EXCHANGE">
+
+</Keyword>
+<Keyword Name="EXCLUDING">
+
+</Keyword>
+<Keyword Name="EXCLUSIVE">
+
+</Keyword>
+<Keyword Name="EXECUTE">
+
+</Keyword>
+<Keyword Name="EXISTS">
+
+</Keyword>
+<Keyword Name="EXPIRE">
+
+</Keyword>
+<Keyword Name="EXPLAIN">
+
+</Keyword>
+<Keyword Name="EXTENT">
+
+</Keyword>
+<Keyword Name="EXTENTS">
+
+</Keyword>
+<Keyword Name="EXTERNALLY">
+
+</Keyword>
+<Keyword Name="FAILED_LOGIN_ATTEMPTS">
+
+</Keyword>
+<Keyword Name="FAST">
+
+</Keyword>
+<Keyword Name="FILE">
+
+</Keyword>
+<Keyword Name="FIRST_ROWS">
+
+</Keyword>
+<Keyword Name="FLAGGER">
+
+</Keyword>
+<Keyword Name="FLOAT">
+
+</Keyword>
+<Keyword Name="FLOB">
+
+</Keyword>
+<Keyword Name="FLUSH">
+
+</Keyword>
+<Keyword Name="FOR">
+
+</Keyword>
+<Keyword Name="FORCE">
+
+</Keyword>
+<Keyword Name="FOREIGN">
+
+</Keyword>
+<Keyword Name="FREELIST">
+
+</Keyword>
+<Keyword Name="FREELISTS">
+
+</Keyword>
+<Keyword Name="FROM">
+
+</Keyword>
+<Keyword Name="FULL">
+
+</Keyword>
+<Keyword Name="FUNCTION">
+
+</Keyword>
+<Keyword Name="GLOBAL">
+
+</Keyword>
+<Keyword Name="GLOBAL_NAME">
+
+</Keyword>
+<Keyword Name="GLOBALLY">
+
+</Keyword>
+<Keyword Name="GRANT">
+
+</Keyword>
+<Keyword Name="GROUP">
+
+</Keyword>
+<Keyword Name="GROUPS">
+
+</Keyword>
+<Keyword Name="HASH">
+
+</Keyword>
+<Keyword Name="HASHKEYS">
+
+</Keyword>
+<Keyword Name="HAVING">
+
+</Keyword>
+<Keyword Name="HEADER">
+
+</Keyword>
+<Keyword Name="HEAP">
+
+</Keyword>
+<Keyword Name="IDENTIFIED">
+
+</Keyword>
+<Keyword Name="IDGENERATORS">
+
+</Keyword>
+<Keyword Name="IDLE_TIME">
+
+</Keyword>
+<Keyword Name="IF">
+
+</Keyword>
+<Keyword Name="IMMEDIATE">
+
+</Keyword>
+<Keyword Name="IN">
+
+</Keyword>
+<Keyword Name="INCLUDING">
+
+</Keyword>
+<Keyword Name="INCREMENT">
+
+</Keyword>
+<Keyword Name="IND_PARTITION">
+
+</Keyword>
+<Keyword Name="INDEX">
+
+</Keyword>
+<Keyword Name="INDEXED">
+
+</Keyword>
+<Keyword Name="INDEXES">
+
+</Keyword>
+<Keyword Name="INDICATOR">
+
+</Keyword>
+<Keyword Name="INITIAL">
+
+</Keyword>
+<Keyword Name="INITIALLY">
+
+</Keyword>
+<Keyword Name="INITRANS">
+
+</Keyword>
+<Keyword Name="INSERT">
+
+</Keyword>
+<Keyword Name="INSTANCE">
+
+</Keyword>
+<Keyword Name="INSTANCES">
+
+</Keyword>
+<Keyword Name="INSTEAD">
+
+</Keyword>
+<Keyword Name="INT">
+
+</Keyword>
+<Keyword Name="INTEGER">
+
+</Keyword>
+<Keyword Name="INTERMEDIATE">
+
+</Keyword>
+<Keyword Name="INTERSECT">
+
+</Keyword>
+<Keyword Name="INTO">
+
+</Keyword>
+<Keyword Name="IS">
+
+</Keyword>
+<Keyword Name="ISOLATION">
+
+</Keyword>
+<Keyword Name="ISOLATION_LEVEL">
+
+</Keyword>
+<Keyword Name="KEEP">
+
+</Keyword>
+<Keyword Name="KEY">
+
+</Keyword>
+<Keyword Name="KILL">
+
+</Keyword>
+<Keyword Name="LABEL">
+
+</Keyword>
+<Keyword Name="LAYER">
+
+</Keyword>
+<Keyword Name="LESS">
+
+</Keyword>
+<Keyword Name="LEVEL">
+
+</Keyword>
+<Keyword Name="LIBRARY">
+
+</Keyword>
+<Keyword Name="LIKE">
+
+</Keyword>
+<Keyword Name="LIMIT">
+
+</Keyword>
+<Keyword Name="LINK">
+
+</Keyword>
+<Keyword Name="LIST">
+
+</Keyword>
+<Keyword Name="LOB">
+
+</Keyword>
+<Keyword Name="LOCAL">
+
+</Keyword>
+<Keyword Name="LOCK">
+
+</Keyword>
+<Keyword Name="LOCKED">
+
+</Keyword>
+<Keyword Name="LOG">
+
+</Keyword>
+<Keyword Name="LOGFILE">
+
+</Keyword>
+<Keyword Name="LOGGING">
+
+</Keyword>
+<Keyword Name="LOGICAL_READS_PER_CALL">
+
+</Keyword>
+<Keyword Name="LOGICAL_READS_PER_SESSION">
+
+</Keyword>
+<Keyword Name="LONG">
+
+</Keyword>
+<Keyword Name="MANAGE">
+
+</Keyword>
+<Keyword Name="MASTER">
+
+</Keyword>
+<Keyword Name="MAX">
+
+</Keyword>
+<Keyword Name="MAXARCHLOGS">
+
+</Keyword>
+<Keyword Name="MAXDATAFILES">
+
+</Keyword>
+<Keyword Name="MAXEXTENTS">
+
+</Keyword>
+<Keyword Name="MAXINSTANCES">
+
+</Keyword>
+<Keyword Name="MAXLOGFILES">
+
+</Keyword>
+<Keyword Name="MAXLOGHISTORY">
+
+</Keyword>
+<Keyword Name="MAXLOGMEMBERS">
+
+</Keyword>
+<Keyword Name="MAXSIZE">
+
+</Keyword>
+<Keyword Name="MAXTRANS">
+
+</Keyword>
+<Keyword Name="MAXVALUE">
+
+</Keyword>
+<Keyword Name="MEMBER">
+
+</Keyword>
+<Keyword Name="MIN">
+
+</Keyword>
+<Keyword Name="MINEXTENTS">
+
+</Keyword>
+<Keyword Name="MINIMUM">
+
+</Keyword>
+<Keyword Name="MINUS">
+
+</Keyword>
+<Keyword Name="MINVALUE">
+
+</Keyword>
+<Keyword Name="MLS_LABEL_FORMAT">
+
+</Keyword>
+<Keyword Name="MLSLABEL">
+
+</Keyword>
+<Keyword Name="MODE">
+
+</Keyword>
+<Keyword Name="MODIFY">
+
+</Keyword>
+<Keyword Name="MOUNT">
+
+</Keyword>
+<Keyword Name="MOVE">
+
+</Keyword>
+<Keyword Name="MTS_DISPATCHERS">
+
+</Keyword>
+<Keyword Name="MULTISET">
+
+</Keyword>
+<Keyword Name="NATIONAL">
+
+</Keyword>
+<Keyword Name="NCHAR">
+
+</Keyword>
+<Keyword Name="NCHAR_CS">
+
+</Keyword>
+<Keyword Name="NCLOB">
+
+</Keyword>
+<Keyword Name="NEEDED">
+
+</Keyword>
+<Keyword Name="NESTED">
+
+</Keyword>
+<Keyword Name="NETWORK">
+
+</Keyword>
+<Keyword Name="NEW">
+
+</Keyword>
+<Keyword Name="NEXT">
+
+</Keyword>
+<Keyword Name="NOARCHIVELOG">
+
+</Keyword>
+<Keyword Name="NOAUDIT">
+
+</Keyword>
+<Keyword Name="NOCACHE">
+
+</Keyword>
+<Keyword Name="NOCOMPRESS">
+
+</Keyword>
+<Keyword Name="NOCYCLE">
+
+</Keyword>
+<Keyword Name="NOFORCE">
+
+</Keyword>
+<Keyword Name="NOLOGGING">
+
+</Keyword>
+<Keyword Name="NOMAXVALUE">
+
+</Keyword>
+<Keyword Name="NOMINVALUE">
+
+</Keyword>
+<Keyword Name="NONE">
+
+</Keyword>
+<Keyword Name="NOORDER">
+
+</Keyword>
+<Keyword Name="NOOVERRIDE">
+
+</Keyword>
+<Keyword Name="NOPARALLEL">
+
+</Keyword>
+<Keyword Name="NOPARALLEL">
+
+</Keyword>
+<Keyword Name="NOREVERSE">
+
+</Keyword>
+<Keyword Name="NORMAL">
+
+</Keyword>
+<Keyword Name="NOSORT">
+
+</Keyword>
+<Keyword Name="NOT">
+
+</Keyword>
+<Keyword Name="NOTHING">
+
+</Keyword>
+<Keyword Name="NOWAIT">
+
+</Keyword>
+<Keyword Name="NULL">
+
+</Keyword>
+<Keyword Name="NUMBER">
+
+</Keyword>
+<Keyword Name="NUMERIC">
+
+</Keyword>
+<Keyword Name="NVARCHAR2">
+
+</Keyword>
+<Keyword Name="OBJECT">
+
+</Keyword>
+<Keyword Name="OBJNO">
+
+</Keyword>
+<Keyword Name="OBJNO_REUSE">
+
+</Keyword>
+<Keyword Name="OF">
+
+</Keyword>
+<Keyword Name="OFF">
+
+</Keyword>
+<Keyword Name="OFFLINE">
+
+</Keyword>
+<Keyword Name="OID">
+
+</Keyword>
+<Keyword Name="OIDINDEX">
+
+</Keyword>
+<Keyword Name="OLD">
+
+</Keyword>
+<Keyword Name="ON">
+
+</Keyword>
+<Keyword Name="ONLINE">
+
+</Keyword>
+<Keyword Name="ONLY">
+
+</Keyword>
+<Keyword Name="OPCODE">
+
+</Keyword>
+<Keyword Name="OPEN">
+
+</Keyword>
+<Keyword Name="OPTIMAL">
+
+</Keyword>
+<Keyword Name="OPTIMIZER_GOAL">
+
+</Keyword>
+<Keyword Name="OPTION">
+
+</Keyword>
+<Keyword Name="OR">
+
+</Keyword>
+<Keyword Name="ORDER">
+
+</Keyword>
+<Keyword Name="ORGANIZATION">
+
+</Keyword>
+<Keyword Name="OSLABEL">
+
+</Keyword>
+<Keyword Name="OVERFLOW">
+
+</Keyword>
+<Keyword Name="OWN">
+
+</Keyword>
+<Keyword Name="PACKAGE">
+
+</Keyword>
+<Keyword Name="PARALLEL">
+
+</Keyword>
+<Keyword Name="PARTITION">
+
+</Keyword>
+<Keyword Name="PASSWORD">
+
+</Keyword>
+<Keyword Name="PASSWORD_GRACE_TIME">
+
+</Keyword>
+<Keyword Name="PASSWORD_LIFE_TIME">
+
+</Keyword>
+<Keyword Name="PASSWORD_LOCK_TIME">
+
+</Keyword>
+<Keyword Name="PASSWORD_REUSE_MAX">
+
+</Keyword>
+<Keyword Name="PASSWORD_REUSE_TIME">
+
+</Keyword>
+<Keyword Name="PASSWORD_VERIFY_FUNCTION">
+
+</Keyword>
+<Keyword Name="PCTFREE">
+
+</Keyword>
+<Keyword Name="PCTINCREASE">
+
+</Keyword>
+<Keyword Name="PCTTHRESHOLD">
+
+</Keyword>
+<Keyword Name="PCTUSED">
+
+</Keyword>
+<Keyword Name="PCTVERSION">
+
+</Keyword>
+<Keyword Name="PERCENT">
+
+</Keyword>
+<Keyword Name="PERMANENT">
+
+</Keyword>
+<Keyword Name="PLAN">
+
+</Keyword>
+<Keyword Name="PLSQL_DEBUG">
+
+</Keyword>
+<Keyword Name="POST_TRANSACTION">
+
+</Keyword>
+<Keyword Name="PRECISION">
+
+</Keyword>
+<Keyword Name="PRESERVE">
+
+</Keyword>
+<Keyword Name="PRIMARY">
+
+</Keyword>
+<Keyword Name="PRIOR">
+
+</Keyword>
+<Keyword Name="PRIVATE">
+
+</Keyword>
+<Keyword Name="PRIVATE_SGA">
+
+</Keyword>
+<Keyword Name="PRIVILEGE">
+
+</Keyword>
+<Keyword Name="PRIVILEGES">
+
+</Keyword>
+<Keyword Name="PROCEDURE">
+
+</Keyword>
+<Keyword Name="PROFILE">
+
+</Keyword>
+<Keyword Name="PUBLIC">
+
+</Keyword>
+<Keyword Name="PURGE">
+
+</Keyword>
+<Keyword Name="QUEUE">
+
+</Keyword>
+<Keyword Name="QUOTA">
+
+</Keyword>
+<Keyword Name="RANGE">
+
+</Keyword>
+<Keyword Name="RAW">
+
+</Keyword>
+<Keyword Name="RBA">
+
+</Keyword>
+<Keyword Name="READ">
+
+</Keyword>
+<Keyword Name="READUP">
+
+</Keyword>
+<Keyword Name="REAL">
+
+</Keyword>
+<Keyword Name="REBUILD">
+
+</Keyword>
+<Keyword Name="RECOVER">
+
+</Keyword>
+<Keyword Name="RECOVERABLE">
+
+</Keyword>
+<Keyword Name="RECOVERY">
+
+</Keyword>
+<Keyword Name="REF">
+
+</Keyword>
+<Keyword Name="REFERENCES">
+
+</Keyword>
+<Keyword Name="REFERENCING">
+
+</Keyword>
+<Keyword Name="REFRESH">
+
+</Keyword>
+<Keyword Name="RENAME">
+
+</Keyword>
+<Keyword Name="REPLACE">
+
+</Keyword>
+<Keyword Name="RESET">
+
+</Keyword>
+<Keyword Name="RESETLOGS">
+
+</Keyword>
+<Keyword Name="RESIZE">
+
+</Keyword>
+<Keyword Name="RESOURCE">
+
+</Keyword>
+<Keyword Name="RESTRICTED">
+
+</Keyword>
+<Keyword Name="RETURN">
+
+</Keyword>
+<Keyword Name="RETURNING">
+
+</Keyword>
+<Keyword Name="REUSE">
+
+</Keyword>
+<Keyword Name="REVERSE">
+
+</Keyword>
+<Keyword Name="REVOKE">
+
+</Keyword>
+<Keyword Name="ROLE">
+
+</Keyword>
+<Keyword Name="ROLES">
+
+</Keyword>
+<Keyword Name="ROLLBACK">
+
+</Keyword>
+<Keyword Name="ROW">
+
+</Keyword>
+<Keyword Name="ROWID">
+
+</Keyword>
+<Keyword Name="ROWNUM">
+
+</Keyword>
+<Keyword Name="ROWS">
+
+</Keyword>
+<Keyword Name="RULE">
+
+</Keyword>
+<Keyword Name="SAMPLE">
+
+</Keyword>
+<Keyword Name="SAVEPOINT">
+
+</Keyword>
+<Keyword Name="SB4">
+
+</Keyword>
+<Keyword Name="SCAN_INSTANCES">
+
+</Keyword>
+<Keyword Name="SCHEMA">
+
+</Keyword>
+<Keyword Name="SCN">
+
+</Keyword>
+<Keyword Name="SCOPE">
+
+</Keyword>
+<Keyword Name="SD_ALL">
+
+</Keyword>
+<Keyword Name="SD_INHIBIT">
+
+</Keyword>
+<Keyword Name="SD_SHOW">
+
+</Keyword>
+<Keyword Name="SEG_BLOCK">
+
+</Keyword>
+<Keyword Name="SEG_FILE">
+
+</Keyword>
+<Keyword Name="SEGMENT">
+
+</Keyword>
+<Keyword Name="SELECT">
+
+</Keyword>
+<Keyword Name="SEQUENCE">
+
+</Keyword>
+<Keyword Name="SERIALIZABLE">
+
+</Keyword>
+<Keyword Name="SESSION">
+
+</Keyword>
+<Keyword Name="SESSION_CACHED_CURSORS">
+
+</Keyword>
+<Keyword Name="SESSIONS_PER_USER">
+
+</Keyword>
+<Keyword Name="SET">
+
+</Keyword>
+<Keyword Name="SHARE">
+
+</Keyword>
+<Keyword Name="SHARED">
+
+</Keyword>
+<Keyword Name="SHARED_POOL">
+
+</Keyword>
+<Keyword Name="SHRINK">
+
+</Keyword>
+<Keyword Name="SIZE">
+
+</Keyword>
+<Keyword Name="SKIP">
+
+</Keyword>
+<Keyword Name="SKIP_UNUSABLE_INDEXES">
+
+</Keyword>
+<Keyword Name="SMALLINT">
+
+</Keyword>
+<Keyword Name="SNAPSHOT">
+
+</Keyword>
+<Keyword Name="SOME">
+
+</Keyword>
+<Keyword Name="SORT">
+
+</Keyword>
+<Keyword Name="SPECIFICATION">
+
+</Keyword>
+<Keyword Name="SPLIT">
+
+</Keyword>
+<Keyword Name="SQL_TRACE">
+
+</Keyword>
+<Keyword Name="STANDBY">
+
+</Keyword>
+<Keyword Name="START">
+
+</Keyword>
+<Keyword Name="STATEMENT_ID">
+
+</Keyword>
+<Keyword Name="STATISTICS">
+
+</Keyword>
+<Keyword Name="STOP">
+
+</Keyword>
+<Keyword Name="STORAGE">
+
+</Keyword>
+<Keyword Name="STORE">
+
+</Keyword>
+<Keyword Name="STRUCTURE">
+
+</Keyword>
+<Keyword Name="SUCCESSFUL">
+
+</Keyword>
+<Keyword Name="SWITCH">
+
+</Keyword>
+<Keyword Name="SYNONYM">
+
+</Keyword>
+<Keyword Name="SYS_OP_ENFORCE_NOT_NULL$">
+
+</Keyword>
+<Keyword Name="SYS_OP_NTCIMG$">
+
+</Keyword>
+<Keyword Name="SYSDATE">
+
+</Keyword>
+<Keyword Name="SYSDBA">
+
+</Keyword>
+<Keyword Name="SYSOPER">
+
+</Keyword>
+<Keyword Name="SYSTEM">
+
+</Keyword>
+<Keyword Name="TABLE">
+
+</Keyword>
+<Keyword Name="TABLES">
+
+</Keyword>
+<Keyword Name="TABLESPACE">
+
+</Keyword>
+<Keyword Name="TABLESPACE_NO">
+
+</Keyword>
+<Keyword Name="TABNO">
+
+</Keyword>
+<Keyword Name="TEMPORARY">
+
+</Keyword>
+<Keyword Name="THAN">
+
+</Keyword>
+<Keyword Name="THE">
+
+</Keyword>
+<Keyword Name="THEN">
+
+</Keyword>
+<Keyword Name="THREAD">
+
+</Keyword>
+<Keyword Name="TIME">
+
+</Keyword>
+<Keyword Name="TIMESTAMP">
+
+</Keyword>
+<Keyword Name="TO">
+
+</Keyword>
+<Keyword Name="TOPLEVEL">
+
+</Keyword>
+<Keyword Name="TRACE">
+
+</Keyword>
+<Keyword Name="TRACING">
+
+</Keyword>
+<Keyword Name="TRANSACTION">
+
+</Keyword>
+<Keyword Name="TRANSITIONAL">
+
+</Keyword>
+<Keyword Name="TRIGGER">
+
+</Keyword>
+<Keyword Name="TRIGGERS">
+
+</Keyword>
+<Keyword Name="TRUNCATE">
+
+</Keyword>
+<Keyword Name="TX">
+
+</Keyword>
+<Keyword Name="TYPE">
+
+</Keyword>
+<Keyword Name="UB2">
+
+</Keyword>
+<Keyword Name="UBA">
+
+</Keyword>
+<Keyword Name="UID">
+
+</Keyword>
+<Keyword Name="UNARCHIVED">
+
+</Keyword>
+<Keyword Name="UNDO">
+
+</Keyword>
+<Keyword Name="UNION">
+
+</Keyword>
+<Keyword Name="UNIQUE">
+
+</Keyword>
+<Keyword Name="UNLIMITED">
+
+</Keyword>
+<Keyword Name="UNLOCK">
+
+</Keyword>
+<Keyword Name="UNRECOVERABLE">
+
+</Keyword>
+<Keyword Name="UNTIL">
+
+</Keyword>
+<Keyword Name="UNUSABLE">
+
+</Keyword>
+<Keyword Name="UNUSED">
+
+</Keyword>
+<Keyword Name="UPDATABLE">
+
+</Keyword>
+<Keyword Name="UPDATE">
+
+</Keyword>
+<Keyword Name="USAGE">
+
+</Keyword>
+<Keyword Name="USE">
+
+</Keyword>
+<Keyword Name="USER">
+
+</Keyword>
+<Keyword Name="USING">
+
+</Keyword>
+<Keyword Name="VALIDATE">
+
+</Keyword>
+<Keyword Name="VALIDATION">
+
+</Keyword>
+<Keyword Name="VALUE">
+
+</Keyword>
+<Keyword Name="VALUES">
+
+</Keyword>
+<Keyword Name="VARCHAR">
+
+</Keyword>
+<Keyword Name="VARCHAR2">
+
+</Keyword>
+<Keyword Name="VARYING">
+
+</Keyword>
+<Keyword Name="VIEW">
+
+</Keyword>
+<Keyword Name="WHEN">
+
+</Keyword>
+<Keyword Name="WHENEVER">
+
+</Keyword>
+<Keyword Name="WHERE">
+
+</Keyword>
+<Keyword Name="WITH">
+
+</Keyword>
+<Keyword Name="WITHOUT">
+
+</Keyword>
+<Keyword Name="WORK">
+
+</Keyword>
+<Keyword Name="WRITE">
+
+</Keyword>
+<Keyword Name="WRITEDOWN">
+
+</Keyword>
+<Keyword Name="WRITEUP">
+
+</Keyword>
+<Keyword Name="XID">
+
+</Keyword>
+<Keyword Name="YEAR">
+
+</Keyword>
+<Keyword Name="ZONE">
+
+</Keyword>
+<Keyword Name="TRUE ">
+
+</Keyword>
+<Keyword Name="FALSE">
+
+</Keyword>
+</tns:R3Reservedlist>

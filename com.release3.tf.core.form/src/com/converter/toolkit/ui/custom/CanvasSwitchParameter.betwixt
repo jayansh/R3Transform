@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<info primitiveTypes="attribute">
+  <element name="CanvasSwitchParameter">
+  <attribute name="SourceForm" property="sourceForm"/>
+    <attribute name="SourceBlock" property="sourceBlock"/>
+    <attribute name="SourceItem" property="sourceItem"/>
+    <attribute name="DestinationForm" property="destinationForm"/>
+   <attribute name="DestinationBlock" property="destinationBlock"/>
+    <attribute name="DestinationItem" property="destinationItem"/>
+    
+  </element>
+</info>
+                

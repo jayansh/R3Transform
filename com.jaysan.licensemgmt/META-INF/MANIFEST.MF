@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: LicenseMgmt
+Bundle-SymbolicName: com.jaysan.licensemgmt
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.jaysan.licensemgmt.LicensePlugin
+Bundle-Vendor: JaySan
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ui
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: truelicense.jar,
+ .,
+ commons-codec-1.6.jar
+Export-Package: com.jaysan.licensemgmt,
+ com.jaysan.licensemgmt.wizard,
+ de.schlichtherle.license

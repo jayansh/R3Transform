@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.release3.com/Customization"
+	xmlns:tns="http://www.release3.com/Customization" elementFormDefault="qualified"
+	xmlns:Q1="http://www.release3.com/Customization/Parameter" xmlns:Q2="http://www.release3.com/Customization/Builtin"
+	xmlns:Q3="http://www.release3.com/Customization/RecordGroup" xmlns:Q4="http://www.release3.com/Customization/BlockCust">
+	<import schemaLocation="BlockCust.xsd"
+		namespace="http://www.release3.com/Customization/BlockCust"></import>
+	<import schemaLocation="RecordGroupCustomization.xsd"
+		namespace="http://www.release3.com/Customization/RecordGroup"></import>
+	<import schemaLocation="BuiltinCustomization.xsd"
+		namespace="http://www.release3.com/Customization/Builtin"></import>
+	<import schemaLocation="ParameterCustomization.xsd"
+		namespace="http://www.release3.com/Customization/Parameter"></import>
+	<element name="R3">
+		<complexType>
+			<sequence>
+				<element name="Trigger" minOccurs="0" maxOccurs="unbounded">
+					<complexType>
+
+						<sequence>
+							<element name="Parameter" maxOccurs="unbounded"
+								minOccurs="0" type="Q1:ParameterType">
+							</element>
+							<element name="Builtin" maxOccurs="unbounded" minOccurs="0"
+								type="Q2:BuiltinType">
+							</element>
+							<element name="Refresh" type="tns:RefreshType" maxOccurs="unbounded"
+								minOccurs="0">
+							</element>
+						</sequence>
+						<attribute name="Block" use="optional" type="string" />
+						<attribute name="Item" use="optional" type="string" />
+
+
+						<attribute name="Jsfattr" type="string"></attribute>
+						<attribute name="plsql" type="string"></attribute>
+						<attribute name="MethodType" type="string"></attribute>
+					</complexType>
+				</element>
+
+
+				<element name="RecordGroup" maxOccurs="unbounded" minOccurs="0"
+					type="Q3:RecordGroupType">
+				</element>
+				<element name="BlockCust" maxOccurs="unbounded" minOccurs="0"
+					type="Q4:BlockCustType">
+				</element>
+			</sequence>
+			<attribute name="Name" type="string"></attribute>
+		</complexType>
+	</element>
+
+
+
+	<complexType name="RefreshType">
+		<attribute name="Block" type="string"></attribute>
+	</complexType>
+
+
+</schema>

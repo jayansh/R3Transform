@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<info primitiveTypes="attribute">
+  <element name="Trigger">
+    <attribute name="Block" property="block"/>
+    <attribute name="Item" property="item"/>
+    <attribute name="Jsfattr" property="jsfattr"/>
+    <attribute name="MethodType" property="methodType"/>
+    <attribute name="plsql" property="plsql"/>
+    <attribute name="JavaMethod" property="javaMethod"/>
+    <element name="Parameter" property="parameter" updater="addParameter"/>
+    <element name="CanvasSwitchParameter" property="canvasSwitchParameters" updater="addCanvasSwitchParameter"/>
+    <element name="Refresh" property="refresh" updater="addRefresh"/>
+  </element>
+</info>
+                

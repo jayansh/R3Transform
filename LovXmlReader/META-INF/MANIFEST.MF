@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: LovXmlReader
+Bundle-SymbolicName: LovXmlReader
+Bundle-Version: 1.0.0.qualifier
+Export-Package: com.release3.transform;uses:="com.release3.transform.lov"
+Import-Package: com.oracle.xmlns.forms
+Require-Bundle: com.release3.tf.jaxb;bundle-version="1.0.0"

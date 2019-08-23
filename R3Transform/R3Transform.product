@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="R3Transform" uid="R3Transform.product" id="R3Transform.product" application="R3Transform.application" version="6.0.0" useFeatures="false" includeLaunchers="true">
+
+   <aboutInfo>
+      <image path="/R3Transform/transform_logo2.GIF"/>
+      <text>
+         Release3 Transform Toolkit - Freeware Edition
+Version: 6.0 M3
+Release Date: 06 May 2013
+(c) Copyright Release3 - A Div. of ObanSoft Inc. and others  2012. All rights reserved.
+Visit http://www.release3.com
+      </text>
+   </aboutInfo>
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-os ${target.os}
+-ws ${target.ws}
+-arch ${target.arch}
+-nl {target.nl}
+-data @noDefault</programArgs>
+      <vmArgs>-Dosgi.requiredJavaVersion=1.5
+-Xms512m
+-Xmx1024m</vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="/R3Transform/icons/r3_temp16X16.GIF"/>
+
+   <splash
+      location="R3Transform"
+      startupProgressRect="20,290,430,15"
+      startupMessageRect="20,270,429,15"
+      startupForegroundColor="804000" />
+   <launcher name="R3Transform">
+      <solaris/>
+      <win useIco="true">
+         <ico path="/R3Transform/icons/r3_24.ico"/>
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <license>
+        <text>
+   Software License Agreement
+TRANSFORM – Forms to Java migration toolkit
+This agreement and all other related agreements relating to open-source technologies used by us to develop this software are included in the license folder with the TRANSFORM toolkit.
+NOTICE TO USER: PLEASE READ THIS CONTRACT CAREFULLY. BY USING ALL OR ANY PORTION OF THE SOFTWARE YOU ACCEPT ALL THE TERMS AND CONDITIONS OF THIS AGREEMENT, INCLUDING, IN PARTICULAR THE LIMITATIONS ON: USE CONTAINED IN SECTION 3; WARRANTY IN SECTION 7 AND 8; LIABILITY IN SECTION 9; AND SPECIFIC EXCEPTIONS IN SECTION 12. YOU AGREE THAT THIS AGREEMENT IS ENFORCEABLE LIKE ANY WRITTEN NEGOTIATED AGREEMENT SIGNED BY YOU. PLEASE READ ALL LICENSE AGREEMENT, AND TERMS. BEFORE USING THISSOFTWARE, YOU MUST AGREE TO ALL TERMS IN ALL THE RELATED AGREEMENTS PROVIDED.
+IF YOU DO NOT AGREE, DO NOT USE THIS SOFTWARE. IF YOU ACQUIRED THE SOFTWARE ON TANGIBLE MEDIA (e.g. BY DOWNLOAD, EMAIL OR ON A CD) WITHOUT AN OPPORTUNITY TO REVIEW THIS LICENSE AND YOU DO NOT ACCEPT THIS AGREEMENT, YOU MAY OBTAIN A REFUND OF THE AMOUNT YOU ORIGINALLY PAID IF YOU: (A) DO NOT USE THE SOFTWARE AND (B) RETURN IT, WITH PROOF OF PAYMENT, TO THE LOCATION FROM WHICH IT WAS OBTAINED WITHIN THIRTY (30) DAYS OF THE PURCHASE DATE.
+ObanSoft Inc. and its suppliers own all intellectual property for TRANSFORM Forms to Java Migration Toolkit („Software‟). ObanSoft Inc. permits you to Use the Software only in accordance with the terms of this Agreement. Use of some third party materials included in the Software may be subject to other terms and conditions typically found in a separate license agreement or “Read Me” file located near such materials.
+1. Definitions. “Software” means (a) all of the contents of the files, disk(s), CD-ROM(s) or other media with which this Agreement is provided, including but not limited to (i) TRANSFORM migration toolkit from ObanSoft Inc. or third party computer information or software; and (b) upgrades, modified versions, updates, additions, and copies of the Software, if any, licensed to you by ObanSoft Inc. (collectively, “Updates”). “Use”, “Used” or “Using” means to access, install, download, copy or otherwise benefit from using the functionality of the Software in accordance with the Documentation. “Licensed Number” means limited to the number of Forms Modules to be migrated using TRANSFORM, for which the TRANSFORM software license has been procured, unless otherwise indicated under a valid license (e.g., volume license) granted by ObanSoft Inc. “Computer” means central processing unit (CPU) that accepts information in digital or similar form and manipulates it for a specific result based on a sequence of instructions. “Release3” means ObanSoft Inc., an Ontario, Canada Corporation, 57 Village Centre Place, Suite 301, Mississauga ON L4Z 1V9 Canada.
+2. Migration Licenses: TRANSFORM migration toolkit software works with a license file. The license file contains the names and pertinent information of the Forms Objects and Modules that will be licensed to be migrated using the TRANSFORM Forms to Java migration toolkit. This information is gathered using the TRANSFORM pre-migration tool into a definition file that is sent to ObanSoft Inc. for generation of migration licenses. The terms of this agreement cover all the 3 parts of the TRANSFORM toolkit software i.e. a) TRANSFORM toolkit, b) TRANSFORM license generator and c) TRANSFORM license file. The term “license” constitute all above mentioned components.
+OBANSOFT INC. DOES NOT LIMIT THE NUMBER OF PCS OR SERVERS THAT TRANSFORM TOOLKIT MAY BE USED ON. THE LIMITATION OF USE IS TO THE NUMBER OF ORACLE FORMS MODULES FOR WHICH THE TRANSFORM USAGE LICENSE FILE HAS BEEN PURCHASED.
+3. Software License. As long as you comply with the terms of this Software License Agreement (this “Agreement”), ObanSoft Inc. grants to you a non-exclusive license to Use the Software for the purposes described in the Documentation, as further set forth below.
+3.1. General Use. You may install and Use a copy of the TRANSFORM toolkit Software on your compatible Computer; or
+3.2. Server Use. You may install a copy of the TRANSFORM toolkit Software on your Computer file server for the purpose of downloading and installing the Software onto other Computers within your internal network or you may install copy of the TRANSFORM toolkit Software on a Computer file server within your internal network for the sole and exclusive purpose of using the Software through commands, data or instructions (e.g. scripts) from another Computer on your internal network. Network use is permitted, including, but not limited to, use of the Software, either directly or through commands, data or instructions from or to a Computer not part of your internal network, for internet or web hosting services as licensed to use this copy of the Software through a valid license from ObanSoft Inc.; and
+3.3. Backup Copy. You may make backup copy of the Software. You may not transfer the rights to a backup copy unless you transfer all rights in the Software.
+3.4. Third Party software, libraries. The Software requires libraries and software (ICEFaces, JSF and/or Java libraries, internet browsers like Internet Explorer or Firefox or similar and/or Java IDE. Your access to and use of any Third Party Site, including any goods, services or information made available from such sites, is governed by the terms and conditions found at each Third Party Site, if any. Third Party Sites are not owned or operated by ObanSoft Inc. YOUR USE OF THIRD PARTY SITES IS AT YOUR OWN RISK. OBANSOFT INC. MAKES NO WARRANTIES, CONDITIONS, INDEMNITIES, REPRESENTATIONS OR TERMS, EXPRESS OR IMPLIED, WHETHER BY STATUTE, COMMON LAW, CUSTOM, USAGE OR OTHERWISE AS TO ANY OTHER MATTERS, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT OF THIRD PARTY RIGHTS, TITLE, INTEGRATION, ACCURACY, SECURITY, AVAILABILITY, SATISFACTORY QUALITY, MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE WITH RESPECT TO THE THIRD PARTY SITES.
+4. Intellectual Property Ownership, Copyright Protection. The Software and any authorized copies that you make are the intellectual property of and are owned by ObanSoft Inc. and its suppliers. The structure, organization and code of the Software are the valuable trade secrets and confidential information of ObanSoft Inc. and its suppliers. The Software is protected by law, including without limitation the copyright laws of Canada and other countries, and by international treaty provisions. Except as expressly stated herein, this Agreement does not grant you any intellectual property rights in the Software and all rights not expressly granted are reserved by ObanSoft Inc. and its suppliers.
+5. Restrictions.
+5.1. Notices. You shall not copy the Software except as set forth in Section 3. Any copy of the Software that you make must contain the same copyright and other proprietary notices that appear on or in the Software.
+5.2. No Modifications. You shall not modify, adapt or translate the Software. You shall not reverse engineer, decompile, disassemble or otherwise attempt to discover the source code of the Software except to the extent you may be expressly permitted to decompile under applicable law. If for some reason, it is essential to do so in order to achieve operability of the Software with another software program, and you have first asked ObanSoft Inc. to provide the information necessary to achieve such operability and ObanSoft Inc. has not made such information available. ObanSoft Inc. has the right to impose reasonable conditions and to request a reasonable fee before providing such information. Any such information supplied by ObanSoft Inc. and any information obtained by you by such permitted de-compilation may only be used by you for the purpose described herein and may not be disclosed to any third party or used to create any software which is substantially similar to the expression of the Software. Requests for such information should be directed to the ObanSoft Inc.‟s Customer Support Department.
+5.3. No Unbundling. The Software may include various applications, utilities and components, may support multiple platforms and languages and may be provided to you on multiple media or in
+multiple copies. Nonetheless, the Software is designed and provided to you as a single product bundle, to be used as a bundle. You shall not unbundle or repackage the Software for distribution or resale.
+6. Updates. If the Software is an Update to a previous version of the Software, you must possess a valid license to such previous version in order to Use such Update. All Updates are provided to you on a license exchange basis. You agree that by Using an Update, you voluntarily terminate your right to use any previous version of the Software. You acknowledge that any obligation ObanSoft Inc. may have to support the previous versions of the Software may be ended upon availability of the Update.
+7. LIMITED WARRANTY. Except as may be otherwise provided in Section 12, ObanSoft Inc. warrants to the person or entity that first purchases a license for the Software for use pursuant to the terms of this license, that the Software will perform substantially in accordance with the Documentation for the thirty (30) day period following receipt of the Software when used on the recommended operating system and hardware configuration. Non-substantial variations of performance from the Documentation does not establish a warranty right. This limited warranty does not apply to PATCHES, pre-release (BETA), tryout, evaluation, product sampler, OR NOT FOR RESALE (NFR) COPIES OF SOFTWARE. To make a warranty claim, you must return the Software to the location where you obtained it along with proof of purchase within such thirty (30) day period. If the Software does not perform substantially in accordance with the Documentation, the entire liability of ObanSoft Inc. your exclusive remedy shall be limited to either, at ObanSoft Inc‟s option, the replacement of the Software or the refund of the license fee you paid for the Software. THE LIMITED WARRANTY SET FORTH IN THIS SECTION GIVES YOU SPECIFIC LEGAL RIGHTS. YOU MAY HAVE ADDITIONAL RIGHTS WHICH VARY FROM JURISDICTION TO JURISDICTION. For further warranty information, please see the jurisdiction specific information at the end of this Agreement, if any, or contact ObanSoft Inc‟s Customer Support Department.
+8. DISCLAIMER. THE FOREGOING LIMITED WARRANTY STATES THE SOLE AND EXCLUSIVE REMEDIES FOR OBANSOFT INC‟S OR ITS SUPPLIER‟S BREACH OF WARRANTY. OBANSOFT INC. AND ITS SUPPLIERS DO NOT AND CANNOT WARRANT THE PERFORMANCE OR RESULTS YOU MAY OBTAIN BY USING THE SOFTWARE. EXCEPT FOR THE FOREGOING LIMITED WARRANTY, AND FOR ANY WARRANTY, CONDITION, REPRESENTATION OR TERM TO THE EXTENT TO WHICH THE SAME CANNOT OR MAY NOT BE EXCLUDED OR LIMITED BY LAW APPLICABLE TO YOU IN YOUR JURISDICTION, OBANSOFT INC AND ITS SUPPLIERS MAKE NO WARRANTIES, CONDITIONS, REPRESENTATIONS OR TERMS, EXPRESS OR IMPLIED, WHETHER BY STATUTE, COMMON LAW, CUSTOM, USAGE OR OTHERWISE AS TO ANY OTHER MATTERS, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT OF THIRD PARTY RIGHTS, INTEGRATION, SATISFACTORY QUALITY OR FITNESS FOR ANY PARTICULAR PURPOSE. The provisions of Section 8 and Section 9 shall survive the termination of this Agreement, howsoever caused, but this shall not imply or create any continued right to Use the Software after termination of this Agreement.
+9. LIMITATION OF LIABILITY. IN NO EVENT WILL OBANSOFT INC. OR ITS SUPPLIERS BE LIABLE TO YOU FOR ANY DAMAGES, CLAIMS OR COSTS WHATSOEVER OR ANY CONSEQUENTIAL, INDIRECT, INCIDENTAL DAMAGES, OR ANY LOST PROFITS OR LOST SAVINGS, EVEN IF A OBANSOFT INC‟s REPRESENTATIVE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSS, DAMAGES, CLAIMS OR COSTS OR FOR ANY CLAIM BY ANY THIRD PARTY. THE FOREGOING LIMITATIONS AND EXCLUSIONS APPLY TO THE EXTENT PERMITTED BY APPLICABLE LAW IN YOUR JURISDICTION. OBANSOFT INC‟s AGGREGATE LIABILITY AND THAT OF ITS SUPPLIERS UNDER OR IN CONNECTION WITH THIS AGREEMENT SHALL BE LIMITED TO THE AMOUNT PAID FOR THE SOFTWARE, IF ANY. Nothing contained in this Agreement limits ObanSoft Inc.‟s liability to you in the event of death or personal injury resulting from ObanSoft Inc.‟s negligence or for the tort of deceit (fraud).
+10. Governing Law. This Agreement will be governed by and construed in accordance with the substantive laws in force in: (a) the province of Ontario, Canada. This Agreement will not be governed by the conflict
+of law rules of any jurisdiction or the United Nations Convention on Contracts for the International Sale of Goods, the application of which is expressly excluded.
+11. General Provisions. If any part of this Agreement is found void and unenforceable, it will not affect the validity of the balance of this Agreement, which shall remain valid and enforceable according to its terms. This Agreement shall not prejudice the statutory rights of any party dealing as a consumer. The English version of this Agreement shall be the version used when interpreting or construing this Agreement. This is the entire agreement between ObanSoft Inc. and you relating to the Software and it supersedes any prior representations, discussions, undertakings, communications or advertising relating to the Software.
+11.1. You are required to take all reasonable measures to avoid and reduce damages, in particular to make back-up copies of the Software and your computer data subject to the provisions of this Agreement.
+12. Evaluation Software, Not-for-Resale (NFR). If the product you have received with this license is a tryout, evaluation copy, or NFR copy of the Software (“Evaluation Software”), then the following Section applies until such time that you purchase a license to the full retail version of such product. To the extent that any provision in this Section is in conflict with any other term or condition in this Agreement, this Section shall super cede such other term(s) and condition(s) with respect to the Evaluation Software, but only to the extent necessary to resolve the conflict. YOU ACKNOWLEDGE THAT THE EVALUATION SOFTWARE CONTAINS LIMITED FUNCTIONALITY AND/OR FUNCTIONS FOR A LIMITED PERIOD OF TIME. OBANSOFT INC. IS LICENSING THE EVALUATION SOFTWARE ON AN “AS IS” BASIS, SOLELY AS A DEMONSTRATION MODEL. If the Evaluation Software is a timeout version, then the program will terminate operations after a designated period of time (e.g. 15, 30, or 45 days) following installation (the “Time Out Date”), which is specified in the Software. Upon such Time Out Date, the license hereunder shall be terminated, unless extended by ObanSoft Inc upon your purchase of a full retail license from ObanSoft Inc. You acknowledge that such Evaluation Software shall cease operation upon the Time Out Date and accordingly, access to any files or output created with such Tryout Software or any product associated with the Evaluation Software is done entirely at your own risk. ObanSoft Inc. disclaims any warranty or liability obligations to you of any kind, INCLUDING WHERE LEGALLY LIABILITY CANNOT BE EXCLUDED FOR EVALUATION SOFTWARE, BUT IT MAY BE LIMITED, OBANSOFT INC‟S LIABILITY AND THAT OF ITS SUPPLIERS SHALL BE LIMITED TO THE SUM OF FIFTY DOLLARS (U.S. $50) IN TOTAL.
+If you have any questions regarding this Agreement or if you wish to request any information from ObanSoft Inc. please use the address and contact information included with this product to contact the ObanSoft Inc offices at info@Release3.com .
+TRANSFORM -Forms to Java Migration toolkit is a product of ObanSoft Inc.
+All names, products and trademarks belong to their respective owners.
+         </text>
+   </license>
+
+   <plugins>
+      <plugin id="LovXmlReader"/>
+      <plugin id="R3Transform"/>
+      <plugin id="com.ibm.icu"/>
+      <plugin id="com.jaysan.licensemgmt"/>
+      <plugin id="com.release3.analysis"/>
+      <plugin id="com.release3.cleanup"/>
+      <plugin id="com.release3.dbconnect"/>
+      <plugin id="com.release3.migrate"/>
+      <plugin id="com.release3.plsql.analysis"/>
+      <plugin id="com.release3.postmigrate"/>
+      <plugin id="com.release3.premigrate"/>
+      <plugin id="com.release3.sqlparsing"/>
+      <plugin id="com.release3.tf.core"/>
+      <plugin id="com.release3.tf.core.form"/>
+      <plugin id="com.release3.tf.form.anlysis"/>
+      <plugin id="com.release3.tf.javasql"/>
+      <plugin id="com.release3.tf.jaxb"/>
+      <plugin id="com.release3.tf.licensing"/>
+      <plugin id="com.release3.tf.pll"/>
+      <plugin id="com.release3.tf.plsql.process"/>
+      <plugin id="com.release3.tf.ui.specialchar.pref"/>
+      <plugin id="com.release3.transform.lib"/>
+      <plugin id="com.release3.transform.pref"/>
+      <plugin id="com.release3.transform.rule"/>
+      <plugin id="com.release3.transform.ui"/>
+      <plugin id="javax.servlet"/>
+      <plugin id="javax.xml"/>
+      <plugin id="org.apache.ant"/>
+      <plugin id="org.apache.log4j"/>
+      <plugin id="org.apache.xerces"/>
+      <plugin id="org.apache.xml.resolver"/>
+      <plugin id="org.apache.xml.serializer"/>
+      <plugin id="org.eclipse.ant.core"/>
+      <plugin id="org.eclipse.compare"/>
+      <plugin id="org.eclipse.compare.core"/>
+      <plugin id="org.eclipse.core.commands"/>
+      <plugin id="org.eclipse.core.contenttype"/>
+      <plugin id="org.eclipse.core.databinding"/>
+      <plugin id="org.eclipse.core.databinding.beans"/>
+      <plugin id="org.eclipse.core.databinding.observable"/>
+      <plugin id="org.eclipse.core.databinding.property"/>
+      <plugin id="org.eclipse.core.expressions"/>
+      <plugin id="org.eclipse.core.filebuffers"/>
+      <plugin id="org.eclipse.core.filesystem"/>
+      <plugin id="org.eclipse.core.filesystem.aix.ppc" fragment="true"/>
+      <plugin id="org.eclipse.core.filesystem.hpux.ia64_32" fragment="true"/>
+      <plugin id="org.eclipse.core.filesystem.linux.ppc" fragment="true"/>
+      <plugin id="org.eclipse.core.filesystem.linux.x86" fragment="true"/>
+      <plugin id="org.eclipse.core.filesystem.linux.x86_64" fragment="true"/>
+      <plugin id="org.eclipse.core.filesystem.macosx" fragment="true"/>
+      <plugin id="org.eclipse.core.filesystem.solaris.sparc" fragment="true"/>
+      <plugin id="org.eclipse.core.filesystem.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.core.filesystem.win32.x86_64" fragment="true"/>
+      <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.net"/>
+      <plugin id="org.eclipse.core.net.linux.x86" fragment="true"/>
+      <plugin id="org.eclipse.core.net.linux.x86_64" fragment="true"/>
+      <plugin id="org.eclipse.core.net.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.core.net.win32.x86_64" fragment="true"/>
+      <plugin id="org.eclipse.core.resources"/>
+      <plugin id="org.eclipse.core.resources.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.core.runtime"/>
+      <plugin id="org.eclipse.core.runtime.compatibility"/>
+      <plugin id="org.eclipse.core.runtime.compatibility.auth"/>
+      <plugin id="org.eclipse.core.runtime.compatibility.registry" fragment="true"/>
+      <plugin id="org.eclipse.core.variables"/>
+      <plugin id="org.eclipse.debug.core"/>
+      <plugin id="org.eclipse.debug.ui"/>
+      <plugin id="org.eclipse.ecf"/>
+      <plugin id="org.eclipse.ecf.filetransfer"/>
+      <plugin id="org.eclipse.ecf.identity"/>
+      <plugin id="org.eclipse.ecf.provider.filetransfer"/>
+      <plugin id="org.eclipse.ecf.provider.filetransfer.ssl" fragment="true"/>
+      <plugin id="org.eclipse.ecf.ssl" fragment="true"/>
+      <plugin id="org.eclipse.emf.common"/>
+      <plugin id="org.eclipse.emf.ecore"/>
+      <plugin id="org.eclipse.emf.ecore.change"/>
+      <plugin id="org.eclipse.emf.ecore.xmi"/>
+      <plugin id="org.eclipse.emf.edit"/>
+      <plugin id="org.eclipse.equinox.app"/>
+      <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.concurrent"/>
+      <plugin id="org.eclipse.equinox.p2.core"/>
+      <plugin id="org.eclipse.equinox.p2.engine"/>
+      <plugin id="org.eclipse.equinox.p2.metadata"/>
+      <plugin id="org.eclipse.equinox.p2.metadata.repository"/>
+      <plugin id="org.eclipse.equinox.p2.repository"/>
+      <plugin id="org.eclipse.equinox.preferences"/>
+      <plugin id="org.eclipse.equinox.registry"/>
+      <plugin id="org.eclipse.equinox.security"/>
+      <plugin id="org.eclipse.equinox.security.macosx" fragment="true"/>
+      <plugin id="org.eclipse.equinox.security.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.equinox.security.win32.x86_64" fragment="true"/>
+      <plugin id="org.eclipse.help"/>
+      <plugin id="org.eclipse.jem.util"/>
+      <plugin id="org.eclipse.jface"/>
+      <plugin id="org.eclipse.jface.databinding"/>
+      <plugin id="org.eclipse.jface.text"/>
+      <plugin id="org.eclipse.ltk.core.refactoring"/>
+      <plugin id="org.eclipse.ltk.ui.refactoring"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.osgi.services"/>
+      <plugin id="org.eclipse.osgi.util"/>
+      <plugin id="org.eclipse.search"/>
+      <plugin id="org.eclipse.swt"/>
+      <plugin id="org.eclipse.swt.carbon.macosx" fragment="true"/>
+      <plugin id="org.eclipse.swt.cocoa.macosx" fragment="true"/>
+      <plugin id="org.eclipse.swt.cocoa.macosx.x86_64" fragment="true"/>
+      <plugin id="org.eclipse.swt.gtk.aix.ppc64" fragment="true"/>
+      <plugin id="org.eclipse.swt.gtk.linux.ppc" fragment="true"/>
+      <plugin id="org.eclipse.swt.gtk.linux.ppc64" fragment="true"/>
+      <plugin id="org.eclipse.swt.gtk.linux.s390" fragment="true"/>
+      <plugin id="org.eclipse.swt.gtk.linux.s390x" fragment="true"/>
+      <plugin id="org.eclipse.swt.gtk.linux.x86" fragment="true"/>
+      <plugin id="org.eclipse.swt.gtk.linux.x86_64" fragment="true"/>
+      <plugin id="org.eclipse.swt.gtk.solaris.sparc" fragment="true"/>
+      <plugin id="org.eclipse.swt.gtk.solaris.x86" fragment="true"/>
+      <plugin id="org.eclipse.swt.motif.aix.ppc" fragment="true"/>
+      <plugin id="org.eclipse.swt.motif.hpux.ia64_32" fragment="true"/>
+      <plugin id="org.eclipse.swt.motif.linux.x86" fragment="true"/>
+      <plugin id="org.eclipse.swt.motif.solaris.sparc" fragment="true"/>
+      <plugin id="org.eclipse.swt.photon.qnx.x86" fragment="true"/>
+      <plugin id="org.eclipse.swt.win32.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.swt.win32.win32.x86_64" fragment="true"/>
+      <plugin id="org.eclipse.team.core"/>
+      <plugin id="org.eclipse.team.ui"/>
+      <plugin id="org.eclipse.text"/>
+      <plugin id="org.eclipse.ui"/>
+      <plugin id="org.eclipse.ui.carbon" fragment="true"/>
+      <plugin id="org.eclipse.ui.cocoa" fragment="true"/>
+      <plugin id="org.eclipse.ui.console"/>
+      <plugin id="org.eclipse.ui.editors"/>
+      <plugin id="org.eclipse.ui.forms"/>
+      <plugin id="org.eclipse.ui.ide"/>
+      <plugin id="org.eclipse.ui.navigator"/>
+      <plugin id="org.eclipse.ui.views"/>
+      <plugin id="org.eclipse.ui.win32" fragment="true"/>
+      <plugin id="org.eclipse.ui.workbench"/>
+      <plugin id="org.eclipse.ui.workbench.texteditor"/>
+      <plugin id="org.eclipse.update.configurator"/>
+      <plugin id="org.eclipse.wb.swt.layout.grouplayout"/>
+      <plugin id="org.eclipse.wb.swt.widgets.baseline"/>
+      <plugin id="org.eclipse.wst.common.core"/>
+      <plugin id="org.eclipse.wst.common.emf"/>
+      <plugin id="org.eclipse.wst.common.emfworkbench.integration"/>
+      <plugin id="org.eclipse.wst.common.environment"/>
+      <plugin id="org.eclipse.wst.common.frameworks"/>
+      <plugin id="org.eclipse.wst.common.project.facet.core"/>
+      <plugin id="org.eclipse.wst.common.ui"/>
+      <plugin id="org.eclipse.wst.common.uriresolver"/>
+      <plugin id="org.eclipse.wst.sse.core"/>
+      <plugin id="org.eclipse.wst.sse.ui"/>
+      <plugin id="org.eclipse.wst.validation"/>
+      <plugin id="org.eclipse.wst.xml.core"/>
+      <plugin id="org.eclipse.wst.xml.ui"/>
+   </plugins>
+
+   <features>
+      <feature id="R3Transform_feature" version="1.0.0"/>
+   </features>
+
+
+</product>

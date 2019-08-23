@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Rule Plug-in
+Bundle-SymbolicName: com.release3.transform.rule
+Bundle-Version: 1.0.0
+Bundle-Activator: com.release3.transform.rule.Activator
+Bundle-Vendor: RELEASE3
+Require-Bundle: org.eclipse.core.runtime,
+ com.release3.transform.lib;bundle-version="1.0.0",
+ com.release3.tf.jaxb;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Export-Package: com.release3.transform.rule,
+ com.release3.transform.rules.model
